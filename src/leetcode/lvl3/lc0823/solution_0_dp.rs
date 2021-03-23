@@ -1,5 +1,12 @@
 use std::collections::HashMap;
 
+/// https://leetcode.com/problems/binary-trees-with-factors/
+///
+/// Time Complexity:    O()
+/// Space Complexity:   O()
+///
+/// Reference:
+///     https://leetcode.com/problems/binary-trees-with-factors/discuss/1107610/Rust-HashMap-solution
 impl Solution {
     pub fn num_factored_binary_trees(arr: Vec<i32>) -> i32 {
         const MOD: i64 = 1_000_000_007;
@@ -7,7 +14,6 @@ impl Solution {
         let mut dp = arr.iter().map(|&n| (n, 1)).collect::<HashMap<_, _>>();
         let mut arr = arr;
 
-        let mut ans: i32 = 0;
         arr.sort_unstable();
 
         for hi in 0..arr.len() {
