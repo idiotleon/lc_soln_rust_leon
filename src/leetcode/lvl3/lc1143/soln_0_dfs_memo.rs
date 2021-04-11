@@ -15,7 +15,7 @@ impl Solution {
         let chs1: Vec<char> = text1.chars().collect();
         let chs2: Vec<char> = text2.chars().collect();
         
-        return Self::dfs(0, 0, &chs1, &chs2, &mut memo);
+        Self::dfs(0, 0, &chs1, &chs2, &mut memo)
     }
     
     fn dfs(idx1: usize, idx2: usize, chs1: &Vec<char>, chs2: &Vec<char>, memo: &mut Vec<Vec<i32>>) -> i32{
@@ -39,6 +39,6 @@ impl Solution {
         }
         
         memo[idx1][idx2] = longest;
-        return longest;
+        longest
     }
 }
