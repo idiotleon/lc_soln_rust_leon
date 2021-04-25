@@ -1,3 +1,7 @@
+// https://leetcode.com/problems/search-in-rotated-sorted-array/
+//
+// Time Compleixty:     O()
+// Space Complexity:    O()
 impl Solution {
     pub fn search(nums: Vec<i32>, target: i32) -> i32 {
         let mut lo = 0;
@@ -24,6 +28,6 @@ impl Solution {
                 }
             }
         }
-        return -1;
+        -1
     }
 }
