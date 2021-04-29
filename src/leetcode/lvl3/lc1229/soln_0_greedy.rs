@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/meeting-scheduler/
 //
-// Time Complexity:     O()
+// Time Complexity:     O(`lens1` * lg(`lens1`)) + O(`lens2` * lg(`lens2`)) ~ O(lens * lg(lens)))
 // Space Complexity:    O(1)
 //
 // Reference:
