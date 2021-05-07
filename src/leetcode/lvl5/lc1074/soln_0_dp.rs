@@ -1,13 +1,17 @@
-// https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/
-//
-// Time Complexity:     O(`rows` * (`cols` ^ 2))
-// Space Complexity:    O(`rows` * `cols`)
-//
-// Reference:
-//  https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/discuss/303750/javacpython-find-the-subarray-with-target-sum/910389
-//  https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/discuss/1162957/Rust-solution
+/// https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/
+///
+/// Time Complexity:     O(`rows` * (`cols` ^ 2))
+/// Space Complexity:    O(`rows` * `cols`)
+///
+/// Reference:
+/// https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/discuss/303750/javacpython-find-the-subarray-with-target-sum/910389
+/// https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/discuss/1162957/Rust-solution
 use std::collections::HashMap;
 
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn num_submatrix_sum_target(mut matrix: Vec<Vec<i32>>, target: i32) -> i32 {
         let rows = matrix.len() as usize;

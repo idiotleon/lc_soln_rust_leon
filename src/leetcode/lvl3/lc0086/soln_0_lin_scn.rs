@@ -1,10 +1,16 @@
-// https://leetcode.com/problems/partition-list/
-//
-// Time Complexity:     O()
-// Space Complexity:    O()
-//
-// Reference:
-//  https://leetcode.com/problems/partition-list/discuss/719013/Rust-100-fast-solution
+/// https://leetcode.com/problems/partition-list/
+///
+/// Time Complexity:     O()
+/// Space Complexity:    O()
+///
+/// Reference:
+/// https://leetcode.com/problems/partition-list/discuss/719013/Rust-100-fast-solution
+use crate::leetcode::util::data_structure::list_node::ListNode;
+
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn partition(head: Option<Box<ListNode>>, x: i32) -> Option<Box<ListNode>> {
         // dummy head for the less

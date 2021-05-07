@@ -3,6 +3,10 @@
 ///
 /// Time Complexity:  O(L)
 /// Space Complexity: O(1)
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn truncate_sentence(str: String, k: i32) -> String {
         let mut cnt: i32 = 0;

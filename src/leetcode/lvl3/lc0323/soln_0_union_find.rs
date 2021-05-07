@@ -3,6 +3,10 @@
 //
 // Time Complexity:     O(`n`)
 // Space Complexity:    O(`n`)
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn count_components(n: i32, edges: Vec<Vec<i32>>) -> i32 {
         let n = n as usize;
@@ -24,7 +28,7 @@ impl Solution {
         count as i32
     }
 
-    fn find(x: usize, mut roots: &mut Vec<usize>) -> usize{
+    fn find(x: usize, roots: &mut Vec<usize>) -> usize{
         let mut x = x;
         while x != roots[x]{
             roots[x] = roots[roots[x]];
@@ -36,8 +40,8 @@ impl Solution {
 
     fn union(x: usize, y: usize,
              mut roots: &mut Vec<usize>,
-             mut ranks: &mut Vec<usize>,
-             mut count: &mut usize) {
+             ranks: &mut Vec<usize>,
+             count: &mut usize) {
         let root_x = Self::find(x, &mut roots);
         let root_y = Self::find(y, &mut roots);
 

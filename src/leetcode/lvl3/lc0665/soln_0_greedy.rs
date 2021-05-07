@@ -4,7 +4,11 @@
 // Space Complexity:    O(1)
 //
 // Reference:
-//  https://leetcode.com/problems/non-decreasing-array/discuss/106826/JavaC%2B%2B-Simple-greedy-like-solution-with-explanation
+// https://leetcode.com/problems/non-decreasing-array/discuss/106826/JavaC%2B%2B-Simple-greedy-like-solution-with-explanation
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn check_possibility(nums: Vec<i32>) -> bool {
         let size: usize = nums.len();

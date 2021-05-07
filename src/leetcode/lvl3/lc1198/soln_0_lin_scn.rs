@@ -5,6 +5,10 @@
 ///
 /// Reference:
 ///     https://leetcode.com/problems/find-smallest-common-element-in-all-rows/discuss/1122045/Rust-simple-solution
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn smallest_common_element(mat: Vec<Vec<i32>>) -> i32 {
         const RANGE: usize = 10007;

@@ -7,6 +7,10 @@
 ///     https://leetcode.com/problems/two-sum/discuss/715951/Rust%3A-HashMap-solution
 use std::collections::HashMap;
 
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         let mut num_to_idx: HashMap<i32, i32> = HashMap::new();

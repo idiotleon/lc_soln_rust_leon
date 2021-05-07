@@ -6,6 +6,10 @@
 use std::collections::HashSet;
 use std::collections::VecDeque;
 
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn count_components(n: i32, edges: Vec<Vec<i32>>) -> i32 {
         let graph = Self::build_graph(n as usize, &edges);
@@ -24,14 +28,14 @@ impl Solution {
         cnt
     }
 
-    fn bfs(start: i32, mut visited: &mut HashSet<i32>, graph: &Vec<Vec<i32>>) {
+    fn bfs(start: i32, visited: &mut HashSet<i32>, graph: &Vec<Vec<i32>>) {
         let mut queue: VecDeque<i32> = VecDeque::new();
         queue.push_back(start);
 
         while !queue.is_empty() {
-            let size = queue.len();
+            let len_lvl = queue.len();
 
-            for sz in 0..size {
+            for _ in 0..len_lvl {
                 if let Some(top) = queue.pop_front() {
                     if !visited.insert(top) {
                         continue;

@@ -6,7 +6,11 @@ use std::collections::HashMap;
 /// Space Complexity:   O()
 ///
 /// Reference:
-///     https://leetcode.com/problems/binary-trees-with-factors/discuss/1107610/Rust-HashMap-solution
+/// https://leetcode.com/problems/binary-trees-with-factors/discuss/1107610/Rust-HashMap-solution
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn num_factored_binary_trees(arr: Vec<i32>) -> i32 {
         const MOD: i64 = 1_000_000_007;

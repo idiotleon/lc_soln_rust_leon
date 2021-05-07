@@ -1,6 +1,11 @@
-// NOT correct
-// index out of bound
+/// https://leetcode.com/problems/unique-paths/
+/// 
+/// Time Complexity:    O()
+/// Space Complexity:   O()
+#[allow(dead_code)]
+struct Solution;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn unique_paths(m: i32, n: i32) -> i32 {
         let m = m as usize;
@@ -10,16 +15,21 @@ impl Solution {
     }
 
     fn dfs(r: usize, c: usize, memo: &mut Vec<Vec<i32>>) -> i32 {
-        if r < 0 || c < 0 {
-            return 0;
-        }
         if r == 0 && c == 0 {
             return 1;
         }
         if memo[r][c] > 0 {
             return memo[r][c];
         }
-        let cnt = Self::dfs(r - 1, c, memo) + Self::dfs(r, c - 1, memo);
+        
+        let mut cnt = 0;
+        if r > 0{
+            cnt += Self::dfs(r - 1, c, memo)
+        }
+        
+        if c > 0{
+            cnt += Self::dfs(r, c - 1, memo);
+        }
         memo[r][c] = cnt;
         return cnt;
     }

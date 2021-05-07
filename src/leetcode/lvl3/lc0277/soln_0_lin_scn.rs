@@ -1,8 +1,11 @@
-/* The knows API is defined for you.
-       knows(a: i32, b: i32)->bool;
-    to call it use self.knows(a,b)
-*/
+/// https://leetcode.com/problems/find-the-celebrity/
+/// 
+/// Time Complexity:    O()
+/// Space Complexity:   O()
+#[allow(dead_code)]
+struct Solution;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn find_celebrity(&self, n: i32) -> i32 {
         if n <= 1 {
@@ -24,5 +27,13 @@ impl Solution {
             }
         }
         celebrity
+    }
+
+    /// Fake API
+    /// The knows API is defined for you.
+    /// knows(a: i32, b: i32)->bool;
+    /// to call it use self.knows(a,b)
+    fn knows(&self, a: i32, b: i32) -> bool{
+        a > b
     }
 }

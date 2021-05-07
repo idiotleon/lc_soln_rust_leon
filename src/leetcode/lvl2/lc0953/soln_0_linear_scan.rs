@@ -10,6 +10,10 @@
 use std::cmp::Ordering;
 use std::collections::HashMap;
 
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn is_alien_sorted(words: Vec<String>, order: String) -> bool {
         let dict: HashMap<char, usize> = order

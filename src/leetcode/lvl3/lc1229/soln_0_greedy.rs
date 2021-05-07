@@ -7,6 +7,10 @@
 //  https://leetcode.com/problems/meeting-scheduler/discuss/408491/JavaC%2B%2B-Two-Pointer-Clean-code-O(NlogN)-for-Sorting-Beat-100
 use std::cmp;
 
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn min_available_duration(
         slots1: Vec<Vec<i32>>,

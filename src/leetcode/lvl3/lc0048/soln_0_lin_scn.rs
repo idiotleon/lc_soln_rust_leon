@@ -1,11 +1,14 @@
-// https://leetcode.com/problems/rotate-image/
-//
-// Time Complexity:     O(`rows` * `cols`)
-// Space Complexity:    O(1)
-//
-// Reference:
-//  https://leetcode.com/problems/rotate-image/discuss/18872/A-common-method-to-rotate-the-image
-//
+/// https://leetcode.com/problems/rotate-image/
+///
+/// Time Complexity:     O(`rows` * `cols`)
+/// Space Complexity:    O(1)
+///
+/// Reference:
+///  https://leetcode.com/problems/rotate-image/discuss/18872/A-common-method-to-rotate-the-image
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn rotate(matrix: &mut Vec<Vec<i32>>) {
         let rows: usize = matrix.len();

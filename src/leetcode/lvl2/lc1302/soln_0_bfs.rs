@@ -5,10 +5,15 @@
 //
 // Reference:
 //  https://leetcode.com/problems/deepest-leaves-sum/discuss/1153427/Rust-BFS-solution
+use crate::leetcode::util::data_structure::tree_node::TreeNode;
 use std::rc::Rc;
 use std::cell::RefCell;
 use std::collections::VecDeque;
 
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn deepest_leaves_sum(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
         let mut queue = VecDeque::new();

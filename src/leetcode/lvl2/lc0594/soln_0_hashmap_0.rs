@@ -10,6 +10,10 @@
 use std::cmp::max;
 use std::collections::HashMap;
 
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn find_lhs(nums: Vec<i32>) -> i32 {
         let mut num_to_freq = HashMap::new();

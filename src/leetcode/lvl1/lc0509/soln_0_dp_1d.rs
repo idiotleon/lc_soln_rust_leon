@@ -1,8 +1,12 @@
-// @author: Leon
-// https://leetcode.com/problems/fibonacci-number/
-//
-// Time Complexity:     O(`n`)
-// Space Complexity:    O(`n`)
+/// @author: Leon
+/// https://leetcode.com/problems/fibonacci-number/
+///
+/// Time Complexity:     O(`n`)
+/// Space Complexity:    O(`n`)
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn fib(n: i32) -> i32 {
         if n == 0 {

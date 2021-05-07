@@ -1,10 +1,14 @@
-// https://leetcode.com/problems/unique-paths/
-//
-// Time Complexity:     O(`m` * `n`)
-// Space Complexity:    O(`n`)
-//
-// Reference:
-// https://leetcode.com/problems/unique-paths/discuss/22954/C%2B%2B-DP
+/// https://leetcode.com/problems/unique-paths/
+///
+/// Time Complexity:     O(`m` * `n`)
+/// Space Complexity:    O(`n`)
+///
+/// Reference:
+/// https://leetcode.com/problems/unique-paths/discuss/22954/C%2B%2B-DP
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn unique_paths(m: i32, n: i32) -> i32 {
         let m = m as usize;
@@ -16,7 +20,7 @@ impl Solution {
         for c in 0..n {
             dp[0][c] = 1;
         }
-
+        
         for r in 1..m {
             for c in 1..n {
                 dp[r][c] = dp[r - 1][c] + dp[r][c - 1];

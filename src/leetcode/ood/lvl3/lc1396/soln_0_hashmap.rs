@@ -1,15 +1,18 @@
+/// https://leetcode.com/problems/design-underground-system/
+/// 
+/// Time Complexities:
+/// 
+/// Space Complexity:   O()
 use std::collections::HashMap;
 
 #[derive(Default)]
+#[allow(dead_code)]
 struct UndergroundSystem {
     check_out_map: HashMap<(String, String), (i32, usize)>,
     check_in_map: HashMap<i32, (String, i32)>,
 }
 
-/**
- * `&self` means the method takes an immutable reference.
- * If you need a mutable reference, change it to `&mut self` instead.
- */
+#[allow(dead_code)]
 impl UndergroundSystem {
     fn new() -> Self {
         Default::default()

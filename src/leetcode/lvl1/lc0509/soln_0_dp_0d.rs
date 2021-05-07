@@ -1,8 +1,12 @@
-// @author: Leon
-// https://leetcode.com/problems/fibonacci-number/
-//
-// Time Complexity:     O(`n`)
-// Space Complexity:    O(1)
+/// @author: Leon
+/// https://leetcode.com/problems/fibonacci-number/
+///
+/// Time Complexity:     O(`n`)
+/// Space Complexity:    O(1)
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn fib(n: i32) -> i32 {
         if n == 0 {
@@ -15,7 +19,7 @@ impl Solution {
         let mut fn_1 = 1;
         let mut sum = 1;
 
-        for i in 2..n + 1 {
+        for _ in 2..n + 1 {
             sum = fn_2 + fn_1;
             fn_2 = fn_1;
             fn_1 = sum;

@@ -7,6 +7,10 @@
 //  https://leetcode.com/problems/powerful-integers/discuss/1183644/C%2B%2B-ans-Rust-bruteforce
 use std::collections::HashSet;
 
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn powerful_integers(x: i32, y: i32, bound: i32) -> Vec<i32> {
         let mut set: HashSet<i32> = HashSet::new();

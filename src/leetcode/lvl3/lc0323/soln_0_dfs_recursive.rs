@@ -3,6 +3,10 @@
 //
 // Time Complexity:     O(V + E)
 // Space Complexity:    O(V + E)
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn count_components(n: i32, edges: Vec<Vec<i32>>) -> i32 {
         let n = n as usize;
@@ -29,7 +33,7 @@ impl Solution {
 
         visited[cur] = 1;
 
-        for &next in graph[cur].iter() {
+        for &next in &graph[cur] {
             Self::dfs(next, &mut visited, &graph);
         }
     }

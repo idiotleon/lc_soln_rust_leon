@@ -4,7 +4,11 @@
 /// Space Complexity:   O(1)
 ///
 /// Reference:
-///     https://leetcode.com/problems/valid-palindrome-ii/discuss/107716/Java-O(n)-Time-O(1)-Space
+/// https://leetcode.com/problems/valid-palindrome-ii/discuss/107716/Java-O(n)-Time-O(1)-Space
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn valid_palindrome(str: String) -> bool {
         let len = str.len();
@@ -12,7 +16,7 @@ impl Solution {
         let mut lo: usize = 0;
         let mut hi: usize = len - 1;
 
-        while (lo < hi) {
+        while lo < hi {
             if chs[lo] != chs[hi] {
                 return Self::is_palindrome(lo + 1, hi, &chs)
                     || Self::is_palindrome(lo, hi - 1, &chs);
@@ -26,7 +30,7 @@ impl Solution {
         let mut lo = low;
         let mut hi = high;
 
-        while (lo < hi) {
+        while lo < hi {
             if chs[lo] != chs[hi] {
                 return false;
             }

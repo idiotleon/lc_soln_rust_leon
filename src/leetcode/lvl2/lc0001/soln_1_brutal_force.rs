@@ -5,6 +5,11 @@
 ///
 /// References:
 ///     https://leetcode.com/problems/two-sum/discuss/207679/Rust
+/// 
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         for lo in 0..nums.len(){

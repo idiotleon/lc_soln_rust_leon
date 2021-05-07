@@ -5,6 +5,10 @@
 // Space Complexity:    O(`len1` * `len2`) + O(max(`len1`, `len2`))
 use std::cmp::max;
 
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn longest_common_subsequence(text1: String, text2: String) -> i32 {
         let len1 = text1.chars().count();

@@ -4,7 +4,11 @@
 // Space Complexity:    O()
 //
 // Reference:
-//  https://leetcode.com/problems/palindromic-substrings/discuss/258917/Java-Simple-Code%3A-DP-short
+// https://leetcode.com/problems/palindromic-substrings/discuss/258917/Java-Simple-Code%3A-DP-short
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn count_substrings(str: String) -> i32 {
         const LEN_S: usize = str.len();

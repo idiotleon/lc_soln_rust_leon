@@ -1,12 +1,16 @@
-// https://leetcode.com/problems/jump-game-ii/
-//
-// Time Complexity:     O(`size`)
-// Space Complexity:    O(1)
-//
-// Reference:
-//  https://leetcode.com/problems/jump-game-ii/discuss/18014/Concise-O(n)-one-loop-JAVA-solution-based-on-Greedy
+/// https://leetcode.com/problems/jump-game-ii/
+///
+/// Time Complexity:     O(`size`)
+/// Space Complexity:    O(1)
+///
+/// Reference:
+///  https://leetcode.com/problems/jump-game-ii/discuss/18014/Concise-O(n)-one-loop-JAVA-solution-based-on-Greedy
 use std::cmp;
 
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn jump(nums: Vec<i32>) -> i32 {
         let size: usize = nums.len();
@@ -27,7 +31,6 @@ impl Solution {
                 }
             }
         }
-        
         jumps
     }
 }

@@ -1,13 +1,16 @@
-// https://leetcode.com/problems/prefix-and-suffix-search/
-//
-// Time Complexities:
-//  `new()`:    O()
-//  `f()`:      O()
-//
-// Space Complexity:    O()
-//
-// Reference:
-//  https://leetcode.com/problems/prefix-and-suffix-search/discuss/1185417/Rust-Trie-solution
+/// https://leetcode.com/problems/prefix-and-suffix-search/
+///
+/// Time Complexities:
+///  `new()`:    O()
+///  `f()`:      O()
+///
+/// Space Complexity:    O()
+///
+/// Reference:
+/// https://leetcode.com/problems/prefix-and-suffix-search/discuss/1185417/Rust-Trie-solution
+#[allow(dead_code)]
+struct Solution;
+
 #[derive(Default)]
 struct Trie {
     idx: i32,
@@ -18,10 +21,7 @@ struct WordFilter {
     root: Trie,
 }
 
-/**
- * `&self` means the method takes an immutable reference.
- * If you need a mutable reference, change it to `&mut self` instead.
- */
+#[allow(dead_code)]
 impl WordFilter {
     fn new(words: Vec<String>) -> Self {
         let mut root = Trie::default();

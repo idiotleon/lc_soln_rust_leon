@@ -8,6 +8,10 @@
 use std::collections::HashSet;
 use std::collections::VecDeque;
 
+#[allow(dead_code)]
+struct Solution;
+
+#[allow(dead_code)]
 impl Solution {
     pub fn can_reach(arr: Vec<i32>, start: i32) -> bool {
         let len_arr = arr.len();
@@ -21,7 +25,7 @@ impl Solution {
         while !queue.is_empty(){
             let len_lvl = queue.len();
             
-            for sz in 0..len_lvl{
+            for _ in 0..len_lvl{
                 if let Some(cur) = queue.pop_front(){
                     if arr[cur] == 0{
                         return true;
