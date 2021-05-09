@@ -50,6 +50,11 @@ mod leetcode{
         pub mod lc1302{
             pub mod soln_0_bfs;
         }
+
+        pub mod lc1564{
+            pub mod soln_0_two_ptrs_0;
+            pub mod soln_0_two_ptrs_1;
+        }
     }
 
     pub mod lvl3{
@@ -127,6 +132,10 @@ mod leetcode{
             }
             pub mod soln_0_hashset;
         }
+
+        pub mod lc1580{
+            pub mod soln_0_hi_lo_ptrs;
+        }
     }
 
     pub mod lvl4{
@@ -136,6 +145,10 @@ mod leetcode{
 
         pub mod lc0745{
             pub mod soln_0_trie;
+        }
+
+        pub mod lc0906{
+            pub mod soln_0_backtrack;
         }
 
         pub mod lc1642{
