@@ -55,6 +55,10 @@ mod leetcode{
             pub mod soln_0_two_ptrs_0;
             pub mod soln_0_two_ptrs_1;
         }
+
+        pub mod lc1854{
+            pub mod soln_0_sweep_line;
+        }
     }
 
     pub mod lvl3{
