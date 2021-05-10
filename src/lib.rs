@@ -6,6 +6,10 @@ mod leetcode{
             pub mod soln_0_dp_2d;
         }
 
+        pub mod lc0204{
+            pub mod soln_0_dp_1d;
+        }
+
         pub mod lc0329{
             pub mod soln_0_math;
         }
