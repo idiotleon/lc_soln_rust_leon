@@ -166,6 +166,10 @@ mod leetcode{
         pub mod lc1642{
             pub mod soln_0_greedy;
         }
+
+        pub mod lc1856{
+            pub mod soln_0_prefix_sums_with_mono_stk;
+        }
     }
 
     pub mod lvl5{
