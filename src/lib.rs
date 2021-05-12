@@ -114,6 +114,10 @@ mod leetcode{
             pub mod soln_0_hi_lo_ptrs;
         }
 
+        pub mod lc0763{
+            pub mod soln_0_lin_scn;
+        }
+
         pub mod lc0823{
             pub mod soln_0_dp;
         }
