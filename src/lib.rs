@@ -118,6 +118,11 @@ mod leetcode{
             pub mod soln_0_dp;
         }
 
+        pub mod lc1010{
+            pub mod soln_0_lin_scn_0;
+            pub mod soln_0_lin_scn_1;
+        }
+
         pub mod lc1055{
             pub mod soln_0_two_ptrs;
         }
