@@ -99,6 +99,10 @@ mod leetcode{
         pub mod lc0277{
             pub mod soln_0_lin_scn;
         }
+        
+        pub mod lc0304{
+            pub mod soln_0_prefix_sums;
+        }
 
         pub mod lc0323{
             pub mod soln_0_bfs;
