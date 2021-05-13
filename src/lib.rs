@@ -51,6 +51,10 @@ mod leetcode{
             pub mod soln_0_math;
         }
 
+        pub mod lc1041{
+            pub mod soln_0_geom;
+        }
+
         pub mod lc1302{
             pub mod soln_0_bfs;
         }
