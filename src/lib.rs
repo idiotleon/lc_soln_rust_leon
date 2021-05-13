@@ -122,6 +122,10 @@ mod leetcode{
             pub mod soln_0_lin_scn;
         }
 
+        pub mod lc0816{
+            pub mod soln_0_parse_str;
+        }
+
         pub mod lc0823{
             pub mod soln_0_dp;
         }
