@@ -34,6 +34,10 @@ mod leetcode{
             pub mod soln_0_dfs_recursive;
         }
 
+        pub mod lc0114{
+            pub mod soln_0_dfs_recursive;
+        }
+
         pub mod lc0215{
             pub mod soln_0_max_heap;
         }
