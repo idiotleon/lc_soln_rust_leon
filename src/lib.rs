@@ -152,6 +152,14 @@ mod leetcode{
             pub mod soln_0_dp_2d;
         }
 
+        pub mod lc1197{
+            pub mod soln_0_bfs;
+        }
+
+        pub mod lc1198{
+            pub mod soln_0_lin_scn;
+        }
+
         pub mod lc1229{
             pub mod soln_0_greedy;
         }
