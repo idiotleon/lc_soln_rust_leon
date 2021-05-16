@@ -192,6 +192,10 @@ mod leetcode{
             pub mod soln_0_parse_str;
         }
 
+        pub mod lc0127{
+            pub mod soln_0_bfs_2e;
+        }
+
         pub mod lc0745{
             pub mod soln_0_trie;
         }
