@@ -188,6 +188,10 @@ mod leetcode{
             pub mod soln_0_dp_0d;
         }
 
+        pub mod lc0065{
+            pub mod soln_0_parse_str;
+        }
+
         pub mod lc0745{
             pub mod soln_0_trie;
         }
