@@ -34,12 +34,17 @@ mod leetcode {
             pub mod soln_1_brutal_force;
         }
 
+        pub mod lc0102 {
+            pub mod soln_0_bfs;
+            pub mod soln_0_dfs_r;
+        }
+
         pub mod lc0109 {
-            pub mod soln_0_dfs_recursive;
+            pub mod soln_0_dfs_r;
         }
 
         pub mod lc0114 {
-            pub mod soln_0_dfs_recursive;
+            pub mod soln_0_dfs_r;
         }
 
         pub mod lc0215 {
@@ -52,7 +57,7 @@ mod leetcode {
         }
 
         pub mod lc0953 {
-            pub mod soln_0_linear_scan;
+            pub mod soln_0_lin_scn;
         }
 
         pub mod lc0970 {
