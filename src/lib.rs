@@ -237,6 +237,12 @@ mod leetcode {
     }
 
     pub mod ood {
+        pub mod lvl2 {
+            pub mod lc0362 {
+                pub mod soln_0_vd;
+                pub mod soln_1_vec;
+            }
+        }
         pub mod lvl3 {
             pub mod lc0173 {
                 pub mod soln_0_stack;
