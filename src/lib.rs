@@ -261,6 +261,10 @@ mod leetcode {
                 pub mod soln_0_stack;
             }
 
+            pub mod lc0348 {
+                pub mod soln_0_lin_scn;
+            }
+
             pub mod lc0359 {
                 pub mod soln_0_hm;
             }
