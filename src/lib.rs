@@ -205,6 +205,10 @@ mod leetcode {
             pub mod soln_0_dp_0d;
         }
 
+        pub mod lc0051 {
+            pub mod soln_0_backtrack;
+        }
+
         pub mod lc0065 {
             pub mod soln_0_parse_str;
         }
@@ -271,6 +275,17 @@ mod leetcode {
         pub mod data_structure {
             pub mod list_node;
             pub mod tree_node;
+        }
+    }
+}
+
+#[cfg(test)]
+mod test {
+    pub mod leetcode {
+        pub mod lvl4 {
+            pub mod lc0051 {
+                pub mod test_soln_0_backtrack;
+            }
         }
     }
 }
