@@ -250,6 +250,12 @@ mod leetcode {
             pub mod soln_0_dp_2d;
         }
 
+        pub mod lc1547 {
+            pub mod soln_0_dfs_memo;
+            pub mod soln_0_dp_2d_0;
+            pub mod soln_0_dp_2d_1;
+        }
+
         pub mod lc1642 {
             pub mod soln_0_greedy;
         }
