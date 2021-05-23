@@ -209,6 +209,11 @@ mod leetcode {
             pub mod soln_0_backtrack;
         }
 
+        pub mod lc0052 {
+            pub mod soln_0_backtrack_0;
+            pub mod soln_0_backtrack_1;
+        }
+
         pub mod lc0065 {
             pub mod soln_0_parse_str;
         }
