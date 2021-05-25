@@ -117,6 +117,10 @@ mod leetcode {
             pub mod soln_0_lin_scn;
         }
 
+        pub mod lc0150{
+            pub mod soln_0_stk;
+        }
+
         pub mod lc0277 {
             pub mod soln_0_lin_scn;
         }
