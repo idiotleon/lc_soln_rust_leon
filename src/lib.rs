@@ -55,6 +55,10 @@ mod leetcode {
             pub mod soln_0_max_heap;
         }
 
+        pub mod lc0226{
+            pub mod soln_0_postorder_r;
+        }
+
         pub mod lc0594 {
             pub mod soln_0_hashmap_0;
             pub mod soln_0_hashmap_1;
@@ -131,6 +135,12 @@ mod leetcode {
 
         pub mod lc0304 {
             pub mod soln_0_prefix_sums;
+        }
+
+        pub mod lc0318{
+            pub mod w_bit{
+                pub mod soln_0_lin_scn;
+            }
         }
 
         pub mod lc0323 {
