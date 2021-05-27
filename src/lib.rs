@@ -121,6 +121,10 @@ mod leetcode {
             pub mod soln_0_stk;
         }
 
+        pub mod lc0153{
+            pub mod soln_0_div_n_cnqr;
+        }
+
         pub mod lc0277 {
             pub mod soln_0_lin_scn;
         }
@@ -226,6 +230,10 @@ mod leetcode {
             pub mod soln_0_parse_str;
         }
 
+        pub mod lc0081{
+            pub mod soln_0_bs;
+        }
+
         pub mod lc0127 {
             pub mod soln_0_bfs_2e;
         }
@@ -233,6 +241,10 @@ mod leetcode {
         pub mod lc0312 {
             pub mod soln_0_dfs_memo;
             pub mod soln_0_dp_2d;
+        }
+
+        pub mod lc0316{
+            pub mod soln_0_mono_stk;
         }
 
         pub mod lc0516 {
@@ -246,6 +258,10 @@ mod leetcode {
 
         pub mod lc0906 {
             pub mod soln_0_backtrack;
+        }
+
+        pub mod lc0968 {
+            pub mod soln_0_postorder_recursive;
         }
 
         pub mod lc1039 {
@@ -272,8 +288,8 @@ mod leetcode {
             pub mod soln_0_prefix_sums_with_mono_stk;
         }
 
-        pub mod lc0968 {
-            pub mod soln_0_postorder_recursive;
+        pub mod lc1857{
+            pub mod soln_0_topo_sort;
         }
     }
 
