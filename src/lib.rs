@@ -248,8 +248,13 @@ mod leetcode {
         }
 
         pub mod lc0052 {
+            pub mod w_bit {
+                pub mod soln_0_backtrack;
+            }
             pub mod soln_0_backtrack_0;
             pub mod soln_0_backtrack_1;
+            pub mod soln_0_backtrack_2;
+            pub mod soln_0_backtrack_3;
         }
 
         pub mod lc0065 {
