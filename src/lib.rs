@@ -117,6 +117,10 @@ mod leetcode {
             pub mod soln_0_greedy_2;
         }
 
+        pub mod lc0078 {
+            pub mod soln_0_backtrack_r;
+        }
+
         pub mod lc0086 {
             pub mod soln_0_lin_scn;
         }
