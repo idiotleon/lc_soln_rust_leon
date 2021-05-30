@@ -76,6 +76,10 @@ mod leetcode {
             pub mod soln_0_geom;
         }
 
+        pub mod lc1167 {
+            pub mod soln_0_greedy;
+        }
+
         pub mod lc1200 {
             pub mod soln_0_lin_scn_w_srt;
         }
@@ -109,6 +113,10 @@ mod leetcode {
 
         pub mod lc0034 {
             pub mod soln_0_bin_srch;
+        }
+
+        pub mod lc0046 {
+            pub mod soln_0_backtrack_r;
         }
 
         pub mod lc0048 {
