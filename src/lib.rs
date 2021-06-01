@@ -30,6 +30,10 @@ mod leetcode {
         pub mod lc1816 {
             pub mod soln_0_lin_scn;
         }
+
+        pub mod lc1880 {
+            pub mod soln_0_prs_str;
+        }
     }
 
     pub mod lvl2 {
@@ -221,6 +225,11 @@ mod leetcode {
 
         pub mod lc1229 {
             pub mod soln_0_greedy;
+        }
+
+        pub mod lc1268 {
+            pub mod soln_0_bs_srt;
+            pub mod soln_0_trie;
         }
 
         pub mod lc1306 {
