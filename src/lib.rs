@@ -185,6 +185,10 @@ mod leetcode {
             pub mod soln_0_greedy;
         }
 
+        pub mod lc0678 {
+            pub mod soln_0_lin_scn;
+        }
+
         pub mod lc0680 {
             pub mod soln_0_hi_lo_ptrs;
         }
