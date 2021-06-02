@@ -72,6 +72,10 @@ mod leetcode {
             pub mod soln_0_hashmap_1;
         }
 
+        pub mod lc0695 {
+            pub mod soln_0_dfs_r;
+        }
+
         pub mod lc0953 {
             pub mod soln_0_lin_scn;
         }
@@ -159,6 +163,10 @@ mod leetcode {
 
         pub mod lc0153 {
             pub mod soln_0_div_n_cnqr;
+        }
+
+        pub mod lc0256 {
+            pub mod soln_0_dp_0d;
         }
 
         pub mod lc0277 {
