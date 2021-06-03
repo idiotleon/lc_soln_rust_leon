@@ -270,6 +270,11 @@ mod leetcode {
             pub mod soln_0_hashset;
         }
 
+        pub mod lc1465 {
+            pub mod soln_0_greedy_0;
+            pub mod soln_0_greedy_1;
+        }
+
         pub mod lc1580 {
             pub mod soln_0_hi_lo_ptrs;
         }
