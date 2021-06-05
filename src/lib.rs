@@ -77,7 +77,8 @@ mod leetcode {
         }
 
         pub mod lc0953 {
-            pub mod soln_0_lin_scn;
+            pub mod soln_0_lin_scn_0;
+            pub mod soln_0_lin_scn_1;
         }
 
         pub mod lc0970 {
