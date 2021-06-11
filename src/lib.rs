@@ -53,6 +53,10 @@ mod leetcode {
             pub mod soln_0_two_ptrs;
         }
 
+        pub mod lc0009{
+            pub mod soln_0_math;
+        }
+
         pub mod lc0102 {
             pub mod soln_0_bfs;
             pub mod soln_0_dfs_r;
