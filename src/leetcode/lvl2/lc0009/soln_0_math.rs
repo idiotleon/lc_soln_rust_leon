@@ -10,19 +10,24 @@ struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
-    pub fn is_palindrome(x: i32) -> bool {
-        if x < 0 || (x != 0 && x % 10 == 0){
-            return false;
-        }
+    pub fn reverse(x: i32) -> i32 {
+        let mut rev: i32 = 0;
+        let mut x: i32 = x;
         
-        let mut x = x;
-        let mut rev = 0;
-        
-        while x > rev{
-            rev = rev * 10 + x % 10;
+        while x != 0{
+            let digit = x % 10;
+            
+            let new_res = rev * 10 + digit;
+            
+            if (new_res - digit) / 10 != rev{
+                return 0;
+            }
+            
+            rev = new_res;
+            
             x /= 10;
         }
         
-        x == rev || x == (rev / 10)
+        rev
     }
 }
