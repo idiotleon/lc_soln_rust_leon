@@ -358,6 +358,10 @@ mod leetcode {
             pub mod soln_0_dp_2d;
         }
 
+        pub mod lc0636{
+            pub mod soln_0_stk;
+        }
+
         pub mod lc0745 {
             pub mod soln_0_trie;
         }
