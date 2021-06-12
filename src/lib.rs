@@ -354,6 +354,11 @@ mod leetcode {
             pub mod soln_0_trie;
         }
 
+        pub mod lc0871{
+            pub mod soln_0_dp_1d;
+            pub mod soln_0_greedy;
+        }
+
         pub mod lc0906 {
             pub mod soln_0_backtrack;
         }
