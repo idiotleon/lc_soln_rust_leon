@@ -78,6 +78,10 @@ mod leetcode {
             pub mod soln_0_postorder_r;
         }
 
+        pub mod lc0560{
+            pub mod soln_0_prefix_sums;
+        }
+
         pub mod lc0594 {
             pub mod soln_0_hashmap_0;
             pub mod soln_0_hashmap_1;
@@ -235,6 +239,10 @@ mod leetcode {
 
         pub mod lc0890 {
             pub mod soln_0_lin_scn_w_hm;
+        }
+
+        pub mod lc0938{
+            pub mod soln_0_dfs_r;
         }
 
         pub mod lc1010 {
