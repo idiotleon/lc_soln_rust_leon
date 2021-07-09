@@ -181,12 +181,20 @@ mod leetcode {
             pub mod soln_0_div_n_cnqr;
         }
 
+        pub mod lc0186{
+            pub mod soln_0_lin_scn;
+        }
+
         pub mod lc0256 {
             pub mod soln_0_dp_0d;
         }
 
         pub mod lc0277 {
             pub mod soln_0_lin_scn;
+        }
+
+        pub mod lc0300{
+            pub mod soln_0_dp_1d;
         }
 
         pub mod lc0304 {
