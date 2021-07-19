@@ -39,6 +39,18 @@ mod leetcode {
             pub mod soln_0_prs_str;
         }
 
+        pub mod lc1903{
+            pub mod soln_0_lin_scn;
+        }
+
+        pub mod lc1909{
+            pub mod soln_0_lin_scn;
+        }
+
+        pub mod lc1913{
+            pub mod soln_0_lin_scn;
+        }
+
         pub mod lc1920{
             pub mod soln_0_lin_scn;
         }
