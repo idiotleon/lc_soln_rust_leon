@@ -39,6 +39,10 @@ mod leetcode {
             pub mod soln_0_prs_str;
         }
 
+        pub mod lc1920{
+            pub mod soln_0_lin_scn;
+        }
+
         pub mod lc1935{
             pub mod soln_0_lin_scn;
             pub mod w_bit{
@@ -320,6 +324,10 @@ mod leetcode {
 
         pub mod lc1695 {
             pub mod soln_0_hi_lo_ptrs;
+        }
+
+        pub mod lc1933{
+            pub mod soln_0_lin_scn;
         }
     }
 
