@@ -38,6 +38,13 @@ mod leetcode {
         pub mod lc1880 {
             pub mod soln_0_prs_str;
         }
+
+        pub mod lc1935{
+            pub mod soln_0_lin_scn;
+            pub mod w_bit{
+                pub mod soln_0_lin_scn;
+            }
+        }
     }
 
     pub mod lvl2 {
