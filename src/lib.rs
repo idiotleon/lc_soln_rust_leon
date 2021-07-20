@@ -35,6 +35,14 @@ mod leetcode {
             pub mod soln_0_lin_scn;
         }
 
+        pub mod lc1837{
+            pub mod soln_0_math;
+        }
+
+        pub mod lc1844{
+            pub mod soln_0_lin_scn;
+        }
+
         pub mod lc1880 {
             pub mod soln_0_prs_str;
         }
@@ -336,6 +344,10 @@ mod leetcode {
 
         pub mod lc1695 {
             pub mod soln_0_hi_lo_ptrs;
+        }
+
+        pub mod lc1893{
+            pub mod soln_0_swp_lin;
         }
 
         pub mod lc1933{
