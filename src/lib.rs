@@ -35,6 +35,17 @@ mod leetcode {
             pub mod soln_0_lin_scn;
         }
 
+        pub mod lc1827{
+            pub mod soln_0_lin_scn;
+        }
+
+        pub mod lc1832{
+            pub mod w_bit{
+                pub mod soln_0_lin_scn;
+            }
+            pub mod soln_0_lin_scn;
+        }
+
         pub mod lc1837{
             pub mod soln_0_math;
         }
