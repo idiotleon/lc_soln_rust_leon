@@ -477,6 +477,10 @@ mod leetcode {
                 pub mod soln_0_vd;
                 pub mod soln_1_vec;
             }
+
+            pub mod lc0384{
+                pub mod soln_0_math;
+            }
         }
         pub mod lvl3 {
             pub mod lc0173 {
