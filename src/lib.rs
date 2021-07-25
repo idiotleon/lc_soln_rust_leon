@@ -170,6 +170,10 @@ mod leetcode {
         pub mod lc1854 {
             pub mod soln_0_sweep_line;
         }
+
+        pub mod lc1945{
+            pub mod soln_0_lin_scn;
+        }
     }
 
     pub mod lvl3 {
