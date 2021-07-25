@@ -25,7 +25,7 @@ impl Solution {
             ParentWithCamera, 
             // if it is covered, without a camera on this node
             MonitoredWoCamera 
-        };
+        }
         
         fn dfs(root: &Option<Rc<RefCell<TreeNode>>>, cnt: &Rc<RefCell<i32>>) -> State{
             if let Some(node) = root{

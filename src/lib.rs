@@ -420,6 +420,10 @@ mod leetcode {
             pub mod soln_0_dp_2d;
         }
 
+        pub mod lc0600{
+            pub mod soln_0_dp_1d;
+        }
+
         pub mod lc0636{
             pub mod soln_0_stk;
         }
