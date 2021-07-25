@@ -80,6 +80,10 @@ mod leetcode {
                 pub mod soln_0_lin_scn;
             }
         }
+
+        pub mod lc1941{
+            pub mod soln_0_lin_scn;
+        }
     }
 
     pub mod lvl2 {
@@ -173,6 +177,10 @@ mod leetcode {
 
         pub mod lc1945{
             pub mod soln_0_lin_scn;
+        }
+
+        pub mod lc1946{
+            pub mod soln_0_greedy;
         }
     }
 
