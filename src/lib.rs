@@ -192,6 +192,10 @@ mod leetcode {
         pub mod lc0011 {
             pub mod soln_0_two_ptrs;
         }
+        
+        pub mod lc0016{
+            pub mod soln_0_tri_ptrs;
+        }
 
         pub mod lc0033 {
             pub mod soln_0_bin_srch;
