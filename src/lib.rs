@@ -387,6 +387,10 @@ mod leetcode {
     }
 
     pub mod lvl4 {
+        pub mod lc0042{
+            pub mod soln_0_two_ptrs;
+        }
+        
         pub mod lc0045 {
             pub mod soln_0_dp_0d;
         }
