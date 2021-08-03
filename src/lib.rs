@@ -182,6 +182,10 @@ mod leetcode {
         pub mod lc1946{
             pub mod soln_0_greedy;
         }
+
+        pub mod lc1952{
+            pub mod soln_0_math;
+        }
     }
 
     pub mod lvl3 {
