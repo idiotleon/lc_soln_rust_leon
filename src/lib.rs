@@ -388,6 +388,14 @@ mod leetcode {
         pub mod lc1933{
             pub mod soln_0_lin_scn;
         }
+
+        pub mod lc1950{
+            pub mod soln_0_mono_stk;
+        }
+
+        pub mod lc1954{
+            pub mod soln_0_bin_srch;
+        }
     }
 
     pub mod lvl4 {
