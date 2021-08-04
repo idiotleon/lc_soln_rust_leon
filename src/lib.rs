@@ -103,8 +103,16 @@ mod leetcode {
             pub mod soln_0_two_ptrs;
         }
 
+        pub mod lc0020{
+            pub mod soln_0_stk;
+        }
+
         pub mod lc0009{
             pub mod soln_0_math;
+        }
+
+        pub mod lc0090{
+            pub mod soln_0_backtrack_r;
         }
 
         pub mod lc0102 {
