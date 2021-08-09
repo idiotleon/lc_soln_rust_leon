@@ -111,6 +111,11 @@ mod leetcode {
             pub mod soln_0_math;
         }
 
+        pub mod lc0049{
+            pub mod soln_0_hashmap_0;
+            pub mod soln_0_hashmap_1;
+        }
+
         pub mod lc0090{
             pub mod soln_0_backtrack_r;
         }
