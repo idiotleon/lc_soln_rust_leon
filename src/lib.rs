@@ -18,6 +18,10 @@ mod leetcode {
             pub mod soln_0_math;
         }
 
+        pub mod lc0415{
+            pub mod soln_0_lin_scn;
+        }
+
         pub mod lc0509 {
             pub mod soln_0_dp_0d;
             pub mod soln_0_dp_1d;
