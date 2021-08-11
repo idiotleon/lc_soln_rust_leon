@@ -15,8 +15,8 @@ impl Solution {
         // not used
         // let len_s = s.len();
 
-        let mut cnt_ones = 0;
-        let mut cnt_flips = 0;
+        let mut cnt_ones: u16 = 0;
+        let mut cnt_flips: u16 = 0;
         
         for ch in s.chars(){
             if ch == '1'{
@@ -28,6 +28,6 @@ impl Solution {
             cnt_flips = std::cmp::min(cnt_flips, cnt_ones);
         }
         
-        cnt_flips
+        cnt_flips as i32
     }
 }

@@ -13,12 +13,12 @@ impl Solution {
     pub fn find_length(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
         let n_nums = nums1.len();
         
-        let mut longest: u32 = 0;
+        let mut longest: u16 = 0;
 
-        let mut cur_longest: u32 = 0;
-        let mut idx_start: usize = 0;
+        let mut cur_longest: u16 = 0;
+        let mut idx1_start: usize = 0;
         
-        let mut dp: Vec<u32> = vec![0; n_nums + 1];
+        let mut dp: Vec<u16> = vec![0; n_nums + 1];
         
         for (idx1, num1) in nums1.iter().enumerate().rev(){
             for (idx2, num2) in nums2.iter().enumerate(){
@@ -26,13 +26,13 @@ impl Solution {
                 longest = std::cmp::max(longest, dp[idx2]);
                 // to keep track of the subvector
                 if longest > cur_longest{
-                    idx_start = idx1;
+                    idx1_start = idx1;
                     cur_longest = longest;
                 }
             }
         }
         
         // to extract the subvector
-        (&nums1[idx_start..idx_start + longest as usize]).to_vec()
+        (&nums1[idx1_start..idx1_start + longest as usize]).to_vec()
     }
 }
