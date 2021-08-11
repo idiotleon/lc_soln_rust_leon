@@ -17,7 +17,7 @@ impl Solution {
         
         let mut dp: Vec<u16> = vec![0; n_nums + 1];
         
-        for (idx1, num1) in nums1.iter().enumerate().rev(){
+        for (_idx1, num1) in nums1.iter().enumerate().rev(){
             for (idx2, num2) in nums2.iter().enumerate(){
                 dp[idx2] = if num1 == num2 { 1 + dp[1 + idx2] } else { 0 };
                 longest = std::cmp::max(longest, dp[idx2]);

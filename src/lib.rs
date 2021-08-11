@@ -203,6 +203,10 @@ mod leetcode {
         pub mod lc1952{
             pub mod soln_0_math;
         }
+
+        pub mod lc1961{
+            pub mod soln_0_two_ptrs;
+        }
     }
 
     pub mod lvl3 {
