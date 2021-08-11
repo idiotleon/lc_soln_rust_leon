@@ -207,6 +207,10 @@ mod leetcode {
         pub mod lc1961{
             pub mod soln_0_two_ptrs;
         }
+
+        pub mod lc1962{
+            pub mod soln_0_max_heap;
+        }
     }
 
     pub mod lvl3 {
