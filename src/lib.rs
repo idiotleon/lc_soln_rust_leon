@@ -515,6 +515,10 @@ mod leetcode {
             pub mod soln_0_dp_0d;
         }
 
+        pub mod lc0954{
+            pub mod soln_0_treemap;
+        }
+
         pub mod lc0968 {
             pub mod soln_0_postorder_recursive;
         }
