@@ -252,6 +252,10 @@ mod leetcode {
             pub mod soln_0_lin_scn_srt;
         }
 
+        pub mod lc0073{
+            pub mod soln_0_matrix_manipulation;
+        }
+
         pub mod lc0078 {
             pub mod soln_0_backtrack_r;
         }
