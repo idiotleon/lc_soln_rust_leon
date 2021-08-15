@@ -568,6 +568,12 @@ mod leetcode {
         }
     }
 
+    pub mod lvl6{
+        pub mod lc0546{
+            pub mod soln_0_dp_3d;
+        }
+    }
+
     pub mod ood {
         pub mod lvl2 {
             pub mod lc0362 {
