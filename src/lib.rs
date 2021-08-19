@@ -264,6 +264,10 @@ mod leetcode {
             pub mod soln_0_lin_scn;
         }
 
+        pub mod lc0091{
+            pub mod soln_0_dp_1d;
+        }
+
         pub mod lc0098 {
             pub mod soln_0_postorder_r;
         }
