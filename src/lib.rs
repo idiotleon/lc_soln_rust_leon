@@ -221,7 +221,7 @@ mod leetcode {
         pub mod lc0011 {
             pub mod soln_0_two_ptrs;
         }
-        
+
         pub mod lc0016{
             pub mod soln_0_tri_ptrs;
         }
@@ -334,7 +334,6 @@ mod leetcode {
 
         pub mod lc0718{
             pub mod soln_0_dp_1d;
-            
             pub mod follow_up{
                 pub mod soln_0_dp_1d_0;
                 pub mod soln_0_dp_1d_1;
@@ -398,6 +397,11 @@ mod leetcode {
 
         pub mod lc1306 {
             pub mod soln_0_bfs;
+        }
+
+        pub mod lc1339{
+            pub mod soln_0_postorder_r_0;
+            pub mod soln_0_postorder_r_1;
         }
 
         pub mod lc1461 {
