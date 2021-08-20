@@ -211,6 +211,12 @@ mod leetcode {
         pub mod lc1962{
             pub mod soln_0_max_heap;
         }
+
+        pub mod lc1971{
+            pub mod soln_0_bfs;
+            pub mod soln_0_dfs_r;
+            pub mod soln_0_union_find;
+        }
     }
 
     pub mod lvl3 {
