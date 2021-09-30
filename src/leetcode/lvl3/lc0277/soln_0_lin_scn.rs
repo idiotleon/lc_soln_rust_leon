@@ -1,5 +1,5 @@
 /// https://leetcode.com/problems/find-the-celebrity/
-/// 
+///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
 #[allow(dead_code)]
@@ -33,7 +33,7 @@ impl Solution {
     /// The knows API is defined for you.
     /// knows(a: i32, b: i32)->bool;
     /// to call it use self.knows(a,b)
-    fn knows(&self, a: i32, b: i32) -> bool{
+    fn knows(&self, a: i32, b: i32) -> bool {
         a > b
     }
 }

@@ -16,15 +16,15 @@ impl Solution {
         // not used
         // let len = nums.len();
         let mut furthest: usize = 0;
-        
-        for (i, &num) in nums.iter().enumerate(){
-            if furthest < i{
+
+        for (i, &num) in nums.iter().enumerate() {
+            if furthest < i {
                 return false;
             }
-            
+
             furthest = cmp::max(furthest, i + num as usize);
         }
-        
+
         true
     }
 }

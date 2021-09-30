@@ -1,8 +1,8 @@
 /// https://leetcode.com/problems/array-of-doubled-pairs/
-/// 
+///
 /// Time Complexity:    O(`n_nums` * lg(`n_nums`))
 /// Space Complexity:   O(`n_nums`)
-/// 
+///
 /// Reference:
 /// https://leetcode.com/problems/array-of-doubled-pairs/discuss/203183/JavaC%2B%2BPython-Match-from-the-Smallest-or-Biggest-100
 /// https://leetcode.com/problems/array-of-doubled-pairs/discuss/886224/Rust-translated-24ms-100
@@ -19,23 +19,25 @@ impl Solution {
         // let n_nums = nums.len();
 
         let mut num_to_freq = BTreeMap::<i32, i32>::new();
-        for &num in &nums{
+        for &num in &nums {
             *num_to_freq.entry(num).or_default() += 1;
         }
-        
+
         let keys = num_to_freq.keys().copied().collect::<Vec<i32>>();
-        for key in keys{
-            if num_to_freq[&key] == 0{
+        for key in keys {
+            if num_to_freq[&key] == 0 {
                 continue;
             }
-            
-            let expected = if key < 0 { key / 2 } else { key * 2};
-            if key < 0 && key & 1 == 1 || num_to_freq[&key] > *num_to_freq.get(&expected).unwrap_or(&0){
+
+            let expected = if key < 0 { key / 2 } else { key * 2 };
+            if key < 0 && key & 1 == 1
+                || num_to_freq[&key] > *num_to_freq.get(&expected).unwrap_or(&0)
+            {
                 return false;
             }
             *num_to_freq.entry(expected).or_default() -= num_to_freq[&key];
         }
-        
+
         true
     }
 }

@@ -15,7 +15,7 @@ impl Solution {
         // let n_edges = edges.len();
         let graph: Vec<HashSet<usize>> = {
             let mut tmp: Vec<HashSet<usize>> = vec![HashSet::new(); n as usize];
-            for edge in edges.iter(){
+            for edge in edges.iter() {
                 let u = edge[0] as usize;
                 let v = edge[1] as usize;
                 tmp[u].insert(v);
@@ -27,13 +27,13 @@ impl Solution {
         seen.insert(start as usize);
         Self::dfs(&mut seen, start as usize, end as usize, &graph)
     }
-    fn dfs(seen: &mut HashSet<usize>, cur: usize, end: usize, graph: &Vec<HashSet<usize>>) -> bool{
-        if cur == end{
+    fn dfs(seen: &mut HashSet<usize>, cur: usize, end: usize, graph: &Vec<HashSet<usize>>) -> bool {
+        if cur == end {
             return true;
         }
-        for &next in &graph[cur]{
-            if seen.insert(next){
-                if Self::dfs(seen, next, end, graph){
+        for &next in &graph[cur] {
+            if seen.insert(next) {
+                if Self::dfs(seen, next, end, graph) {
                     return true;
                 }
             }

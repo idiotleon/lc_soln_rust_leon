@@ -12,21 +12,17 @@ impl Solution {
         let len_s = s.len();
         let chs: Vec<char> = s.chars().collect();
         let mut dp: Vec<u32> = vec![0; len_s];
-        if chs[0] != '0'{
+        if chs[0] != '0' {
             dp[0] = 1;
         }
-        for idx in 1..len_s{
+        for idx in 1..len_s {
             let cur = chs[idx] as u32 - '0' as u32;
-            if cur != 0{
+            if cur != 0 {
                 dp[idx] += dp[idx - 1];
             }
             let prev = (chs[idx - 1] as u32 - '0' as u32) * 10 + cur;
-            if prev >= 10 && prev <= 26{
-                dp[idx] += if idx >= 2{
-                    dp[idx - 2]
-                }else{
-                    1
-                }
+            if prev >= 10 && prev <= 26 {
+                dp[idx] += if idx >= 2 { dp[idx - 2] } else { 1 }
             }
         }
         dp[len_s - 1] as i32

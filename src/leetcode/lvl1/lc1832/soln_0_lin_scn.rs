@@ -1,6 +1,6 @@
 /// @author: Leon
 /// https://leetcode.com/problems/check-if-the-sentence-is-pangram/
-/// 
+///
 /// Time Complexity:    O(`len_s`)
 /// Space Complexity:   O(26) ~ O(1)
 #[allow(dead_code)]
@@ -14,15 +14,15 @@ impl Solution {
 
         let mut freqs: Vec<u16> = vec![0; 26];
         let mut cnt = 0;
-        
-        for ch in sentence.chars(){
+
+        for ch in sentence.chars() {
             let idx = ch as usize - 'a' as usize;
-            if freqs[idx] == 0{
+            if freqs[idx] == 0 {
                 cnt += 1;
             }
             freqs[idx] += 1;
         }
-        
+
         cnt == 26
     }
 }

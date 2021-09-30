@@ -322,6 +322,10 @@ mod leetcode {
             pub mod soln_0_union_find;
         }
 
+        pub mod lc0325 {
+            pub mod soln_0_prefix_sums;
+        }
+
         pub mod lc0609 {
             pub mod soln_0_parse_str;
         }

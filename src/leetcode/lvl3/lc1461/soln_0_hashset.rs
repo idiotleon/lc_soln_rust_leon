@@ -1,12 +1,12 @@
+use std::cmp;
 /// https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/
 ///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-/// 
+///
 /// Reference:
 /// https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/discuss/1106203/Rust-Set-Solution
 use std::collections::HashSet;
-use std::cmp;
 
 #[allow(dead_code)]
 struct Solution;

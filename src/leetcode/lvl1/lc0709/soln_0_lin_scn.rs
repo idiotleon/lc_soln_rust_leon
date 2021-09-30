@@ -1,8 +1,8 @@
 /// https://leetcode.com/problems/to-lower-case/
-/// 
+///
 /// Time Complexity:    O(L)
 /// Space Complexity:   O(1)?
-/// 
+///
 /// Reference:
 /// https://leetcode.com/problems/to-lower-case/discuss/502373/Rust-Learn-Rust-Everyday
 #[allow(dead_code)]

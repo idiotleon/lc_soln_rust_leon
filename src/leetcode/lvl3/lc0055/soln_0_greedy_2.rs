@@ -18,19 +18,19 @@ impl Solution {
         let len: usize = nums.len();
         let mut cur_end: usize = 0;
         let mut cur_furthest: usize = 0;
-        
-        for i in 0..len - 1{
+
+        for i in 0..len - 1 {
             cur_furthest = cmp::max(cur_furthest, i + nums[i] as usize);
-            
-            if i == cur_end{
+
+            if i == cur_end {
                 cur_end = cur_furthest;
-                
-                if cur_furthest >= len - 1{
+
+                if cur_furthest >= len - 1 {
                     return true;
                 }
             }
         }
-        
+
         len == 1
     }
 }

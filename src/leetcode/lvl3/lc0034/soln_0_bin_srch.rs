@@ -41,7 +41,7 @@ impl Solution {
         let mut lo: usize = 0;
         let mut hi: usize = len;
 
-        while lo < hi{
+        while lo < hi {
             let mid: usize = lo + (hi - lo) / 2;
 
             if target < nums[mid] {

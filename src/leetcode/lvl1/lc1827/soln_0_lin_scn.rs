@@ -1,6 +1,6 @@
 /// @author: Leon
 /// https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/
-/// 
+///
 /// Time Complexity:    O(`n`)
 /// Space Complexity:   O(1)
 #[allow(dead_code)]
@@ -14,16 +14,16 @@ impl Solution {
 
         let mut cur_max = 0;
         let mut cnt = 0;
-        
-        for num in nums{
+
+        for num in nums {
             let expect = cur_max + 1;
-            if expect > num{
+            if expect > num {
                 cnt += expect - num;
             }
-            
+
             cur_max = std::cmp::max(expect, num);
         }
-        
+
         cnt
     }
 }

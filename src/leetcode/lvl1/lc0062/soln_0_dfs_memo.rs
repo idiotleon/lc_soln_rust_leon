@@ -1,5 +1,5 @@
 /// https://leetcode.com/problems/unique-paths/
-/// 
+///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
 #[allow(dead_code)]
@@ -21,13 +21,13 @@ impl Solution {
         if memo[r][c] > 0 {
             return memo[r][c];
         }
-        
+
         let mut cnt = 0;
-        if r > 0{
+        if r > 0 {
             cnt += Self::dfs(r - 1, c, memo)
         }
-        
-        if c > 0{
+
+        if c > 0 {
             cnt += Self::dfs(r, c - 1, memo);
         }
         memo[r][c] = cnt;

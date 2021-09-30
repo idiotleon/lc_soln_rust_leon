@@ -1,8 +1,8 @@
 /// https://leetcode.com/problems/verifying-an-alien-dictionary/
-/// 
+///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-/// 
+///
 /// Reference:
 /// https://leetcode.com/problems/verifying-an-alien-dictionary/discuss/987952/Idiomatic-Rust
 use std::cmp::Ordering;

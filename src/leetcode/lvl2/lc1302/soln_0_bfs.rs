@@ -6,9 +6,9 @@
 // Reference:
 //  https://leetcode.com/problems/deepest-leaves-sum/discuss/1153427/Rust-BFS-solution
 use crate::leetcode::util::data_structure::tree_node::TreeNode;
-use std::rc::Rc;
 use std::cell::RefCell;
 use std::collections::VecDeque;
+use std::rc::Rc;
 
 #[allow(dead_code)]
 struct Solution;
@@ -20,26 +20,26 @@ impl Solution {
         if let Some(r) = root {
             queue.push_back(r);
         }
-        
+
         let mut sum = 0;
-        while !queue.is_empty(){
+        while !queue.is_empty() {
             sum = 0;
-            
-            for _ in 0..queue.len(){
-                if let Some(node) = queue.pop_front(){
+
+            for _ in 0..queue.len() {
+                if let Some(node) = queue.pop_front() {
                     sum += node.borrow().val;
-                    
-                    if let Some(left) = node.borrow_mut().left.take(){
+
+                    if let Some(left) = node.borrow_mut().left.take() {
                         queue.push_back(left);
                     }
-                    
-                    if let Some(right) = node.borrow_mut().right.take(){
+
+                    if let Some(right) = node.borrow_mut().right.take() {
                         queue.push_back(right);
                     }
                 }
             }
         }
-        
+
         sum
     }
 }
