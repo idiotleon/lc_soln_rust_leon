@@ -523,6 +523,12 @@ mod leetcode {
             pub mod soln_0_stk;
         }
 
+        pub mod lc0698 {
+            pub mod with_bit {
+                pub mod soln_0_dp_1d;
+            }
+        }
+
         pub mod lc0745 {
             pub mod soln_0_trie;
         }
