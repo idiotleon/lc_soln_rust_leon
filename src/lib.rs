@@ -5,220 +5,174 @@ mod leetcode {
             pub mod soln_0_dp_1d;
             pub mod soln_0_dp_2d;
         }
-
         pub mod lc0067 {
             pub mod soln_0_two_ptrs;
         }
-
+        pub mod lc0070 {
+            pub mod soln_0_dp_0d;
+        }
         pub mod lc0204 {
             pub mod soln_0_dp_1d;
         }
-
         pub mod lc0329 {
             pub mod soln_0_math;
         }
-
         pub mod lc0415 {
             pub mod soln_0_lin_scn;
         }
-
         pub mod lc0509 {
             pub mod soln_0_dp_0d;
             pub mod soln_0_dp_1d;
         }
-
         pub mod lc0709 {
             pub mod soln_0_lin_scn;
         }
-
         pub mod lc1629 {
             pub mod soln_0_lin_scn;
         }
-
         pub mod lc1816 {
             pub mod soln_0_lin_scn;
         }
-
         pub mod lc1827 {
             pub mod soln_0_lin_scn;
         }
-
         pub mod lc1832 {
             pub mod w_bit {
                 pub mod soln_0_lin_scn;
             }
             pub mod soln_0_lin_scn;
         }
-
         pub mod lc1837 {
             pub mod soln_0_math;
         }
-
         pub mod lc1844 {
             pub mod soln_0_lin_scn;
         }
-
         pub mod lc1880 {
             pub mod soln_0_prs_str;
         }
-
         pub mod lc1903 {
             pub mod soln_0_lin_scn;
         }
-
         pub mod lc1909 {
             pub mod soln_0_lin_scn;
         }
-
         pub mod lc1913 {
             pub mod soln_0_lin_scn;
         }
-
         pub mod lc1920 {
             pub mod soln_0_lin_scn;
         }
-
         pub mod lc1935 {
             pub mod soln_0_lin_scn;
             pub mod w_bit {
                 pub mod soln_0_lin_scn;
             }
         }
-
         pub mod lc1941 {
             pub mod soln_0_lin_scn;
         }
     }
-
     pub mod lvl2 {
         pub mod lc0001 {
             pub mod soln_0_hashmap;
             pub mod soln_1_brutal_force;
         }
-
         pub mod lc0002 {
             pub mod soln_0_dfs_r_0;
             pub mod soln_0_dfs_r_1;
             pub mod soln_0_dfs_r_2;
             pub mod soln_0_dfs_r_3;
         }
-
         pub mod lc0003 {
             pub mod soln_0_two_ptrs;
         }
-
         pub mod lc0020 {
             pub mod soln_0_stk;
         }
-
         pub mod lc0009 {
             pub mod soln_0_math;
         }
-
         pub mod lc0049 {
             pub mod soln_0_hashmap_0;
             pub mod soln_0_hashmap_1;
         }
-
         pub mod lc0090 {
             pub mod soln_0_backtrack_r;
         }
-
         pub mod lc0102 {
             pub mod soln_0_bfs;
             pub mod soln_0_dfs_r;
         }
-
         pub mod lc0109 {
             pub mod soln_0_dfs_r;
         }
-
         pub mod lc0114 {
             pub mod soln_0_dfs_r;
         }
-
         pub mod lc0215 {
             pub mod soln_0_max_heap;
         }
-
         pub mod lc0226 {
             pub mod soln_0_postorder_r;
         }
-
         pub mod lc0560 {
             pub mod soln_0_prefix_sums;
         }
-
         pub mod lc0594 {
             pub mod soln_0_hashmap_0;
             pub mod soln_0_hashmap_1;
         }
-
         pub mod lc0695 {
             pub mod soln_0_dfs_r;
         }
-
         pub mod lc0953 {
             pub mod soln_0_lin_scn_0;
             pub mod soln_0_lin_scn_1;
         }
-
         pub mod lc0970 {
             pub mod soln_0_math;
         }
-
         pub mod lc1041 {
             pub mod soln_0_geom;
         }
-
         pub mod lc1167 {
             pub mod soln_0_greedy;
         }
-
         pub mod lc1200 {
             pub mod soln_0_lin_scn_w_srt;
         }
-
         pub mod lc1302 {
             pub mod soln_0_bfs;
         }
-
         pub mod lc1564 {
             pub mod soln_0_two_ptrs_0;
             pub mod soln_0_two_ptrs_1;
         }
-
         pub mod lc1854 {
             pub mod soln_0_sweep_line;
         }
-
         pub mod lc1945 {
             pub mod soln_0_lin_scn;
         }
-
         pub mod lc1946 {
             pub mod soln_0_greedy;
         }
-
         pub mod lc1952 {
             pub mod soln_0_math;
         }
-
         pub mod lc1961 {
             pub mod soln_0_two_ptrs;
         }
-
         pub mod lc1962 {
             pub mod soln_0_max_heap;
         }
-
         pub mod lc1971 {
             pub mod soln_0_bfs;
             pub mod soln_0_dfs_r;
             pub mod soln_0_union_find;
         }
     }
-
     pub mod lvl3 {
         pub mod lc0005 {
             pub mod soln_0_dp_2d;
