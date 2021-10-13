@@ -68,6 +68,7 @@ pub mod lc1461;
 pub mod lc1465;
 pub mod lc1580;
 pub mod lc1695;
+pub mod lc1814;
 pub mod lc1893;
 pub mod lc1933;
 pub mod lc1950;
