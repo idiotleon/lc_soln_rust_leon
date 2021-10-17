@@ -1,16 +1,14 @@
-/// https://leetcode.com/problems/path-sum-iii/
-///
-/// Time Complexity:    O(N)
-/// Space Complexity:   O(N)
-///
-/// Reference:
-/// https://leetcode.com/problems/path-sum-iii/discuss/1317371/Rust-Recursive-with-Prefix-Sum
 use std::cell::RefCell;
 use std::collections::HashMap;
 use std::rc::Rc;
 
-use crate::leetcode::util::data_structure::tree_node::TreeNode;
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 
+/// https://leetcode.com/problems/path-sum-iii/
+/// Time Complexity:    O(N)
+/// Space Complexity:   O(N)
+/// Reference:
+/// https://leetcode.com/problems/path-sum-iii/discuss/1317371/Rust-Recursive-with-Prefix-Sum
 #[allow(dead_code)]
 struct Solution;
 

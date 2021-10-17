@@ -1,15 +1,15 @@
+use std::cell::RefCell;
+use std::collections::VecDeque;
+use std::rc::Rc;
+
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
+
 /// https://leetcode.com/problems/binary-tree-right-side-view/
 /// Time Complexity:    O(N)
 /// Space Complexity:   O(W)
 /// Reference:
 /// https://leetcode.com/problems/binary-tree-right-side-view/discuss/1052300/Rust-BFS
 /// https://leetcode.com/problems/binary-tree-right-side-view/discuss/690995/Rust-BFS
-use std::cell::RefCell;
-use std::collections::VecDeque;
-use std::rc::Rc;
-
-use crate::leetcode::util::data_structure::tree_node::TreeNode;
-
 #[allow(dead_code)]
 struct Solution;
 

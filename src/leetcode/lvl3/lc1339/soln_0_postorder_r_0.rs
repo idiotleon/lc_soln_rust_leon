@@ -1,4 +1,8 @@
 use std::cell::RefCell;
+use std::rc::Rc;
+
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
+
 /// https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/
 ///
 /// Time Complexity:    O()
@@ -6,10 +10,6 @@ use std::cell::RefCell;
 ///
 /// Reference:
 /// https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/discuss/1413525/Rust-DFS-solution
-use std::rc::Rc;
-
-use crate::leetcode::util::data_structure::tree_node::TreeNode;
-
 #[allow(dead_code)]
 struct Solution;
 

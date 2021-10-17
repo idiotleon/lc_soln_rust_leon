@@ -1,4 +1,8 @@
 use std::cell::RefCell;
+use std::rc::Rc;
+
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
+
 /// https://leetcode.com/problems/binary-tree-cameras/
 ///
 /// Time Complexity:    O(N)
@@ -6,10 +10,6 @@ use std::cell::RefCell;
 ///
 /// Reference:
 /// https://leetcode.com/problems/binary-tree-cameras/discuss/211180/JavaC%2B%2BPython-Greedy-DFS
-use std::rc::Rc;
-
-use crate::leetcode::util::data_structure::tree_node::TreeNode;
-
 #[allow(dead_code)]
 struct Solution;
 
@@ -25,7 +25,6 @@ impl Solution {
             // if it is covered, without a camera on this node
             MonitoredWoCamera,
         }
-
         fn dfs(root: &Option<Rc<RefCell<TreeNode>>>, cnt: &Rc<RefCell<i32>>) -> State {
             if let Some(node) = root {
                 let node = node.borrow();

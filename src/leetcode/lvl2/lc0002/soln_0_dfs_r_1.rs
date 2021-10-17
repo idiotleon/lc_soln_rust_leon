@@ -5,7 +5,7 @@
 ///
 /// Reference:
 /// https://leetcode.com/problems/add-two-numbers/discuss/261694/Rust-4ms
-use crate::leetcode::util::data_structure::list_node::ListNode;
+use crate::leetcode::util::data_structure::linked_list::single::list_node::ListNode;
 
 #[allow(dead_code)]
 struct Solution;

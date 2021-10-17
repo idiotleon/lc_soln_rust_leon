@@ -1,3 +1,4 @@
+use crate::leetcode::util::data_structure::linked_list::single::list_node::ListNode;
 /// https://leetcode.com/problems/remove-linked-list-elements/
 /// Time Complexity:    O(L)
 /// Space Complexity:   O(1)
@@ -5,8 +6,6 @@
 /// https://leetcode.com/problems/remove-linked-list-elements/discuss/746297/Rust-no-unwraps.
 #[allow(dead_code)]
 struct Solution;
-
-use crate::leetcode::util::data_structure::list_node::ListNode;
 
 #[allow(dead_code)]
 impl Solution {

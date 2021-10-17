@@ -1,3 +1,8 @@
+use std::cell::RefCell;
+use std::rc::Rc;
+
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
+
 /// https://leetcode.com/problems/diameter-of-binary-tree/
 /// Time Complexity:    O(N)
 /// Space Complexity:   O(H)
@@ -6,11 +11,6 @@
 /// https://leetcode.com/problems/diameter-of-binary-tree/discuss/898404/Rust-0ms-100
 #[allow(dead_code)]
 struct Solution;
-
-use std::cell::RefCell;
-use std::rc::Rc;
-
-use crate::leetcode::util::data_structure::tree_node::TreeNode;
 
 #[allow(dead_code)]
 impl Solution {

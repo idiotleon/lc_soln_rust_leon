@@ -5,10 +5,11 @@
 ///
 /// Reference:
 /// https://leetcode.com/problems/binary-tree-level-order-traversal/discuss/1220016/Rust-BFS-solution-with-no-.clone
-use crate::leetcode::util::data_structure::tree_node::TreeNode;
 use std::cell::RefCell;
 use std::collections::VecDeque;
 use std::rc::Rc;
+
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 
 #[allow(dead_code)]
 struct Solution;

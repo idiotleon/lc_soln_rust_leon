@@ -1,15 +1,13 @@
-///  https://leetcode.com/problems/count-complete-tree-nodes/
-///
-/// Time Complexity:    O(H)
-/// Space Complexity:   O(H)
-///
-/// Reference:
-/// https://leetcode.com/problems/count-complete-tree-nodes/discuss/514004/Rust-recursive-solution
 use std::cell::RefCell;
 use std::rc::Rc;
 
-use crate::leetcode::util::data_structure::tree_node::TreeNode;
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 
+/// https://leetcode.com/problems/count-complete-tree-nodes/
+/// Time Complexity:    O(H)
+/// Space Complexity:   O(H)
+/// Reference:
+/// https://leetcode.com/problems/count-complete-tree-nodes/discuss/514004/Rust-recursive-solution
 #[allow(dead_code)]
 pub struct Solution;
 

@@ -1,9 +1,9 @@
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
+
 /// https://leetcode.com/problems/binary-search-tree-iterator/
 ///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-use crate::leetcode::util::data_structure::tree_node::TreeNode;
-
 #[allow(dead_code)]
 struct BSTIterator {
     stack: Vec<TreeNode>,

@@ -1,12 +1,10 @@
+use crate::leetcode::util::data_structure::linked_list::single::list_node::ListNode;
+
 /// https://leetcode.com/problems/partition-list/
-///
 /// Time Complexity:     O()
 /// Space Complexity:    O()
-///
 /// Reference:
 /// https://leetcode.com/problems/partition-list/discuss/719013/Rust-100-fast-solution
-use crate::leetcode::util::data_structure::list_node::ListNode;
-
 #[allow(dead_code)]
 struct Solution;
 

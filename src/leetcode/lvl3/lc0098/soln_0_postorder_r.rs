@@ -1,13 +1,13 @@
+use std::cell::RefCell;
+use std::rc::Rc;
+
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
+
 /// @author: Leon
 /// https://leetcode.com/problems/validate-binary-search-tree/
 ///
 /// Time Complexity:    O(N)
 /// Space Complexity:   O(H)
-use std::cell::RefCell;
-use std::rc::Rc;
-
-use crate::leetcode::util::data_structure::tree_node::TreeNode;
-
 #[allow(dead_code)]
 struct Solution;
 
@@ -16,7 +16,6 @@ impl Solution {
     pub fn is_valid_bst(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
         Self::is_valid(&root, None, None)
     }
-
     fn is_valid(
         node: &Option<Rc<RefCell<TreeNode>>>,
         lower_bound: Option<i32>,

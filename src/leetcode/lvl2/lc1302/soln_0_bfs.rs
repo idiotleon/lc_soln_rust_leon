@@ -1,15 +1,14 @@
-// https://leetcode.com/problems/deepest-leaves-sum/
-//
-// Time Complexity:     O(N)
-// Space Complexity:    O(W)
-//
-// Reference:
-//  https://leetcode.com/problems/deepest-leaves-sum/discuss/1153427/Rust-BFS-solution
-use crate::leetcode::util::data_structure::tree_node::TreeNode;
 use std::cell::RefCell;
 use std::collections::VecDeque;
 use std::rc::Rc;
 
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
+
+/// https://leetcode.com/problems/deepest-leaves-sum/
+/// Time Complexity:     O(N)
+/// Space Complexity:    O(W)
+/// Reference:
+///  https://leetcode.com/problems/deepest-leaves-sum/discuss/1153427/Rust-BFS-solution
 #[allow(dead_code)]
 struct Solution;
 

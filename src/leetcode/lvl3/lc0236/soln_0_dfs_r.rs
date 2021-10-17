@@ -1,13 +1,13 @@
+use std::cell::RefCell;
+use std::rc::Rc;
+
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
+
 /// https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 /// Time Complexity:    O(N)
 /// Space Complexity:   O(H)
 /// Reference:
 /// https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/discuss/963346/Rust-recursive
-use std::cell::RefCell;
-use std::rc::Rc;
-
-use crate::leetcode::util::data_structure::tree_node::TreeNode;
-
 #[allow(dead_code)]
 struct Solution;
 

@@ -1,4 +1,8 @@
 use std::cell::RefCell;
+use std::rc::Rc;
+
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
+
 /// https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
 ///
 /// Time Complexity:    O(N)
@@ -6,10 +10,6 @@ use std::cell::RefCell;
 ///
 /// Reference:
 /// https://leetcode.com/problems/flatten-binary-tree-to-linked-list/discuss/1208091/Rust-recursive-solution-with-no-clone
-use std::rc::Rc;
-
-use crate::leetcode::util::data_structure::tree_node::TreeNode;
-
 #[allow(dead_code)]
 struct Solution;
 

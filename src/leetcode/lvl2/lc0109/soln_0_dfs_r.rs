@@ -5,7 +5,9 @@
 ///
 /// Reference:
 ///  https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/discuss/1194315/Rust-recursive-solution
-use crate::leetcode::util::data_structure::{list_node::ListNode, tree_node::TreeNode};
+use crate::leetcode::util::data_structure::{
+    linked_list::single::list_node::ListNode, tree::binary::tree_node::TreeNode,
+};
 use std::cell::RefCell;
 use std::rc::Rc;
 

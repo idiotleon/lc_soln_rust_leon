@@ -5,9 +5,10 @@
 ///
 /// Reference:
 /// https://leetcode.com/problems/binary-tree-level-order-traversal/discuss/267006/Rust-0ms-DFS-recursive
-use crate::leetcode::util::data_structure::tree_node::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
+
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 
 #[allow(dead_code)]
 struct Solution;

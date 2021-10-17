@@ -1,14 +1,13 @@
-use crate::leetcode::util::data_structure::tree_node::TreeNode;
 use std::cell::RefCell;
-/// https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
-///
-/// Time Complexity:    O(N)
-/// Space Complexity:   O(H)
-///
-/// Reference:
-/// https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/discuss/326589/Rust-0ms-3.4MB
 use std::rc::Rc;
 
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
+
+/// https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+/// Time Complexity:    O(N)
+/// Space Complexity:   O(H)
+////// Reference:
+/// https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/discuss/326589/Rust-0ms-3.4MB
 #[allow(dead_code)]
 struct Solution;
 
@@ -20,7 +19,6 @@ impl Solution {
             _ => Self::build_bst(nums.as_slice()),
         }
     }
-
     fn build_bst(nums: &[i32]) -> Option<Rc<RefCell<TreeNode>>> {
         let len_n = nums.len();
         let mid = len_n / 2;
@@ -34,7 +32,6 @@ impl Solution {
             }
             tmp
         };
-
         Some(Rc::new(RefCell::new(node)))
     }
 }
