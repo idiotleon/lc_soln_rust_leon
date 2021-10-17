@@ -269,17 +269,9 @@ mod leetcode {
                 pub mod soln_0_lin_scn;
             }
         }
-
-        pub mod lc0323 {
-            pub mod soln_0_bfs;
-            pub mod soln_0_dfs_recursive;
-            pub mod soln_0_union_find;
-        }
-
-        pub mod lc0325 {
-            pub mod soln_0_prefix_sums;
-        }
-
+        pub mod lc0323;
+        pub mod lc0325;
+        pub mod lc0437;
         pub mod lc0609 {
             pub mod soln_0_parse_str;
         }
