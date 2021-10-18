@@ -130,15 +130,10 @@ mod leetcode {
             pub mod soln_0_lin_scn_0;
             pub mod soln_0_lin_scn_1;
         }
-        pub mod lc0970 {
-            pub mod soln_0_math;
-        }
-        pub mod lc1041 {
-            pub mod soln_0_geom;
-        }
-        pub mod lc1167 {
-            pub mod soln_0_greedy;
-        }
+        pub mod lc0970;
+        pub mod lc0993;
+        pub mod lc1041;
+        pub mod lc1167;
         pub mod lc1200 {
             pub mod soln_0_lin_scn_w_srt;
         }
