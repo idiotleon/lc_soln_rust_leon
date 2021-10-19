@@ -16,19 +16,21 @@ impl Solution {
     fn dfs(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
         match root {
             Some(node) => {
-                if node.borrow().left.is_none(){
+                if node.borrow().left.is_none() {
                     return -1;
                 }
-                let left = if node.borrow().val == node.borrow().left.clone().unwrap().borrow().val {
+                let left = if node.borrow().val == node.borrow().left.clone().unwrap().borrow().val
+                {
                     Self::dfs(node.borrow().left.clone())
                 } else {
                     node.borrow().left.clone().unwrap().borrow().val
                 };
-                let right = if node.borrow().val == node.borrow().right.clone().unwrap().borrow().val {
-                    Self::dfs(node.borrow().right.clone())
-                } else {
-                    node.borrow().right.clone().unwrap().borrow().val
-                };
+                let right =
+                    if node.borrow().val == node.borrow().right.clone().unwrap().borrow().val {
+                        Self::dfs(node.borrow().right.clone())
+                    } else {
+                        node.borrow().right.clone().unwrap().borrow().val
+                    };
                 if left == Self::IMPOSSIBLE || right == Self::IMPOSSIBLE {
                     std::cmp::max(left, right)
                 } else {
