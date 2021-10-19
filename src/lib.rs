@@ -74,10 +74,7 @@ mod leetcode {
         }
     }
     pub mod lvl2 {
-        pub mod lc0001 {
-            pub mod soln_0_hashmap;
-            pub mod soln_1_brutal_force;
-        }
+        pub mod lc0001;
         pub mod lc0002 {
             pub mod soln_0_dfs_r_0;
             pub mod soln_0_dfs_r_1;
