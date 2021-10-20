@@ -75,12 +75,7 @@ mod leetcode {
     }
     pub mod lvl2 {
         pub mod lc0001;
-        pub mod lc0002 {
-            pub mod soln_0_dfs_r_0;
-            pub mod soln_0_dfs_r_1;
-            pub mod soln_0_dfs_r_2;
-            pub mod soln_0_dfs_r_3;
-        }
+        pub mod lc0002;
         pub mod lc0003 {
             pub mod soln_0_two_ptrs;
         }
