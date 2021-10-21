@@ -76,19 +76,10 @@ mod leetcode {
     pub mod lvl2 {
         pub mod lc0001;
         pub mod lc0002;
-        pub mod lc0003 {
-            pub mod soln_0_two_ptrs;
-        }
-        pub mod lc0020 {
-            pub mod soln_0_stk;
-        }
-        pub mod lc0009 {
-            pub mod soln_0_math;
-        }
-        pub mod lc0049 {
-            pub mod soln_0_hashmap_0;
-            pub mod soln_0_hashmap_1;
-        }
+        pub mod lc0003;
+        pub mod lc0009;
+        pub mod lc0020;
+        pub mod lc0049;
         pub mod lc0090 {
             pub mod soln_0_backtrack_r;
         }
