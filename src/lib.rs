@@ -80,25 +80,13 @@ mod leetcode {
         pub mod lc0009;
         pub mod lc0020;
         pub mod lc0049;
-        pub mod lc0090 {
-            pub mod soln_0_backtrack_r;
-        }
-        pub mod lc0102 {
-            pub mod soln_0_bfs;
-            pub mod soln_0_dfs_r;
-        }
-        pub mod lc0109 {
-            pub mod soln_0_dfs_r;
-        }
-        pub mod lc0114 {
-            pub mod soln_0_dfs_r;
-        }
-        pub mod lc0215 {
-            pub mod soln_0_max_heap;
-        }
-        pub mod lc0226 {
-            pub mod soln_0_postorder_r;
-        }
+        pub mod lc0090;
+        pub mod lc0102;
+        pub mod lc0109;
+        pub mod lc0114;
+        pub mod lc0215;
+        pub mod lc0226;
+        pub mod lc0451;
         pub mod lc0560 {
             pub mod soln_0_prefix_sums;
         }
