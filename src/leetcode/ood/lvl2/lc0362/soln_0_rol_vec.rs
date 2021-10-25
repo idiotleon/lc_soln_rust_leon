@@ -7,11 +7,13 @@
 /// https://leetcode.com/discuss/interview-question/178662/Design-a-Hit-Counter/
 const FIVE_MIN: i32 = 5 * 60;
 
+#[allow(dead_code)]
 struct HitCounter {
     tses: Vec<i32>,
     hits: Vec<i32>,
 }
 
+#[allow(dead_code)]
 impl HitCounter {
     /** Initialize your data structure here. */
     fn new() -> Self {

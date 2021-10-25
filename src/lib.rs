@@ -183,7 +183,6 @@ mod leetcode {
 
         pub mod lc0186;
         pub mod lc0222;
-
         pub mod lc0256 {
             pub mod soln_0_dp_0d;
         }
@@ -470,54 +469,27 @@ mod leetcode {
             pub mod soln_0_topo_sort;
         }
     }
-
     pub mod lvl5 {
-        pub mod lc1074 {
-            pub mod soln_0_dp;
-        }
+        pub mod lc1074;
     }
-
     pub mod lvl6 {
-        pub mod lc0546 {
-            pub mod soln_0_dp_3d;
-        }
+        pub mod lc0546;
     }
-
     pub mod ood {
         pub mod lvl2 {
-            pub mod lc0362 {
-                pub mod soln_0_vd;
-                pub mod soln_1_vec;
-            }
-
-            pub mod lc0384 {
-                pub mod soln_0_math;
-            }
+            pub mod lc0155;
+            pub mod lc0362;
+            pub mod lc0384;
         }
         pub mod lvl3 {
-            pub mod lc0173 {
-                pub mod soln_0_stack;
-            }
-
-            pub mod lc0348 {
-                pub mod soln_0_lin_scn;
-            }
-
-            pub mod lc0359 {
-                pub mod soln_0_hm;
-            }
-
-            pub mod lc1396 {
-                pub mod soln_0_hashmap;
-            }
+            pub mod lc0173;
+            pub mod lc0348;
+            pub mod lc0359;
+            pub mod lc1396;
         }
     }
-
     pub mod util {
-        pub mod data_structure {
-            pub mod list_node;
-            pub mod tree_node;
-        }
+        pub mod data_structure;
     }
 }
 
