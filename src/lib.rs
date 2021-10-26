@@ -451,23 +451,11 @@ mod leetcode {
             pub mod soln_0_dp_2d;
         }
 
-        pub mod lc1547 {
-            pub mod soln_0_dfs_memo;
-            pub mod soln_0_dp_2d_0;
-            pub mod soln_0_dp_2d_1;
-        }
-
-        pub mod lc1642 {
-            pub mod soln_0_greedy;
-        }
-
-        pub mod lc1856 {
-            pub mod soln_0_prefix_sums_with_mono_stk;
-        }
-
-        pub mod lc1857 {
-            pub mod soln_0_topo_sort;
-        }
+        pub mod lc1547;
+        pub mod lc1642;
+        pub mod lc1856;
+        pub mod lc1857;
+        pub mod lc1955;
     }
     pub mod lvl5 {
         pub mod lc1074;
