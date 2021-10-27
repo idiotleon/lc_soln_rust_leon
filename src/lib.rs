@@ -149,14 +149,9 @@ mod leetcode {
         pub mod lc0048;
         pub mod lc0055;
         pub mod lc0056;
-        pub mod lc0073 {
-            pub mod soln_0_matrix_manipulation;
-        }
-
-        pub mod lc0078 {
-            pub mod soln_0_backtrack_r;
-        }
-
+        pub mod lc0073;
+        pub mod lc0075;
+        pub mod lc0078;
         pub mod lc0086 {
             pub mod soln_0_lin_scn;
         }
