@@ -20,7 +20,6 @@ impl Solution {
         let mut is_same_anti_diagonal: Vec<bool> = vec![false; 2 * n - 1];
         let mut board: Vec<Vec<char>> = vec![vec!['.'; n]; n];
         let mut ans: Vec<Vec<String>> = Vec::new();
-
         Self::backtrack(
             0,
             &mut is_same_col,

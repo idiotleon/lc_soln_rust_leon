@@ -18,12 +18,10 @@ impl Solution {
         let chs2: Vec<char> = s2.chars().collect();
         let len3: usize = s3.len();
         let chs3: Vec<char> = s3.chars().collect();
-
         if len1 + len2 != len3 {
             return false;
         }
         let mut dp: Vec<Vec<bool>> = vec![vec![false; len2 + 1]; len1 + 1];
-
         for idx1 in 0..=len1 {
             for idx2 in 0..=len2 {
                 dp[idx1][idx2] = match (idx1, idx2) {

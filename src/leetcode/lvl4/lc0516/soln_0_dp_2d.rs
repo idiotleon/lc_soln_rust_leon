@@ -14,7 +14,6 @@ impl Solution {
         let len_s = s.len();
         let chs: Vec<char> = s.chars().collect();
         let mut dp: Vec<Vec<i32>> = vec![vec![0; len_s]; len_s];
-
         for lo in (0..len_s).rev() {
             dp[lo][lo] = 1;
             for hi in lo + 1..len_s {

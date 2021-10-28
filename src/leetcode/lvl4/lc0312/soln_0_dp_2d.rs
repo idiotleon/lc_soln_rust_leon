@@ -31,7 +31,6 @@ impl Solution {
             for lo in 1..len_p - len {
                 let hi = lo + len - 1;
                 let mut max_coins = 0;
-
                 for k in lo..=hi {
                     max_coins = max(
                         max_coins,

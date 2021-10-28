@@ -33,11 +33,9 @@ impl Solution {
         if lo > hi {
             return 0;
         }
-
         if lo == hi {
             return padded[lo - 1] * padded[lo] * padded[lo + 1];
         }
-
         if memo[lo][hi] > 1 {
             return memo[lo][hi];
         }

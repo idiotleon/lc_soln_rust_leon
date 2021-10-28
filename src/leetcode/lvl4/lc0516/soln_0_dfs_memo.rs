@@ -21,15 +21,12 @@ impl Solution {
         if memo[lo][hi] >= 0 {
             return memo[lo][hi];
         }
-
         if lo > hi {
             return 0;
         }
-
         if lo == hi {
             return 1;
         }
-
         memo[lo][hi] = if chs[lo] == chs[hi] {
             Self::dfs(lo + 1, hi - 1, chs, memo) + 2
         } else {

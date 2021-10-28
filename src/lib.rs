@@ -335,70 +335,20 @@ mod leetcode {
     }
 
     pub mod lvl4 {
-        pub mod lc0042 {
-            pub mod soln_0_two_ptrs;
-        }
-        pub mod lc0045 {
-            pub mod soln_0_dp_0d;
-        }
-
-        pub mod lc0051 {
-            pub mod soln_0_backtrack;
-        }
-
-        pub mod lc0052 {
-            pub mod w_bit {
-                pub mod soln_0_backtrack;
-            }
-            pub mod soln_0_backtrack_0;
-            pub mod soln_0_backtrack_1;
-            pub mod soln_0_backtrack_2;
-            pub mod soln_0_backtrack_3;
-        }
-
-        pub mod lc0065 {
-            pub mod soln_0_parse_str;
-        }
-
-        pub mod lc0081 {
-            pub mod soln_0_bs;
-        }
-
-        pub mod lc0097 {
-            pub mod soln_0_dp_2d;
-        }
-
-        pub mod lc0127 {
-            pub mod soln_0_bfs_2e;
-        }
-
-        pub mod lc0164 {
-            pub mod soln_0_bkt_srt;
-            pub mod soln_0_radix_srt;
-        }
-
-        pub mod lc0312 {
-            pub mod soln_0_dfs_memo;
-            pub mod soln_0_dp_2d;
-        }
-
-        pub mod lc0316 {
-            pub mod soln_0_mono_stk;
-        }
-
-        pub mod lc0516 {
-            pub mod soln_0_dfs_memo;
-            pub mod soln_0_dp_2d;
-        }
-
-        pub mod lc0600 {
-            pub mod soln_0_dp_1d;
-        }
-
-        pub mod lc0636 {
-            pub mod soln_0_stk;
-        }
-
+        pub mod lc0042;
+        pub mod lc0045;
+        pub mod lc0052;
+        pub mod lc0065;
+        pub mod lc0081;
+        pub mod lc0097;
+        pub mod lc0127;
+        pub mod lc0154;
+        pub mod lc0164;
+        pub mod lc0312;
+        pub mod lc0316;
+        pub mod lc0516;
+        pub mod lc0600;
+        pub mod lc0636;
         pub mod lc0698 {
             pub mod with_bit {
                 pub mod soln_0_dp_1d;

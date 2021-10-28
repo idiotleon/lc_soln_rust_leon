@@ -19,7 +19,6 @@ impl Solution {
         let mut is_same_main_diagonal: Vec<bool> = vec![false; 2 * n - 1];
         let mut is_same_anti_diagonal: Vec<bool> = vec![false; 2 * n - 1];
         let mut board: Vec<Vec<char>> = vec![vec!['.'; n]; n];
-
         return Self::backtrack(
             0,
             &mut is_same_column,
@@ -40,9 +39,7 @@ impl Solution {
         if row == n {
             return 1;
         }
-
         let mut count: i32 = 0;
-
         for col in 0..n {
             if is_same_column[col]
                 || is_same_main_diagonal[row + n - col - 1]
@@ -50,7 +47,6 @@ impl Solution {
             {
                 continue;
             }
-
             is_same_column[col] = true;
             is_same_main_diagonal[row + n - col - 1] = true;
             is_same_anti_diagonal[row + col] = true;
@@ -64,13 +60,11 @@ impl Solution {
                 board,
                 n,
             );
-
             is_same_column[col] = false;
             is_same_main_diagonal[row + n - col - 1] = false;
             is_same_anti_diagonal[row + col] = false;
             board[row][col] = Self::EMPTY;
         }
-
         return count;
     }
 }

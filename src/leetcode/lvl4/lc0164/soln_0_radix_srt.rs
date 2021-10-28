@@ -22,7 +22,6 @@ impl Solution {
         for i in 0..10 {
             nums.iter()
                 .for_each(|&x| buckets[((x / 10_i32.pow(i)) % 10) as usize].push(x));
-
             buckets
                 .iter()
                 .flat_map(|b| b.iter())

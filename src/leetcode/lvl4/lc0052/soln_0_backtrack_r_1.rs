@@ -16,12 +16,10 @@ impl Solution {
     const EMPTY: char = '.';
     pub fn total_n_queens(n: i32) -> i32 {
         let n: usize = n as usize;
-
         let mut cols = HashSet::<usize>::new();
         let mut dia_sum = HashSet::<usize>::new();
         let mut anti_dia_sum = HashSet::<usize>::new();
         let mut board: Vec<Vec<char>> = vec![vec!['.'; n]; n];
-
         Self::backtrack(0, &mut cols, &mut dia_sum, &mut anti_dia_sum, &mut board, n)
     }
     fn backtrack(

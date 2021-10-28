@@ -19,9 +19,7 @@ impl Solution {
         let mut is_same_main_diagonal: Vec<bool> = vec![false; 2 * n - 1];
         let mut is_same_anti_diagonal: Vec<bool> = vec![false; 2 * n - 1];
         let mut board: Vec<Vec<char>> = vec![vec!['.'; n]; n];
-
         let mut count: i32 = 0;
-
         Self::backtrack(
             0,
             &mut is_same_column,

@@ -17,7 +17,6 @@ impl Solution {
 
     fn backtrack(mut row: &mut Vec<i32>, n: i32) -> i32 {
         let len_c: usize = row.len();
-
         if len_c == n as usize {
             return 1;
         }

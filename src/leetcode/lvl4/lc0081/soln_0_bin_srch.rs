@@ -13,17 +13,13 @@ struct Solution;
 impl Solution {
     pub fn search(nums: Vec<i32>, target: i32) -> bool {
         let len_n: usize = nums.len();
-
         let mut lo: usize = 0;
         let mut hi: usize = len_n - 1;
-
         while lo <= hi {
             let mid = lo + (hi - lo) / 2;
-
             if target == nums[mid] {
                 return true;
             }
-
             if nums[lo] < nums[mid] {
                 if nums[lo] <= target && target < nums[mid] {
                     hi = mid - 1;
@@ -40,7 +36,6 @@ impl Solution {
                 }
             }
         }
-
         false
     }
 }

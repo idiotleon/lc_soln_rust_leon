@@ -15,7 +15,6 @@ struct Solution;
 impl Solution {
     pub fn maximum_gap(nums: Vec<i32>) -> i32 {
         let len_n: usize = nums.len();
-
         if len_n < 2 {
             return 0;
         }
@@ -25,7 +24,6 @@ impl Solution {
         let bkt_cnt: usize = 1 + (max_num - min_num) / bkt_sze;
         let bkts: Vec<(Option<i32>, Option<i32>)> = {
             let mut bkts: Vec<(Option<i32>, Option<i32>)> = vec![(None, None); bkt_cnt];
-
             for num in nums.into_iter() {
                 let idx_bkt = (num as usize - min_num) / bkt_sze;
                 match bkts[idx_bkt] {
@@ -36,9 +34,7 @@ impl Solution {
                             bkts[idx_bkt] = (Some(a), Some(num))
                         }
                     }
-
                     (None, None) => bkts[idx_bkt] = (Some(num), Some(num)),
-
                     _ => (),
                 }
             }
