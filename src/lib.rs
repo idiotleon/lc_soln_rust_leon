@@ -1,77 +1,28 @@
 mod leetcode {
     pub mod lvl1 {
-        pub mod lc0062 {
-            pub mod soln_0_dfs_memo;
-            pub mod soln_0_dp_1d;
-            pub mod soln_0_dp_2d;
-        }
-        pub mod lc0067 {
-            pub mod soln_0_two_ptrs;
-        }
-        pub mod lc0070 {
-            pub mod soln_0_dp_0d;
-        }
-        pub mod lc0204 {
-            pub mod soln_0_dp_1d;
-        }
-        pub mod lc0329 {
-            pub mod soln_0_math;
-        }
-        pub mod lc0415 {
-            pub mod soln_0_lin_scn;
-        }
-        pub mod lc0509 {
-            pub mod soln_0_dp_0d;
-            pub mod soln_0_dp_1d;
-        }
-        pub mod lc0709 {
-            pub mod soln_0_lin_scn;
-        }
-        pub mod lc1629 {
-            pub mod soln_0_lin_scn;
-        }
-        pub mod lc1816 {
-            pub mod soln_0_lin_scn;
-        }
-        pub mod lc1827 {
-            pub mod soln_0_lin_scn;
-        }
-        pub mod lc1832 {
-            pub mod w_bit {
-                pub mod soln_0_lin_scn;
-            }
-            pub mod soln_0_lin_scn;
-        }
-        pub mod lc1837 {
-            pub mod soln_0_math;
-        }
-        pub mod lc1844 {
-            pub mod soln_0_lin_scn;
-        }
-        pub mod lc1880 {
-            pub mod soln_0_prs_str;
-        }
-        pub mod lc1903 {
-            pub mod soln_0_lin_scn;
-        }
-        pub mod lc1909 {
-            pub mod soln_0_lin_scn;
-        }
-        pub mod lc1913 {
-            pub mod soln_0_lin_scn;
-        }
-        pub mod lc1920 {
-            pub mod soln_0_lin_scn;
-        }
-        pub mod lc1935 {
-            pub mod soln_0_lin_scn;
-            pub mod w_bit {
-                pub mod soln_0_lin_scn;
-            }
-        }
-        pub mod lc1941 {
-            pub mod soln_0_lin_scn;
-        }
+        pub mod lc0062;
+        pub mod lc0067;
+        pub mod lc0070;
+        pub mod lc0204;
+        pub mod lc0329;
+        pub mod lc0415;
+        pub mod lc0509;
+        pub mod lc0709;
+        pub mod lc1629;
+        pub mod lc1816;
+        pub mod lc1827;
+        pub mod lc1832;
+        pub mod lc1837;
+        pub mod lc1844;
+        pub mod lc1880;
+        pub mod lc1881;
+        pub mod lc1897;
+        pub mod lc1903;
+        pub mod lc1909;
+        pub mod lc1913;
+        pub mod lc1920;
+        pub mod lc1935;
+        pub mod lc1941;
     }
     pub mod lvl2 {
         pub mod lc0001;

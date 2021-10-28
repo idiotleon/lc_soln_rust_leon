@@ -1,7 +1,7 @@
 /// https://leetcode.com/problems/maximum-value-after-insertion/
 ///
-/// Time Complexity:    O(L)
-/// Space Complexity:   O(L)
+/// Time Complexity:    O(`_len_s`)
+/// Space Complexity:   O(`_len_s`)
 ///
 /// Reference:
 /// https://leetcode.com/problems/maximum-value-after-insertion/discuss/1239779/Java-Simple/955120
@@ -12,7 +12,7 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn max_value(n: String, x: i32) -> String {
-        let len_s: usize = n.len();
+        let _len_s: usize = n.len();
         let chs: Vec<char> = n.chars().collect();
         let is_negative: bool = chs[0] == '-';
 

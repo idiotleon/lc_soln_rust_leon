@@ -18,7 +18,6 @@ impl Solution {
         let mut fn_2 = 0;
         let mut fn_1 = 1;
         let mut sum = 1;
-
         for _ in 2..n + 1 {
             sum = fn_2 + fn_1;
             fn_2 = fn_1;

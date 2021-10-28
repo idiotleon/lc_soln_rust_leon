@@ -1,6 +1,6 @@
 /// @author: Leon
 /// https://leetcode.com/problems/concatenation-of-array/
-/// 
+///
 /// Time Complexity:    O(`len_n`)
 /// Space Complexity:   O(1) / O(`len_n`)
 #[allow(dead_code)]
@@ -10,17 +10,14 @@ struct Solution;
 impl Solution {
     pub fn get_concatenation(nums: Vec<i32>) -> Vec<i32> {
         let len_n = nums.len();
-        
         let ans: Vec<i32> = {
             let mut tmp = vec![0; 2 * len_n];
-            for (idx, &num) in nums.iter().enumerate(){
+            for (idx, &num) in nums.iter().enumerate() {
                 tmp[idx] = num;
                 tmp[idx + len_n] = num;
             }
-            
             tmp
         };
-        
         ans
     }
 }

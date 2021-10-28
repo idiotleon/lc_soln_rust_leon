@@ -10,7 +10,6 @@ struct Solution;
 impl Solution {
     pub fn build_array(nums: Vec<i32>) -> Vec<i32> {
         let len_n = nums.len();
-
         let ans: Vec<i32> = {
             let mut tmp = vec![0; len_n];
             for (idx, &num) in nums.iter().enumerate() {
@@ -18,7 +17,6 @@ impl Solution {
             }
             tmp
         };
-
         ans
     }
 }
