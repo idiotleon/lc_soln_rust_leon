@@ -1,6 +1,6 @@
 /// https://leetcode.com/problems/paint-house/
 ///
-/// Time Complexity:    O(`len_cts`)
+/// Time Complexity:    O(`_len_cts`)
 /// Space Complexity:   O(1)
 ///
 /// Reference:
@@ -14,13 +14,10 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn min_cost(costs: Vec<Vec<i32>>) -> i32 {
-        // not used
-        // let len_cts: usize = costs.len();
-
+        let _len_cts: usize = costs.len();
         let mut r: i32 = 0;
         let mut b: i32 = 0;
         let mut g: i32 = 0;
-
         for cost in costs.into_iter() {
             let (prev_r, prev_b, prev_g) = (r, b, g);
             r = cost[0] + min(prev_b, prev_g);

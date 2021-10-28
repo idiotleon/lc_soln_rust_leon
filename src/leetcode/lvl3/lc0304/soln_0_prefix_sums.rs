@@ -15,7 +15,6 @@ impl NumMatrix {
     fn new(matrix: Vec<Vec<i32>>) -> Self {
         let n_rows: usize = matrix.len();
         let n_cols: usize = if n_rows > 0 { matrix[0].len() } else { 0 };
-
         let mut prefix_sums = vec![vec![0; n_cols + 1]; n_rows + 1];
         for r in 0..n_rows {
             for c in 0..n_cols {
@@ -24,7 +23,6 @@ impl NumMatrix {
                         - prefix_sums[r][c];
             }
         }
-
         NumMatrix { prefix_sums }
     }
 

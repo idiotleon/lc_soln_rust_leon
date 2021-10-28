@@ -21,7 +21,6 @@ impl Solution {
             if j == celebrity {
                 continue;
             }
-
             if self.knows(celebrity, j) || !self.knows(j, celebrity) {
                 return -1;
             }

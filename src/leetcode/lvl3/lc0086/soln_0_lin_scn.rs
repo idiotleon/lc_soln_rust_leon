@@ -17,14 +17,11 @@ impl Solution {
         let mut dummy_less = Some(Box::new(ListNode::new(0)));
         // (prev) cursor for the less
         let mut prev_less = dummy_less.as_mut();
-
         // dummy head for the greater
         let mut dummy_greater = Some(Box::new(ListNode::new(0)));
         // (prev) cursor for the greater
         let mut prev_greater = dummy_greater.as_mut();
-
         let mut curr = head;
-
         while let Some(node) = curr {
             if node.val < x {
                 if let Some(n) = prev_less {
@@ -37,18 +34,14 @@ impl Solution {
                     prev_greater = n.next.as_mut();
                 }
             }
-
             curr = node.next;
         }
-
         if let Some(n) = prev_greater {
             n.next = None;
         }
-
         if let Some(n) = prev_less {
             n.next = dummy_greater.unwrap().next;
         }
-
         dummy_less.unwrap().next
     }
 }

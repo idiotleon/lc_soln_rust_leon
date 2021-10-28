@@ -142,6 +142,7 @@ mod leetcode {
     pub mod lvl3 {
         pub mod lc0005;
         pub mod lc0011;
+        pub mod lc0015;
         pub mod lc0016;
         pub mod lc0033;
         pub mod lc0034;
@@ -152,60 +153,24 @@ mod leetcode {
         pub mod lc0073;
         pub mod lc0075;
         pub mod lc0078;
-        pub mod lc0086 {
-            pub mod soln_0_lin_scn;
-        }
-
-        pub mod lc0091 {
-            pub mod soln_0_dp_1d;
-        }
-
-        pub mod lc0098 {
-            pub mod soln_0_postorder_r;
-        }
-
-        pub mod lc0108 {
-            pub mod soln_0_recursion;
-        }
-
-        pub mod lc0150 {
-            pub mod soln_0_stk;
-        }
-
-        pub mod lc0153 {
-            pub mod soln_0_div_n_cnqr;
-        }
-
+        pub mod lc0086;
+        pub mod lc0091;
+        pub mod lc0098;
+        pub mod lc0108;
+        pub mod lc0150;
+        pub mod lc0151;
+        pub mod lc0153;
         pub mod lc0186;
         pub mod lc0222;
-        pub mod lc0256 {
-            pub mod soln_0_dp_0d;
-        }
-
-        pub mod lc0277 {
-            pub mod soln_0_lin_scn;
-        }
-
-        pub mod lc0300 {
-            pub mod soln_0_dp_1d;
-        }
-
-        pub mod lc0304 {
-            pub mod soln_0_prefix_sums;
-        }
-
-        pub mod lc0318 {
-            pub mod w_bit {
-                pub mod soln_0_lin_scn;
-            }
-        }
+        pub mod lc0256;
+        pub mod lc0277;
+        pub mod lc0300;
+        pub mod lc0304;
+        pub mod lc0318;
         pub mod lc0323;
         pub mod lc0325;
         pub mod lc0437;
-        pub mod lc0609 {
-            pub mod soln_0_parse_str;
-        }
-
+        pub mod lc0609;
         pub mod lc0665 {
             pub mod soln_0_greedy;
         }

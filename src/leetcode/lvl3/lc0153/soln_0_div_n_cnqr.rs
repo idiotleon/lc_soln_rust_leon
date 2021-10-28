@@ -13,7 +13,6 @@ struct Solution;
 impl Solution {
     pub fn find_min(nums: Vec<i32>) -> i32 {
         let len_n = nums.len();
-
         Self::find(0, len_n - 1, &nums)
     }
 
@@ -21,11 +20,9 @@ impl Solution {
         if lo + 1 >= hi {
             return std::cmp::min(nums[lo], nums[hi]);
         }
-
         if nums[lo] < nums[hi] {
             return nums[lo];
         }
-
         let mid: usize = lo + (hi - lo) / 2;
         std::cmp::min(Self::find(lo, mid, nums), Self::find(mid + 1, hi, nums))
     }
