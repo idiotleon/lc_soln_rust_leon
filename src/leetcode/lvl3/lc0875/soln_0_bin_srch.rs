@@ -16,15 +16,12 @@ impl Solution {
         const DATA_RANGE: usize = 1e9 as usize + 7;
         let mut lo: usize = 1;
         let mut hi: usize = DATA_RANGE;
-
         while lo < hi {
             let mid = lo + (hi - lo) / 2;
             let mut total: i32 = 0;
-
             for pile in &piles {
                 total += (pile + mid as i32 - 1) / mid as i32;
             }
-
             if total > h {
                 lo = mid + 1;
             } else {
