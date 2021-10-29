@@ -18,7 +18,6 @@ impl Solution {
         };
         let search_word = search_word.as_bytes();
         let mut ans = vec![Vec::new(); search_word.len()];
-
         for product in &sorted {
             let p = product.as_bytes();
             let mut idx = 0;

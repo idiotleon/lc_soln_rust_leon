@@ -166,45 +166,16 @@ mod leetcode {
             pub mod soln_0_two_ptrs;
         }
 
-        pub mod lc0938 {
-            pub mod soln_0_dfs_r;
-        }
-
-        pub mod lc1010 {
-            pub mod soln_0_lin_scn_0;
-            pub mod soln_0_lin_scn_1;
-        }
-
-        pub mod lc1055 {
-            pub mod soln_0_two_ptrs;
-        }
-
-        pub mod lc1143 {
-            pub mod soln_0_dfs_memo;
-            pub mod soln_0_dp_2d;
-        }
-
-        pub mod lc1197 {
-            pub mod soln_0_bfs;
-        }
-
-        pub mod lc1198 {
-            pub mod soln_0_lin_scn;
-        }
-
-        pub mod lc1229 {
-            pub mod soln_0_greedy;
-        }
-
-        pub mod lc1268 {
-            pub mod soln_0_bs_srt;
-            pub mod soln_0_trie;
-        }
-
-        pub mod lc1306 {
-            pub mod soln_0_bfs;
-        }
-
+        pub mod lc0938;
+        pub mod lc1010;
+        pub mod lc1055;
+        pub mod lc1143;
+        pub mod lc1197;
+        pub mod lc1198;
+        pub mod lc1229;
+        pub mod lc1249;
+        pub mod lc1268;
+        pub mod lc1306;
         pub mod lc1339 {
             pub mod soln_0_postorder_r_0;
             pub mod soln_0_postorder_r_1;

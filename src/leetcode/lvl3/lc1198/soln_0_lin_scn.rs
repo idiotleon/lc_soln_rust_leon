@@ -19,13 +19,11 @@ impl Solution {
                 count[num as usize - 1] += 1;
             }
         }
-
         for i in 0..RANGE {
             if count[i] == num_rows {
                 return i as i32 + 1;
             }
         }
-
         -1
     }
 }
