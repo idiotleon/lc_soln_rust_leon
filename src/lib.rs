@@ -122,14 +122,8 @@ mod leetcode {
         pub mod lc0325;
         pub mod lc0437;
         pub mod lc0609;
-        pub mod lc0665 {
-            pub mod soln_0_greedy;
-        }
-
-        pub mod lc0678 {
-            pub mod soln_0_lin_scn;
-        }
-
+        pub mod lc0665;
+        pub mod lc0678;
         pub mod lc0680 {
             pub mod soln_0_hi_lo_ptrs;
         }
