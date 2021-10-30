@@ -21,7 +21,7 @@ impl Solution {
             if diff > 0 {
                 min_heap.push(-diff);
             }
-            if min_heap.len() > ladders as usize{
+            if min_heap.len() > ladders as usize {
                 if let Some(min) = min_heap.pop() {
                     bricks += min;
                     if bricks < 0 {
