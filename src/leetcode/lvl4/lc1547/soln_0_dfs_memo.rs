@@ -32,7 +32,6 @@ impl Solution {
         if hi - lo <= 1 {
             return 0;
         }
-
         if memo[lo][hi] > 0 {
             return memo[lo][hi];
         }

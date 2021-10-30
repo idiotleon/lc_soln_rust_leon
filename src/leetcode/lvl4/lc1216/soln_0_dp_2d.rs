@@ -16,7 +16,6 @@ impl Solution {
         let len_s: usize = s.len();
         let chs: Vec<char> = s.chars().collect();
         let mut dp = vec![vec![0; len_s + 1]; len_s + 1];
-
         for d in 0..len_s {
             for lo in 1..=len_s - d {
                 let hi = lo + d;

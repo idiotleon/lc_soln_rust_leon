@@ -15,7 +15,6 @@ impl Solution {
     pub fn max_sum_after_partitioning(nums: Vec<i32>, k: i32) -> i32 {
         let len_n: usize = nums.len();
         let mut dp: Vec<i32> = vec![0; len_n + 1];
-
         for idx in 1..=len_n {
             let mut cur_max: i32 = 0;
             let mut max_sum: i32 = 0;

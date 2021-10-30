@@ -13,7 +13,6 @@ impl Solution {
     pub fn min_score_triangulation(nums: Vec<i32>) -> i32 {
         let len_n = nums.len();
         let mut dp = vec![vec![0; len_n]; len_n];
-
         for len in 2..len_n {
             for lo in 0..len_n - len {
                 let hi = lo + len;

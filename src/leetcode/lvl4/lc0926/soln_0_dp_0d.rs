@@ -1,6 +1,6 @@
 /// https://leetcode.com/problems/flip-string-to-monotone-increasing/
 ///
-/// Time Complexity:    O(`len_s`)
+/// Time Complexity:    O(`_len_s`)
 /// Space Complexity:   O(1)
 ///
 /// Reference:
@@ -12,12 +12,9 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn min_flips_mono_incr(s: String) -> i32 {
-        // not used
-        // let len_s = s.len();
-
+        let _len_s = s.len();
         let mut cnt_ones: u16 = 0;
         let mut cnt_flips: u16 = 0;
-
         for ch in s.chars() {
             if ch == '1' {
                 cnt_ones += 1;

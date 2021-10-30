@@ -23,7 +23,6 @@ impl Solution {
         if idx_start >= len_n {
             return 0;
         }
-
         if memo[idx_start] > 0 {
             return memo[idx_start];
         }

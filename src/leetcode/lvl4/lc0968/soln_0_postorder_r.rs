@@ -31,31 +31,23 @@ impl Solution {
                 let node = node.borrow();
                 let left: State = dfs(&node.left, &cnt);
                 let right: State = dfs(&node.right, &cnt);
-
                 if left == State::Leaf || right == State::Leaf {
                     *cnt.borrow_mut() += 1;
                     return State::ParentWithCamera;
                 }
-
                 if left == State::ParentWithCamera || right == State::ParentWithCamera {
                     return State::MonitoredWoCamera;
                 }
-
                 return State::Leaf;
             }
-
             State::MonitoredWoCamera
         }
-
         let cnt: Rc<RefCell<i32>> = Rc::new(RefCell::new(0));
         let state = dfs(&root, &cnt);
-
         let count = *cnt.borrow();
-
         if state == State::Leaf {
             return 1 + count;
         }
-
         count
     }
 }

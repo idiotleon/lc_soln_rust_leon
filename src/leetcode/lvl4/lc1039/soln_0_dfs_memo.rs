@@ -22,7 +22,6 @@ impl Solution {
         if memo[lo][hi] > 0 {
             return memo[lo][hi];
         }
-
         if hi - lo < 2 {
             return 0;
         }

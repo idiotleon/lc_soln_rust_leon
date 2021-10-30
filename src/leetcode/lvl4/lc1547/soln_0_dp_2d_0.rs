@@ -25,7 +25,6 @@ impl Solution {
             tmp
         };
         let mut dp: Vec<Vec<i32>> = vec![vec![0; len_p]; len_p];
-
         for len in 2..len_p {
             for lo in 0..len_p - len {
                 let hi = lo + len;

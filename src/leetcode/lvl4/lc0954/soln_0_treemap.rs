@@ -1,7 +1,7 @@
 /// https://leetcode.com/problems/array-of-doubled-pairs/
 ///
-/// Time Complexity:    O(`n_nums` * lg(`n_nums`))
-/// Space Complexity:   O(`n_nums`)
+/// Time Complexity:    O(`_len_n` * lg(`_len_n`))
+/// Space Complexity:   O(`_len_n`)
 ///
 /// Reference:
 /// https://leetcode.com/problems/array-of-doubled-pairs/discuss/203183/JavaC%2B%2BPython-Match-from-the-Smallest-or-Biggest-100
@@ -15,8 +15,7 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn can_reorder_doubled(nums: Vec<i32>) -> bool {
-        // not used
-        // let n_nums = nums.len();
+        let _len_n = nums.len();
 
         let mut num_to_freq = BTreeMap::<i32, i32>::new();
         for &num in &nums {

@@ -16,8 +16,7 @@ impl Solution {
         let len_s: usize = s.len();
         let chs: Vec<char> = s.chars().collect();
         let mut memo: Vec<Vec<Option<i32>>> = vec![vec![None; len_s]; len_s];
-
-        return len_s as i32 - Self::dfs(0, len_s - 1, &chs, &mut memo) <= k;
+        len_s as i32 - Self::dfs(0, len_s - 1, &chs, &mut memo) <= k
     }
 
     fn dfs(lo: usize, hi: usize, chs: &Vec<char>, memo: &mut Vec<Vec<Option<i32>>>) -> i32 {
@@ -27,11 +26,9 @@ impl Solution {
         if lo == hi {
             return 1;
         }
-
         if let Some(m) = memo[lo][hi] {
             return m;
         }
-
         let longest = if chs[lo] == chs[hi] {
             Self::dfs(lo + 1, hi - 1, chs, memo) + 2
         } else {
