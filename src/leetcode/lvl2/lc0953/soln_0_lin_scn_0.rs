@@ -19,7 +19,6 @@ impl Solution {
             .enumerate()
             .map(|(idx, ch)| (ch, idx))
             .collect();
-
         'toploop: for word_pair in words.windows(2) {
             for (ch1, ch2) in word_pair[0].chars().zip(word_pair[1].chars()) {
                 match dict[&ch1].cmp(&dict[&ch2]) {

@@ -20,26 +20,21 @@ impl Solution {
         if let Some(r) = root {
             queue.push_back(r);
         }
-
         let mut sum = 0;
         while !queue.is_empty() {
             sum = 0;
-
             for _ in 0..queue.len() {
                 if let Some(node) = queue.pop_front() {
                     sum += node.borrow().val;
-
                     if let Some(left) = node.borrow_mut().left.take() {
                         queue.push_back(left);
                     }
-
                     if let Some(right) = node.borrow_mut().right.take() {
                         queue.push_back(right);
                     }
                 }
             }
         }
-
         sum
     }
 }

@@ -13,7 +13,6 @@ impl Solution {
             let len_prev = chs_prev.len();
             let len_cur = chs_cur.len();
             let len = std::cmp::min(len_prev, len_cur);
-
             for idx in 0..len {
                 let ch_prev: char = chs_prev[idx];
                 let ch_cur: char = chs_cur[idx];
@@ -23,27 +22,22 @@ impl Solution {
                         > dict[ch_cur as usize - 'a' as usize];
                 }
             }
-
             len_prev > len_cur
         }
-
         let chses: Vec<Vec<char>> = words.into_iter().map(|w| w.chars().collect()).collect();
         let dict: Vec<usize> = {
             let mut dict: Vec<usize> = vec![0; 26];
             for (idx, ch) in order.chars().into_iter().enumerate() {
                 dict[ch as usize - 'a' as usize] = idx;
             }
-
             dict
         };
-
         let len_chses = chses.len();
         for idx in 1..len_chses {
             if is_bigger(&chses[idx - 1], &chses[idx], &dict) {
                 return false;
             }
         }
-
         true
     }
 }

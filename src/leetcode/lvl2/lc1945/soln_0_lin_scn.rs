@@ -21,7 +21,6 @@ impl Solution {
             }
             sum as i32
         };
-
         let mut k = k - 1;
         let mut sum = init;
         while k > 0 && sum > 9 {
@@ -33,7 +32,6 @@ impl Solution {
             sum = tmp;
             k -= 1;
         }
-
         sum
     }
 }

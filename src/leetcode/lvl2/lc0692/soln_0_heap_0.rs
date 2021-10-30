@@ -1,6 +1,6 @@
 /// https://leetcode.com/problems/top-k-frequent-words/
 /// 
-/// Time Complexity:    O(`len_w` * lg(`k`))
+/// Time Complexity:    O(`_len_w` * lg(`k`))
 /// Space Complexity:   O(k) + O(DISTINCT(`words`))
 /// 
 /// Reference:
@@ -9,15 +9,11 @@ use std::collections::{BinaryHeap, HashMap};
 
 impl Solution {
     pub fn top_k_frequent(words: Vec<String>, k: i32) -> Vec<String> {
-        // not used
-        // let len_w = words.len();
-
+        let _len_w = words.len();
         let mut word_to_freq = HashMap::<String, i32>::new();
-        
         for word in &words{
             *word_to_freq.entry(word.to_string()).or_default() += 1;
         }
-        
         let mut heap = BinaryHeap::<(i32, String)>::new();
         for (word, freq) in word_to_freq.into_iter(){
             heap.push((-freq, word));
@@ -25,7 +21,6 @@ impl Solution {
                 heap.pop();
             }
         }
-        
         let mut ans: Vec<String> = vec![];
         while let Some((_freq, word)) = heap.pop(){
             ans.push(word);

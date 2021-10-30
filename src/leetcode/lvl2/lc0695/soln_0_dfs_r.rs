@@ -12,11 +12,9 @@ struct Solution;
 impl Solution {
     pub fn max_area_of_island(grid: Vec<Vec<i32>>) -> i32 {
         const DIRS: [isize; 5] = [0, -1, 0, 1, 0];
-
         fn dfs(r: isize, c: isize, visited: &mut Vec<Vec<bool>>, grid: &Vec<Vec<i32>>) -> i32 {
             let len_rs: usize = grid.len();
             let len_cs: usize = grid[0].len();
-
             if r < 0
                 || r >= len_rs as isize
                 || c < 0
@@ -42,7 +40,6 @@ impl Solution {
         let len_cs: usize = grid[0].len();
         let mut max_area: i32 = 0;
         let mut visited: Vec<Vec<bool>> = vec![vec![false; len_cs]; len_rs];
-
         for r in 0..len_rs {
             for c in 0..len_cs {
                 if grid[r][c] == 0 {

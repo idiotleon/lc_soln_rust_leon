@@ -17,7 +17,6 @@ impl Solution {
             tmp
         };
         let mut min_abs = std::i32::MAX;
-
         for idx in 1..len_n {
             let cur_abs = (sorted[idx] - sorted[idx - 1]).abs();
 
