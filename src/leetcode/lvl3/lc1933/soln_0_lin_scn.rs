@@ -17,13 +17,10 @@ impl Solution {
         if len_p < 2 + 1 {
             return false;
         }
-
         let mut cnt = 1;
         // the flag whether value-equal substring of length two appeared
         let mut flag = false;
-
         let chs: Vec<char> = padded.chars().collect();
-
         for idx in 1..len_p {
             if chs[idx - 1] == chs[idx] {
                 cnt += 1;
@@ -42,7 +39,6 @@ impl Solution {
                 cnt = 1;
             }
         }
-
         flag
     }
 }

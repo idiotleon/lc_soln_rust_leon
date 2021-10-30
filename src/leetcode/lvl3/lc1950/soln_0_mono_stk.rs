@@ -14,7 +14,6 @@ struct Solution;
 impl Solution {
     pub fn find_maximums(nums: Vec<i32>) -> Vec<i32> {
         let len_n = nums.len();
-
         let mut stk: VecDeque<usize> = VecDeque::with_capacity(len_n);
         let right: Vec<i32> = {
             let mut tmp: Vec<i32> = vec![len_n as i32; len_n];
@@ -23,7 +22,6 @@ impl Solution {
             }
             tmp
         };
-
         stk.clear();
         let left: Vec<i32> = {
             let mut tmp: Vec<i32> = vec![-1; len_n];
@@ -32,22 +30,17 @@ impl Solution {
             }
             tmp
         };
-
         let ans: Vec<i32> = {
             let mut tmp: Vec<i32> = vec![0; len_n];
-
             for idx in 0..len_n {
                 let len = right[idx] - left[idx] - 1;
                 tmp[len as usize - 1] = std::cmp::max(tmp[len as usize - 1], nums[idx]);
             }
-
             for idx in (0..len_n - 1).rev() {
                 tmp[idx] = std::cmp::max(tmp[idx], tmp[idx + 1]);
             }
-
             tmp
         };
-
         ans
     }
 

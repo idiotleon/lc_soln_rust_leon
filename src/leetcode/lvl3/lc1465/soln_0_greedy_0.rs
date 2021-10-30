@@ -18,7 +18,6 @@ impl Solution {
         mut vertical_cuts: Vec<i32>,
     ) -> i32 {
         const MOD: i64 = 1e9 as i64 + 7;
-
         let get_max_gap = |cuts: &mut Vec<i32>, dim| {
             cuts.extend(&[0, dim]);
             cuts.sort_unstable();
