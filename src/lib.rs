@@ -8,14 +8,3 @@ mod leetcode {
     pub mod ood;
     pub mod util;
 }
-
-#[cfg(test)]
-mod test {
-    pub mod leetcode {
-        pub mod lvl4 {
-            pub mod lc0051 {
-                pub mod test_soln_0_backtrack;
-            }
-        }
-    }
-}
