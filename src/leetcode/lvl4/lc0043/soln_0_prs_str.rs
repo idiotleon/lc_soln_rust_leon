@@ -22,11 +22,15 @@ impl Solution {
                     digits[idx1 + idx2 + 1] += res / 10;
                 }
             }
-            while digits.len() > 1 && digits.last() == Some(&0){
+            while digits.len() > 1 && digits.last() == Some(&0) {
                 digits.pop();
             }
             digits
         };
-        digits.into_iter().rev().map(|d| d.to_string()).collect::<String>()
+        digits
+            .into_iter()
+            .rev()
+            .map(|d| d.to_string())
+            .collect::<String>()
     }
 }
