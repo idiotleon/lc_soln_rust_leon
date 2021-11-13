@@ -36,6 +36,7 @@ pub mod lc0665;
 pub mod lc0678;
 pub mod lc0680;
 pub mod lc0718;
+pub mod lc0739;
 pub mod lc0763;
 pub mod lc0816;
 pub mod lc0823;
