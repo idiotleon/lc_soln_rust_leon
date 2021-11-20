@@ -12,10 +12,10 @@ impl Solution {
     pub fn hamming_distance(x: i32, y: i32) -> i32 {
         Self::get_hamming_weight(x ^ y)
     }
-    fn get_hamming_weight(mut num: i32) -> i32{
+    fn get_hamming_weight(mut num: i32) -> i32 {
         let cnt = {
             let mut cnt = 0;
-            while num != 0{
+            while num != 0 {
                 cnt += num & 1;
                 num >>= 1;
             }
