@@ -27,7 +27,6 @@ impl Solution {
                     Ordering::Less => continue 'toploop,
                 }
             }
-
             if word_pair[0].len() > word_pair[1].len() {
                 return false;
             }

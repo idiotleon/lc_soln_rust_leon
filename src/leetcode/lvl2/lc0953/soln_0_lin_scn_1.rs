@@ -1,6 +1,5 @@
 /// @author: Leon
 /// https://leetcode.com/problems/verifying-an-alien-dictionary/
-///
 /// Time Complexity:    O(n_words * avg_word_len)
 /// Space Complexity:   O(26) ~ O(1)
 #[allow(dead_code)]
@@ -16,7 +15,6 @@ impl Solution {
             for idx in 0..len {
                 let ch_prev: char = chs_prev[idx];
                 let ch_cur: char = chs_cur[idx];
-
                 if ch_prev != ch_cur {
                     return dict[ch_prev as usize - 'a' as usize]
                         > dict[ch_cur as usize - 'a' as usize];
