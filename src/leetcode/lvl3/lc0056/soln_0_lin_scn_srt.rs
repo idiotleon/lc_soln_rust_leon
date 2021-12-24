@@ -15,12 +15,12 @@ impl Solution {
             tmp.sort_by(|a, b| a[0].cmp(&b[0]));
             tmp
         };
-        let mut ans: Vec<Vec<i32>> = Vec::new();
+        let mut merged: Vec<Vec<i32>> = Vec::new();
         for cur_interval in sorted.into_iter() {
-            let prev_interval = match ans.last_mut() {
+            let prev_interval = match merged.last_mut() {
                 Some(prev) => prev,
                 None => {
-                    ans.push(cur_interval);
+                    merged.push(cur_interval);
                     continue;
                 }
             };
@@ -30,9 +30,9 @@ impl Solution {
                     std::cmp::max(cur_interval[1], prev_interval[1]),
                 ];
             } else {
-                ans.push(cur_interval);
+                merged.push(cur_interval);
             }
         }
-        ans
+        merged
     }
 }
