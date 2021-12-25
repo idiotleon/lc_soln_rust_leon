@@ -45,3 +45,4 @@ pub mod lc1952;
 pub mod lc1961;
 pub mod lc1962;
 pub mod lc1971;
+pub mod lc2032;
