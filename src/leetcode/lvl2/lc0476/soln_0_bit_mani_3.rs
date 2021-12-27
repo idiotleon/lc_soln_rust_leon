@@ -9,13 +9,13 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn find_complement(num: i32) -> i32 {
-       let mask: i32 = {
-           let mut mask: i32 = !0;
-           while num & mask > 0{
-               mask <<= 1;
-           }
-           mask
-        }; 
+        let mask: i32 = {
+            let mut mask: i32 = !0;
+            while num & mask > 0 {
+                mask <<= 1;
+            }
+            mask
+        };
         num ^ !mask
     }
 }
