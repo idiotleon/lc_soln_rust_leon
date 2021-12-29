@@ -1,3 +1,4 @@
+use std::collections::VecDeque;
 /// @author: Leon
 /// https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
 ///
@@ -6,38 +7,33 @@
 ///
 /// Reference:
 /// https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/discuss/419402/JavaC%2B%2B-Stack
-use std::collections::VecDeque;
-
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn min_remove_to_make_valid(s: String) -> String {
-        let _len_s = s.len();
-        const PLACE_HOLDER: char = '#';
+        let _len_s: usize = s.len();
+        const IMPS: char = '#';
         const PAREN_OPEN: char = '(';
         const PAREN_CLOSED: char = ')';
         let mut chs: Vec<char> = s.chars().collect();
-        let mut stack = VecDeque::<usize>::new();
+        let mut stk: VecDeque<usize> = VecDeque::new();
         for (idx, ch) in s.chars().into_iter().enumerate() {
             match ch {
-                PAREN_OPEN => stack.push_back(idx),
+                PAREN_OPEN => stk.push_back(idx),
                 PAREN_CLOSED => {
-                    if stack.is_empty() {
-                        chs[idx] = PLACE_HOLDER;
+                    if stk.is_empty() {
+                        chs[idx] = IMPS;
                     } else {
-                        stack.pop_back();
+                        stk.pop_back();
                     }
                 }
-                _ => (),
+                _ => {}
             };
         }
-        while let Some(idx) = stack.pop_back() {
-            chs[idx] = PLACE_HOLDER;
+        while let Some(idx) = stk.pop_back() {
+            chs[idx] = IMPS;
         }
-        chs.into_iter()
-            .filter(|&c| c != PLACE_HOLDER)
-            .collect::<String>()
+        chs.into_iter().filter(|&c| c != IMPS).collect::<String>()
     }
 }
