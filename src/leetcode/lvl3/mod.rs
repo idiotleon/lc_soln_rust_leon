@@ -40,6 +40,7 @@ pub mod lc0416;
 pub mod lc0437;
 pub mod lc0448;
 pub mod lc0543;
+pub mod lc0560;
 pub mod lc0609;
 pub mod lc0665;
 pub mod lc0678;
