@@ -1,10 +1,8 @@
 use std::collections::VecDeque;
 /// @author: Leon
 /// https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
-///
 /// Time Complexity:    O(`_len_s`)
 /// Space Complexity:   O(`_len_s`)
-///
 /// Reference:
 /// https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/discuss/419402/JavaC%2B%2B-Stack
 struct Solution;
