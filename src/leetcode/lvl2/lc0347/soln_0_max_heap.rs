@@ -1,8 +1,8 @@
 use std::collections::{BinaryHeap, HashMap};
 
 /// https://leetcode.com/problems/top-k-frequent-elements/
-/// Time Complexity:    O()
-/// Space Complexity:   O()
+/// Time Complexity:    O(`_len_n` * lg(`_len_n`))
+/// Space Complexity:   O(`_len_n`)
 #[allow(dead_code)]
 struct Solution;
 
@@ -10,11 +10,11 @@ struct Solution;
 impl Solution {
     pub fn top_k_frequent(nums: Vec<i32>, k: i32) -> Vec<i32> {
         let num_to_freq: HashMap<i32, u16> = {
-            let mut tmp: HashMap<i32, u16> = HashMap::new();
-            for &num in &nums {
-                *tmp.entry(num).or_insert(0) += 1;
+            let mut num_to_freq: HashMap<i32, u16> = HashMap::new();
+            for num in nums {
+                *num_to_freq.entry(num).or_default() += 1;
             }
-            tmp
+            num_to_freq
         };
         let mut heap: BinaryHeap<(i16, i32)> = BinaryHeap::new();
         for (num, freq) in num_to_freq.into_iter() {
@@ -24,14 +24,11 @@ impl Solution {
             }
         }
         let ans: Vec<i32> = {
-            let mut idx: usize = 0;
-            let mut tmp: Vec<i32> = vec![0; k as usize];
-            while let Some((_, num)) = heap.pop() {
-                tmp[idx] = num;
-                idx += 1;
+            let mut ans: Vec<i32> = Vec::new();
+            while let Some((_freq, num)) = heap.pop() {
+                ans.push(num);
             }
-            tmp.reverse();
-            tmp
+            ans
         };
         ans
     }
@@ -44,7 +41,11 @@ mod test {
     fn test_sample_input_1() {
         let nums = vec![1, 1, 1, 2, 2, 3];
         let k = 2;
-        let actual = Solution::top_k_frequent(nums, k);
+        let actual = {
+            let mut sorted: Vec<i32> = Solution::top_k_frequent(nums, k);
+            sorted.sort();
+            sorted
+        };
         let expected = vec![1, 2];
         assert_eq!(actual, expected);
     }
