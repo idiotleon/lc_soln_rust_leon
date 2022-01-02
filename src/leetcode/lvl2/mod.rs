@@ -56,3 +56,5 @@ pub mod lc1962;
 pub mod lc1971;
 pub mod lc2032;
 pub mod lc2121;
+pub mod lc2125;
+pub mod lc2126;

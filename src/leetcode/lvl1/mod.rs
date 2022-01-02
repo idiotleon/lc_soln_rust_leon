@@ -28,3 +28,4 @@ pub mod lc1941;
 pub mod lc2108;
 pub mod lc2109;
 pub mod lc2119;
+pub mod lc2124;
