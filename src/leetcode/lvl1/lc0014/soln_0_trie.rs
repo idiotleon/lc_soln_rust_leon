@@ -117,7 +117,7 @@ mod test {
         assert_eq!(expected, actual);
     }
     #[test]
-    fn it_works_with_sample_input_2(){
+    fn it_works_with_sample_input_2() {
         let strs = vec!["dog".to_owned(), "racecar".to_owned(), "car".to_owned()];
         let actual = Solution::longest_common_prefix(strs);
         let expected = "";
