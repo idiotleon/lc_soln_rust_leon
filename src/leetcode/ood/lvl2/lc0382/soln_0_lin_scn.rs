@@ -10,6 +10,7 @@ struct Solution {
     list: Option<Box<ListNode>>,
 }
 
+#[allow(dead_code)]
 impl Solution {
     fn new(head: Option<Box<ListNode>>) -> Self {
         let mut cur = head.as_ref();
@@ -20,7 +21,6 @@ impl Solution {
         }
         Self { len, list: head }
     }
-
     fn get_random(&self) -> i32 {
         if self.len == 0 {
             return -1;
