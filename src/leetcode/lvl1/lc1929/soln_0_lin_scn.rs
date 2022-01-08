@@ -11,12 +11,12 @@ impl Solution {
     pub fn get_concatenation(nums: Vec<i32>) -> Vec<i32> {
         let len_n = nums.len();
         let ans: Vec<i32> = {
-            let mut tmp = vec![0; 2 * len_n];
+            let mut res = vec![0; 2 * len_n];
             for (idx, &num) in nums.iter().enumerate() {
-                tmp[idx] = num;
-                tmp[idx + len_n] = num;
+                res[idx] = num;
+                res[idx + len_n] = num;
             }
-            tmp
+            res
         };
         ans
     }

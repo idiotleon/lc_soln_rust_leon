@@ -1,6 +1,5 @@
 /// @author: Leon
 /// https://leetcode.com/problems/find-if-path-exists-in-graph/
-///
 /// Time Complexity:    O(V + E) ~ O(`n` + `n_edges`)
 /// Space Complexity:   O(V + E) ~ O(`n` + `n_edges`)
 #[allow(dead_code)]
@@ -11,11 +10,11 @@ impl Solution {
     pub fn valid_path(n: i32, edges: Vec<Vec<i32>>, start: i32, end: i32) -> bool {
         let n: usize = n as usize;
         let mut roots: Vec<usize> = {
-            let mut tmp: Vec<usize> = vec![0; n];
+            let mut res: Vec<usize> = vec![0; n];
             for idx in 0..n {
-                tmp[idx] = idx;
+                res[idx] = idx;
             }
-            tmp
+            res
         };
         let mut ranks: Vec<usize> = vec![1; n];
         for edge in edges {

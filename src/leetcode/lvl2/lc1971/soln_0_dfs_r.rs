@@ -1,39 +1,35 @@
+use std::collections::HashSet;
 /// @author: Leon
 /// https://leetcode.com/problems/find-if-path-exists-in-graph/
-///
-/// Time Complexity:    O(V + E) ~ O(`n` + `n_edges`)
-/// Space Complexity:   O(V + E) ~ O(`n` + `n_edges`)
-use std::collections::HashSet;
-
-#[allow(dead_code)]
+/// Time Complexity:    O(V + E) ~ O(`n` + `_len_es`)
+/// Space Complexity:   O(V + E) ~ O(`n` + `_len_es`)
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn valid_path(n: i32, edges: Vec<Vec<i32>>, start: i32, end: i32) -> bool {
-        // not used
-        // let n_edges = edges.len();
-        let graph: Vec<HashSet<usize>> = {
-            let mut tmp: Vec<HashSet<usize>> = vec![HashSet::new(); n as usize];
-            for edge in edges.iter() {
+        let _len_es = edges.len();
+        let graph: Vec<Vec<usize>> = {
+            let mut graph: Vec<Vec<usize>> = vec![Vec::new(); n as usize];
+            for edge in edges {
                 let u = edge[0] as usize;
                 let v = edge[1] as usize;
-                tmp[u].insert(v);
-                tmp[v].insert(u);
+                graph[u].push(v);
+                graph[v].push(u);
             }
-            tmp
+            graph
         };
-        let mut seen: HashSet<usize> = HashSet::new();
+        let mut seen: HashSet<usize> = HashSet::with_capacity(n as usize);
         seen.insert(start as usize);
-        Self::dfs(&mut seen, start as usize, end as usize, &graph)
+        Self::dfs(start as usize, end as usize, &mut seen, &graph)
     }
-    fn dfs(seen: &mut HashSet<usize>, cur: usize, end: usize, graph: &Vec<HashSet<usize>>) -> bool {
+    fn dfs(cur: usize, end: usize, seen: &mut HashSet<usize>, graph: &Vec<Vec<usize>>) -> bool {
         if cur == end {
             return true;
         }
         for &next in &graph[cur] {
             if seen.insert(next) {
-                if Self::dfs(seen, next, end, graph) {
+                if Self::dfs(next, end, seen, graph) {
                     return true;
                 }
             }
