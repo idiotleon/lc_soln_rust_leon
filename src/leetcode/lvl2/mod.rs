@@ -53,6 +53,7 @@ pub mod lc1351;
 pub mod lc1564;
 pub mod lc1762;
 pub mod lc1854;
+pub mod lc1901;
 pub mod lc1945;
 pub mod lc1946;
 pub mod lc1952;
