@@ -9,11 +9,11 @@ impl Solution {
     pub fn count_characters(words: Vec<String>, chs: String) -> i32 {
         let _len_ws: usize = words.len();
         let freqs_chs: Vec<u8> = {
-            let mut tmp: Vec<u8> = vec![0; 26];
+            let mut res: Vec<u8> = vec![0; 26];
             for ch in chs.chars() {
-                tmp[ch as usize - 'a' as usize] += 1;
+                res[ch as usize - 'a' as usize] += 1;
             }
-            tmp
+            res
         };
         let mut ans: usize = 0;
         for word in words {
@@ -25,11 +25,11 @@ impl Solution {
     }
     fn can_form(word: &str, freqs_chs: &Vec<u8>) -> bool {
         let freqs: Vec<u8> = {
-            let mut tmp: Vec<u8> = vec![0; 26];
+            let mut res: Vec<u8> = vec![0; 26];
             for ch in word.chars() {
-                tmp[ch as usize - 'a' as usize] += 1;
+                res[ch as usize - 'a' as usize] += 1;
             }
-            tmp
+            res
         };
         for (idx, freq) in freqs.into_iter().enumerate() {
             if freq > freqs_chs[idx] {

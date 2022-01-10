@@ -12,10 +12,10 @@ impl Solution {
         const ONE: i32 = 1;
         let row_to_ones: Vec<u8> = {
             let mut res: Vec<u8> = vec![0; len_r];
-            for (idx, row) in mat.into_iter().enumerate(){
+            for (idx, row) in mat.into_iter().enumerate() {
                 let mut cnt: u8 = 0;
-                for num in row{
-                    if num == ONE{
+                for num in row {
+                    if num == ONE {
                         cnt += 1;
                     }
                 }
@@ -24,16 +24,16 @@ impl Solution {
             res
         };
         let mut heap: BinaryHeap<(u8, usize)> = BinaryHeap::new();
-        for (idx, ones) in row_to_ones.into_iter().enumerate(){
+        for (idx, ones) in row_to_ones.into_iter().enumerate() {
             heap.push((ones, idx));
-            if heap.len() > k as usize{
+            if heap.len() > k as usize {
                 heap.pop();
             }
         }
         let ans: Vec<i32> = {
             let mut res: Vec<i32> = vec![0; k as usize];
             let mut idx_rs: isize = k as isize - 1;
-            while let Some((_ones, idx)) = heap.pop(){
+            while let Some((_ones, idx)) = heap.pop() {
                 res[idx_rs as usize] = idx as i32;
                 idx_rs -= 1;
             }

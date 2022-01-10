@@ -16,11 +16,11 @@ impl Solution {
         let mut r: isize = len_r as isize - 1;
         let mut c: usize = 0;
         let mut cnt: u16 = 0;
-        while r >= 0 && c < len_c{
-            if grid[r as usize][c] < 0{
+        while r >= 0 && c < len_c {
+            if grid[r as usize][c] < 0 {
                 r -= 1;
                 cnt += len_c as u16 - c as u16;
-            }else{
+            } else {
                 c += 1;
             }
         }
