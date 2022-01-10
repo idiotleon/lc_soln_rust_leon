@@ -1,8 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/add-binary/
-///
 /// Time Complexity:    O(max(`len_a`, `len_b`))
 /// Space Complexity:   O(1)
-///
 /// Reference:
 /// https://leetcode.com/problems/add-binary/discuss/253415/Rust-Solution
 #[allow(dead_code)]
