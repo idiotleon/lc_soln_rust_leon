@@ -1,56 +1,31 @@
 /// @author: Leon
 /// https://leetcode.com/problems/maximize-distance-to-closest-person/
 /// Time Complexity:    O(`len_sts`)
-/// Space Complexity:   O(`len_sts`)
-/// 3 passes
+/// Space Complexity:   O(1)
+/// Reference:
+/// https://leetcode.com/problems/maximize-distance-to-closest-person/discuss/137912/JavaC%2B%2BPython-One-pass-Easy-Understood
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn max_dist_to_closest(seats: Vec<i32>) -> i32 {
         let len_sts: usize = seats.len();
-        const RANGE: i32 = 2e4 as i32 + 7;
         const SEATED: i32 = 1;
-        const EMPTY: i32 = 0;
-        let lo_lens: Vec<usize> = {
-            let mut res: Vec<usize> = vec![0; len_sts];
-            let mut len: usize = if seats[len_sts - 1] == EMPTY {
-                len_sts
-            } else {
-                0
-            };
-            for (idx, &num) in seats.iter().enumerate().rev() {
-                if num == SEATED {
-                    len = 0;
+        const _EMPTY: i32 = 0;
+        let mut last: isize = -1;
+        let mut longest: usize = 0;
+        for (idx, seat) in seats.into_iter().enumerate() {
+            if seat == SEATED {
+                longest = if last < 0 {
+                    idx
                 } else {
-                    len += 1;
-                }
-                res[idx] = len;
+                    std::cmp::max(longest, (idx - last as usize) / 2)
+                };
+                last = idx as isize;
             }
-            res
-        };
-        let hi_lens: Vec<usize> = {
-            let mut res: Vec<usize> = vec![0; len_sts];
-            let mut len: usize = if seats[0] == EMPTY { len_sts } else { 0 };
-            for (idx, &num) in seats.iter().enumerate() {
-                if num == SEATED {
-                    len = 0;
-                } else {
-                    len += 1;
-                }
-                res[idx] = len;
-            }
-            res
-        };
-        let ans: i32 = {
-            let mut res: i32 = 0;
-            for idx in 0..len_sts {
-                let min_len = std::cmp::min(lo_lens[idx], hi_lens[idx]);
-                res = std::cmp::max(res, min_len as i32);
-            }
-            res
-        };
-        ans
+        }
+        longest = std::cmp::max(longest, len_sts - last as usize - 1);
+        longest as i32
     }
 }
 
@@ -85,4 +60,14 @@ mod test {
         let expected: i32 = 1;
         assert_eq!(expected, actual);
     }
+    #[test]
+    fn it_works_with_sample_edge_case_1() {
+        let seats: Vec<i32> = vec![0, 1];
+        let actual: i32 = Solution::max_dist_to_closest(seats);
+        let expected: i32 = 1;
+        assert_eq!(expected, actual);
+    }
+    // according to the description of the problem:
+    // the size of the array must be equal and larger than 2,
+    // and there is at least one seat occupied, and at least one empty seat
 }
