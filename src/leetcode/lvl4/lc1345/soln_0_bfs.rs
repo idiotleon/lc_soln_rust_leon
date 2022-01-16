@@ -2,7 +2,7 @@ use std::collections::{HashMap, HashSet, VecDeque};
 /// @author: Leon
 /// https://leetcode.com/problems/jump-game-iv/
 /// Time Complexity:    O(V + E)
-/// Space Complexity:   O(V + E) 
+/// Space Complexity:   O(V + E)
 /// Reference:
 /// https://leetcode.com/problems/jump-game-iv/discuss/502699/JavaC%2B%2B-BFS-Solution-Clean-code-O(N)
 struct Solution;
