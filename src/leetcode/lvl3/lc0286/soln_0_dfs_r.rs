@@ -12,19 +12,19 @@ impl Solution {
         let len_r: usize = rooms.len();
         let len_c: usize = rooms[0].len();
         const GATE: i32 = 0;
-        for r in 0..len_r{
-            for c in 0..len_c{
-                if rooms[r][c] == GATE{
+        for r in 0..len_r {
+            for c in 0..len_c {
+                if rooms[r][c] == GATE {
                     Self::dfs((r, c), rooms);
                 }
             }
         }
     }
-    fn dfs(coord: (usize, usize), rooms: &mut Vec<Vec<i32>>){
+    fn dfs(coord: (usize, usize), rooms: &mut Vec<Vec<i32>>) {
         let len_r: usize = rooms.len();
         let len_c: usize = rooms[0].len();
         let (r_cur, c_cur) = coord;
-        for d in 0..4{
+        for d in 0..4 {
             let r_nxt: isize = r_cur as isize + Self::DIRS[d];
             let c_nxt: isize = c_cur as isize + Self::DIRS[d + 1];
             if r_nxt < 0 || c_nxt < 0 || r_nxt as usize >= len_r || c_nxt as usize >= len_c {
@@ -32,7 +32,7 @@ impl Solution {
             }
             let r_nxt: usize = r_nxt as usize;
             let c_nxt: usize = c_nxt as usize;
-            if rooms[r_nxt][c_nxt] > 1 + rooms[r_cur][c_cur]{
+            if rooms[r_nxt][c_nxt] > 1 + rooms[r_cur][c_cur] {
                 rooms[r_nxt][c_nxt] = 1 + rooms[r_cur][c_cur];
                 Self::dfs((r_nxt, c_nxt), rooms);
             }
