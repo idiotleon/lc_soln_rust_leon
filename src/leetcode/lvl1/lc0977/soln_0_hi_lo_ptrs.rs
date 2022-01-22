@@ -12,11 +12,11 @@ impl Solution {
         let mut hi: usize = len_n - 1;
         let mut ans: Vec<i32> = vec![0; len_n];
         let mut idx: isize = len_n as isize - 1;
-        while idx >= 0{
-            if nums[lo].abs() > nums[hi].abs(){
+        while idx >= 0 {
+            if nums[lo].abs() > nums[hi].abs() {
                 ans[idx as usize] = nums[lo] * nums[lo];
                 lo += 1;
-            }else{
+            } else {
                 ans[idx as usize] = nums[hi] * nums[hi];
                 hi -= 1;
             }
