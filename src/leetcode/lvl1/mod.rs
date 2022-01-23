@@ -30,6 +30,7 @@ pub mod lc1827;
 pub mod lc1832;
 pub mod lc1837;
 pub mod lc1844;
+pub mod lc1859;
 pub mod lc1880;
 pub mod lc1881;
 pub mod lc1897;
