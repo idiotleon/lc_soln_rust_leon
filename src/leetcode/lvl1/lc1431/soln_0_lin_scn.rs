@@ -10,9 +10,9 @@ impl Solution {
         let len_cds: usize = candies.len();
         let most_candies: i32 = *candies.iter().max().unwrap();
         let mut ans: Vec<bool> = vec![false; len_cds];
-        for (idx, cnt) in candies.into_iter().enumerate(){
+        for (idx, cnt) in candies.into_iter().enumerate() {
             ans[idx] = (cnt + extra_candies) >= most_candies;
-        } 
+        }
         ans
     }
 }
