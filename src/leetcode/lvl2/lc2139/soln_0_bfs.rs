@@ -1,6 +1,6 @@
 /// @author: Leon
 /// https://leetcode.com/problems/minimum-moves-to-reach-target-score/
-/// Time Complexity:    O(`target`)
+/// Time Complexity:    O(lg(`target`))
 /// Space Complexity:   O(1)
 struct Solution;
 
