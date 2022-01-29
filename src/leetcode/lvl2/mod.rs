@@ -13,6 +13,8 @@ pub mod lc0100;
 pub mod lc0102;
 pub mod lc0104;
 pub mod lc0109;
+pub mod lc0110;
+pub mod lc0111;
 pub mod lc0114;
 pub mod lc0122;
 pub mod lc0198;
