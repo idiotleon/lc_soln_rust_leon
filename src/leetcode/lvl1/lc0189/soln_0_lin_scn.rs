@@ -8,21 +8,16 @@ struct Solution;
 impl Solution {
     pub fn rotate(nums: &mut Vec<i32>, k: i32) {
         let len_n: usize = nums.len();
-        let k: usize = {
-            let mut k: usize = k as usize;
-            k %= len_n;
-            k
-        };
+        let k: usize = (k % len_n as i32) as usize;
         if len_n < 2 || k == 0 {
             return;
         }
-        Self::reverse(0, len_n, nums);
-        Self::reverse(0, k, nums);
-        Self::reverse(k, len_n, nums);
+        Self::reverse((0, len_n - 1), nums);
+        Self::reverse((0, k as usize - 1), nums);
+        Self::reverse((k as usize, len_n - 1), nums);
     }
-    fn reverse(lo: usize, hi: usize, nums: &mut Vec<i32>) {
-        let mut lo: usize = lo;
-        let mut hi: usize = hi - 1;
+    fn reverse(coord: (usize, usize), nums: &mut Vec<i32>) {
+        let (mut lo, mut hi) = coord;
         while lo < hi {
             let tmp = nums[lo];
             nums[lo] = nums[hi];
