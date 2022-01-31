@@ -5,6 +5,7 @@ mod leetcode {
     pub mod lvl4;
     pub mod lvl5;
     pub mod lvl6;
+    pub mod multithreading;
     pub mod ood;
     pub mod util;
 }
