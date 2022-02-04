@@ -1,7 +1,6 @@
 /// https://leetcode.com/problems/maximum-subarray/
 /// Time Complexity:    O(`_len_n`)
 /// Space Complexity:   O(1)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

@@ -1,17 +1,14 @@
-/// https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
-///
-/// Time Complexity:     O()
-/// Space Complexity:    O()
-///
-/// Reference:
-///  https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/discuss/1194315/Rust-recursive-solution
 use crate::leetcode::util::data_structure::{
     linked_list::single::list_node::ListNode, tree::binary::tree_node::TreeNode,
 };
 use std::cell::RefCell;
 use std::rc::Rc;
-
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
+/// Time Complexity:     O()
+/// Space Complexity:    O()
+/// Reference:
+///  https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/discuss/1194315/Rust-recursive-solution
 pub struct Solution;
 
 #[allow(dead_code)]
@@ -26,7 +23,6 @@ impl Solution {
         let mut head = head;
         Self::dfs(&mut head, len)
     }
-
     fn dfs(list: &mut Option<Box<ListNode>>, len: usize) -> Option<Rc<RefCell<TreeNode>>> {
         if len == 0 {
             return None;

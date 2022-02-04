@@ -1,8 +1,6 @@
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
-
-use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
-
 /// @author: Leon
 /// https://leetcode.com/problems/maximum-depth-of-binary-tree/
 /// Time Complexity:    O(N)

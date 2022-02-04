@@ -1,8 +1,7 @@
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 use std::cell::RefCell;
 use std::collections::VecDeque;
 use std::rc::Rc;
-
-use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 
 /// @author: Leon
 /// https://leetcode.com/problems/minimum-depth-of-binary-tree/

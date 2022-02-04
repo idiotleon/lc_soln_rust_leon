@@ -1,9 +1,7 @@
 /// @author: Leon
 /// https://leetcode.com/problems/longest-substring-without-repeating-characters/
-///
 /// Time Complexity:    O(`len_s`)
 /// Space Compleixty:   O(`len_s`)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
@@ -15,10 +13,8 @@ impl Solution {
         let mut lo: usize = 0;
         let mut hi: usize = 0;
         let mut longest: usize = 0;
-
         while hi < len_s {
             freqs[chs[hi] as usize] += 1;
-
             while freqs[chs[hi] as usize] > 1 {
                 freqs[chs[lo] as usize] -= 1;
                 lo += 1;

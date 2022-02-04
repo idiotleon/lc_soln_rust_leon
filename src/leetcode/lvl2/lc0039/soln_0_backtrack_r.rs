@@ -1,8 +1,13 @@
+/// @author: Leon
+/// https://leetcode.com/problems/combination-sum/
+/// Time Complexity:    O(`_len_cds`!)
+/// Space Complexity:   O(`_len_cds`)
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn combination_sum(candidates: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
+        let _len_cds: usize = candidates.len();
         let mut path: Vec<i32> = Vec::new();
         let mut paths: Vec<Vec<i32>> = Vec::new();
         Self::backtrack(0, target, &candidates, &mut path, &mut paths);

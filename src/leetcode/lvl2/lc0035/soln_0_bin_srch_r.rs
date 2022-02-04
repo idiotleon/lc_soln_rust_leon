@@ -1,9 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/search-insert-position/
 /// Time Complexity:    O(lg(`len_n`))
 /// Space Complexity:   O(lg(`len_n`))
 /// Reference:
 /// https://leetcode.com/problems/search-insert-position/discuss/1596603/C%2B%2BPython-Simple-Solutions-w-Explanation-or-Recursive-%2B-Iterative-Binary-Search-and-Built-in
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
