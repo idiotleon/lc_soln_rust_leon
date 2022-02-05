@@ -4,6 +4,7 @@ pub mod lc0003;
 pub mod lc0009;
 pub mod lc0020;
 pub mod lc0021;
+pub mod lc0023;
 pub mod lc0026;
 pub mod lc0035;
 pub mod lc0039;
