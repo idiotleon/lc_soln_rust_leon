@@ -1,0 +1,1 @@
+There three types of breakfast, i.e. breakfast 1, 2, 3. One can have breakfast1 everyday, breakfast2 every two days, and breakfas3 every three days. Given n days, how many breakfasts one can have in a morning are there possibly at most?
