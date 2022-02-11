@@ -10,15 +10,14 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn max_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
-        Self::postorder(root)
+        Self::postorder(root) as i32
     }
-    fn postorder(node: Option<Rc<RefCell<TreeNode>>>) -> i32 {
-        if node.is_none() {
-            return 0;
+    fn postorder(node: Option<Rc<RefCell<TreeNode>>>) -> u16 {
+        if let Some(n) = node {
+            let left = Self::postorder(n.borrow().left.clone());
+            let right = Self::postorder(n.borrow().right.clone());
+            return 1 + std::cmp::max(left, right);
         }
-        let node = node.unwrap();
-        let left = Self::postorder(node.borrow().left.clone());
-        let right = Self::postorder(node.borrow().right.clone());
-        std::cmp::max(left, right) + 1
+        0
     }
 }
