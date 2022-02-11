@@ -10,6 +10,8 @@
 /// transition: dp[cur][2] = 1 + dp[cur - 3][2]
 /// Result:
 /// the most overral
+/// Note:
+/// this is NOT a correct solution
 struct Solution;
 
 #[allow(dead_code)]
@@ -42,7 +44,7 @@ impl Solution {
 
 #[cfg(test)]
 mod test {
-    use soln_0_dp_2d::*;
+    use super::*;
     #[test]
     fn it_works_with_test_case_0() {
         let actual = Solution::cnt_bkfst(3);

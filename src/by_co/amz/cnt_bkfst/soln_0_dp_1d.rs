@@ -17,13 +17,13 @@ impl Solution {
     // pub fn cnt_bkfst(n: i32) -> i32 {}
 }
 
-#[cfg(test)]
-mod test {
-    use soln_0_dp_2d::*;
-    #[test]
-    fn it_works_with_test_case_0() {
-        let actual = Solution::cnt_bkfst(3);
-        let expected = 6;
-        assert_eq!(expected, actual);
-    }
-}
+// #[cfg(test)]
+// mod test {
+//     use super::*;
+//     #[test]
+//     fn it_works_with_test_case_0() {
+//         let actual = Solution::cnt_bkfst(3);
+//         let expected = 6;
+//         assert_eq!(expected, actual);
+//     }
+// }
