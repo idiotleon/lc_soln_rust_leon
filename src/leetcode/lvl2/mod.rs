@@ -12,6 +12,7 @@ pub mod lc0049;
 pub mod lc0053;
 pub mod lc0064;
 pub mod lc0077;
+pub mod lc0078;
 pub mod lc0090;
 pub mod lc0100;
 pub mod lc0102;
