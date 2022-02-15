@@ -75,6 +75,7 @@ pub mod lc1021;
 pub mod lc1026;
 pub mod lc1041;
 pub mod lc1047;
+pub mod lc1100;
 pub mod lc1167;
 pub mod lc1200;
 pub mod lc1299;
