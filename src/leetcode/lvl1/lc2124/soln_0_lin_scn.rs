@@ -8,18 +8,18 @@ struct Solution;
 impl Solution {
     pub fn check_string(s: String) -> bool {
         let _len_s: usize = s.len();
-        let mut met = false;
+        let mut b_met = false;
         const A: char = 'a';
         const B: char = 'b';
         for ch in s.chars() {
             match ch {
                 A => {
-                    if met {
+                    if b_met {
                         return false;
                     }
                 }
-                B => met = true,
-                _ => {}
+                B => b_met = true,
+                _ => unreachable!(),
             }
         }
         true
