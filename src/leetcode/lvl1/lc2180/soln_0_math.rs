@@ -8,16 +8,16 @@ struct Solution;
 impl Solution {
     pub fn count_even(num: i32) -> i32 {
         let mut cnt: i32 = 0;
-        for n in 1..=num{
-            if Self::get_sum(n) % 2 == 0{
+        for n in 1..=num {
+            if Self::get_sum(n) % 2 == 0 {
                 cnt += 1;
             }
         }
         cnt
     }
-    fn get_sum(mut num: i32) -> i32{
+    fn get_sum(mut num: i32) -> i32 {
         let mut sum: i32 = 0;
-        while num > 0{
+        while num > 0 {
             sum += num % 10;
             num /= 10;
         }

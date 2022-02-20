@@ -18,8 +18,8 @@ impl Solution {
             sorted.sort_by_key(|e| e[0]);
             sorted
         };
-        for v in sorted{
-            if v[0] > lo && v[1] > hi{
+        for v in sorted {
+            if v[0] > lo && v[1] > hi {
                 lo = v[0];
                 cnt += 1;
             }
