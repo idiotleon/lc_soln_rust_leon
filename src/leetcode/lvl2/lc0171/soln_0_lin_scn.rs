@@ -11,7 +11,7 @@ impl Solution {
         let mut ans: i32 = 0;
         const RANGE: i32 = 26;
         let mut hi: i32 = 1;
-        for ch in column_title.chars().rev(){
+        for ch in column_title.chars().rev() {
             ans += (ch as i32 - 'A' as i32 + 1) * hi;
             hi *= RANGE;
         }
