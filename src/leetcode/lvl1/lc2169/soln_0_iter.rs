@@ -10,8 +10,8 @@ struct Solution;
 impl Solution {
     pub fn count_operations(mut num1: i32, mut num2: i32) -> i32 {
         let mut cnt: i32 = 0;
-        while std::cmp::min(num1, num2) > 0{
-            if num1 < num2{
+        while std::cmp::min(num1, num2) > 0 {
+            if num1 < num2 {
                 let tmp = num1;
                 num1 = num2;
                 num2 = tmp;
