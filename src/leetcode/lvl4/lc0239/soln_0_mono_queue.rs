@@ -12,23 +12,23 @@ impl Solution {
         let k: usize = k as usize;
         let mut ans: Vec<i32> = Vec::with_capacity(len_n - k + 1);
         let mut deque: VecDeque<usize> = VecDeque::with_capacity(len_n - k + 1);
-        for idx in 0..len_n{
-            while let Some(&first) = deque.front(){
-                if idx + 1 >= k && first < idx - k + 1{
+        for idx in 0..len_n {
+            while let Some(&first) = deque.front() {
+                if idx + 1 >= k && first < idx - k + 1 {
                     deque.pop_front();
-                }else{
+                } else {
                     break;
                 }
             }
-            while let Some(&last) = deque.back(){
-                if nums[last] < nums[idx]{
+            while let Some(&last) = deque.back() {
+                if nums[last] < nums[idx] {
                     deque.pop_back();
-                }else{
+                } else {
                     break;
                 }
             }
             deque.push_back(idx);
-            if idx >= k - 1{
+            if idx >= k - 1 {
                 ans.push(nums[*deque.front().unwrap()]);
             }
         }
