@@ -12,19 +12,19 @@ impl Solution {
         let total_trips: i64 = total_trips as i64;
         let mut lo: i64 = 1;
         let mut hi: i64 = RANGE;
-        while lo < hi{
+        while lo < hi {
             let mid = lo + (hi - lo) / 2;
-            if Self::get_trips(mid, &times) >= total_trips{
+            if Self::get_trips(mid, &times) >= total_trips {
                 hi = mid;
-            }else{
+            } else {
                 lo = mid + 1;
             }
         }
         lo as i64
     }
-    fn get_trips(guess: i64, times: &Vec<i32>) -> i64{
+    fn get_trips(guess: i64, times: &Vec<i32>) -> i64 {
         let mut trips: i64 = 0;
-        for &time in times{
+        for &time in times {
             trips += guess / time as i64;
         }
         trips

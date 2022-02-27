@@ -11,20 +11,20 @@ impl Solution {
         let len_p: usize = pref.len();
         let chs_p: Vec<char> = pref.chars().collect();
         let mut cnt: i32 = 0;
-        for word in words{
+        for word in words {
             let len_wd: usize = word.len();
-            if len_wd < len_p{
+            if len_wd < len_p {
                 continue;
             }
-            if Self::starts_with(&word.chars().collect(), &chs_p){
+            if Self::starts_with(&word.chars().collect(), &chs_p) {
                 cnt += 1;
             }
         }
         cnt
     }
-    fn starts_with(chs_wd: &Vec<char>, chs_p: &Vec<char>) -> bool{
-        for (idx, &ch) in chs_p.iter().enumerate(){
-            if chs_wd[idx] != ch{
+    fn starts_with(chs_wd: &Vec<char>, chs_p: &Vec<char>) -> bool {
+        for (idx, &ch) in chs_p.iter().enumerate() {
+            if chs_wd[idx] != ch {
                 return false;
             }
         }
