@@ -8,6 +8,9 @@ use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 /// https://leetcode.com/problems/maximum-width-of-binary-tree/
 /// Time Complexity:    O(N)
 /// Space Complexity:   O(W)
+/// Reference:
+/// https://leetcode.com/problems/maximum-width-of-binary-tree/discuss/106653/Java-One-Queue-Solution-with-HashMap/1230414
+/// https://leetcode.com/problems/maximum-width-of-binary-tree/discuss/106653/Java-One-Queue-Solution-with-HashMap
 struct Solution;
 
 #[allow(dead_code)]
