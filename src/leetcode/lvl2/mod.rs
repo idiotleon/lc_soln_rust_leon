@@ -120,3 +120,4 @@ pub mod lc2160;
 pub mod lc2176;
 pub mod lc2182;
 pub mod lc2187;
+pub mod lc2195;
