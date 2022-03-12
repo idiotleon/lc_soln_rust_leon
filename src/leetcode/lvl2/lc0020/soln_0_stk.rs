@@ -1,8 +1,8 @@
 use std::collections::VecDeque;
 /// @author: Leon
 /// https://leetcode.com/problems/valid-parentheses/
-/// Time Complexity:    O(`len_s`)
-/// Space Complexity:   O(`len_s`)
+/// Time Complexity:    O(`_len_s`)
+/// Space Complexity:   O(`_len_s`)
 struct Solution;
 
 #[allow(dead_code)]
@@ -25,10 +25,11 @@ impl Solution {
                     if stk.is_empty() {
                         return false;
                     }
-                    if *stk.back().unwrap() != ch {
-                        return false;
+                    if let Some(top) = stk.pop_back() {
+                        if top != ch {
+                            return false;
+                        }
                     }
-                    stk.pop_back();
                 }
             }
         }
