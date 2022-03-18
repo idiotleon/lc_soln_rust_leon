@@ -1,5 +1,4 @@
 use crate::leetcode::util::data_structure::linked_list::single::list_node::ListNode;
-
 /// https://leetcode.com/problems/middle-of-the-linked-list/
 /// Time Complexity:    O(L)
 /// Space Complexity:   O(1)

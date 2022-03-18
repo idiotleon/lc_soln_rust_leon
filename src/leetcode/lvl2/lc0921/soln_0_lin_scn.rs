@@ -1,3 +1,4 @@
+/// @author: Leon
 /// https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/
 /// Time Complexity:    O(`_len_s`)
 /// Space Complexity:   O(`1`)
