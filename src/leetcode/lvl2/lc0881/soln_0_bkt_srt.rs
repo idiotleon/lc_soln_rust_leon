@@ -13,26 +13,26 @@ impl Solution {
         let limit: usize = limit as usize;
         let mut buckets: Vec<i16> = {
             let mut buckets: Vec<i16> = vec![0; limit + 1];
-            for p in people{
-                buckets[p as usize]+= 1;
+            for p in people {
+                buckets[p as usize] += 1;
             }
             buckets
         };
         let mut lo: usize = 0;
         let mut hi: usize = limit;
         let mut cnt: i32 = 0;
-        while lo <= hi{
-            while lo <= hi && buckets[lo] <= 0{
+        while lo <= hi {
+            while lo <= hi && buckets[lo] <= 0 {
                 lo += 1;
             }
-            while lo <= hi && buckets[hi] <= 0{
+            while lo <= hi && buckets[hi] <= 0 {
                 hi -= 1;
             }
-            if lo > hi{
+            if lo > hi {
                 break;
             }
             cnt += 1;
-            if lo + hi <= limit{
+            if lo + hi <= limit {
                 buckets[lo] -= 1;
             }
             buckets[hi] -= 1;

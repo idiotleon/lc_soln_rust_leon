@@ -16,12 +16,12 @@ impl Solution {
         let mut lo = 0;
         let mut hi = len_p - 1;
         let mut cnt: i32 = 0;
-        while lo <= hi{
+        while lo <= hi {
             cnt += 1;
-            if hi == 0{
+            if hi == 0 {
                 break;
             }
-            if sorted[lo] + sorted[hi] <= limit{
+            if sorted[lo] + sorted[hi] <= limit {
                 lo += 1;
             }
             hi -= 1;
