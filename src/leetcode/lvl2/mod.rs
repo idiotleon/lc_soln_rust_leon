@@ -80,6 +80,7 @@ pub mod lc0986;
 pub mod lc0993;
 pub mod lc1021;
 pub mod lc1026;
+pub mod lc1029;
 pub mod lc1041;
 pub mod lc1047;
 pub mod lc1064;
