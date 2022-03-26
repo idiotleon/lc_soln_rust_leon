@@ -10,20 +10,20 @@ impl Solution {
         let len_n: usize = nums.len();
         let mut lo: isize = 0;
         let mut hi: isize = len_n as isize;
-        while lo < hi{
+        while lo < hi {
             let mid = lo + (hi - lo) / 2;
-            if nums[mid as usize] < target{
+            if nums[mid as usize] < target {
                 lo = mid + 1;
-            }else{
+            } else {
                 hi = mid;
             }
         }
-        if lo as usize == len_n{
+        if lo as usize == len_n {
             return -1;
         }
-        if nums[lo as usize] == target{
+        if nums[lo as usize] == target {
             lo as i32
-        }else{
+        } else {
             -1
         }
     }
