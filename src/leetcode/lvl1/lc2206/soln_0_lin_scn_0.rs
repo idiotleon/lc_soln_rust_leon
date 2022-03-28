@@ -11,13 +11,13 @@ impl Solution {
         const RANGE: usize = 500 + 1;
         let freqs: Vec<u16> = {
             let mut freqs: Vec<u16> = vec![0; RANGE];
-            for num in nums{
+            for num in nums {
                 freqs[num as usize] += 1;
             }
             freqs
         };
-        for freq in freqs{
-            if freq % 2 == 1{
+        for freq in freqs {
+            if freq % 2 == 1 {
                 return false;
             }
         }
