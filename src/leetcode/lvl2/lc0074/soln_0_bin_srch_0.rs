@@ -12,16 +12,16 @@ impl Solution {
         let len: usize = len_r * len_c;
         let mut lo: isize = 0;
         let mut hi: isize = len as isize - 1;
-        while lo <= hi{
+        while lo <= hi {
             let mid = lo + (hi - lo) / 2;
             let r = mid / (len_c as isize);
             let c = mid % (len_c as isize);
-            if matrix[r as usize][c as usize] == target{
+            if matrix[r as usize][c as usize] == target {
                 return true;
             }
-            if matrix[r as usize][c as usize] > target{
+            if matrix[r as usize][c as usize] > target {
                 hi = mid - 1;
-            }else{
+            } else {
                 lo = mid + 1;
             }
         }
