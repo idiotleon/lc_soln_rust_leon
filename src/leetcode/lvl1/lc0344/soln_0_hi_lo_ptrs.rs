@@ -10,7 +10,7 @@ impl Solution {
         let len_s: usize = s.len();
         let mut lo: usize = 0;
         let mut hi: usize = len_s - 1;
-        while lo < hi{
+        while lo < hi {
             s.swap(lo, hi);
             lo += 1;
             hi -= 1;
