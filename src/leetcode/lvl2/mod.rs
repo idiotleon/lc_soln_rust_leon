@@ -106,6 +106,7 @@ pub mod lc1663;
 pub mod lc1762;
 pub mod lc1807;
 pub mod lc1854;
+pub mod lc1874;
 pub mod lc1901;
 pub mod lc1910;
 pub mod lc1945;
