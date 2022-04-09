@@ -1,14 +1,14 @@
 use std::collections::{BinaryHeap, HashMap};
-
+/// @author: Leon
 /// https://leetcode.com/problems/top-k-frequent-elements/
 /// Time Complexity:    O(`_len_n` * lg(`_len_n`))
 /// Space Complexity:   O(`_len_n`)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn top_k_frequent(nums: Vec<i32>, k: i32) -> Vec<i32> {
+        let _len_n: usize = nums.len();
         let num_to_freq: HashMap<i32, u16> = {
             let mut num_to_freq: HashMap<i32, u16> = HashMap::new();
             for num in nums {
