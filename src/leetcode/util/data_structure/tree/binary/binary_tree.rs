@@ -50,6 +50,30 @@ impl BinaryTree {
         }
         Some(root)
     }
+
+    /// only compare values of, not references to, the ree nodes
+    pub fn is_same_tree(
+        root1: Option<Rc<RefCell<TreeNode>>>,
+        root2: Option<Rc<RefCell<TreeNode>>>,
+    ) -> bool {
+        if root1.is_none() && root2.is_none() {
+            return true;
+        }
+        if root1.is_none() || root2.is_none() {
+            return false;
+        }
+        let value1 = root1.clone().unwrap().borrow().val;
+        let value2 = root2.clone().unwrap().borrow().val;
+        if value1 != value2 {
+            return false;
+        }
+        let left1 = root1.clone().unwrap().borrow().left.clone();
+        let right1 = root1.clone().unwrap().borrow().right.clone();
+        let left2 = root2.clone().unwrap().borrow().left.clone();
+        let right2 = root2.clone().unwrap().borrow().right.clone();
+        Self::is_same_tree(left1, left2) && Self::is_same_tree(right1, right2)
+    }
+
     fn bfs(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
         let mut ans: Vec<i32> = Vec::new();
         if let Some(node) = root {
