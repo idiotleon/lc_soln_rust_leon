@@ -15,15 +15,15 @@ impl Solution {
         root: Option<Rc<RefCell<TreeNode>>>,
         val: i32,
     ) -> Option<Rc<RefCell<TreeNode>>> {
-        if root.is_none(){
+        if root.is_none() {
             return None;
         }
         let value: i32 = root.clone().unwrap().borrow().val;
-        if value > val{
+        if value > val {
             return Self::search_bst(root.clone().unwrap().borrow().left.clone(), val);
-        }else if value < val{
+        } else if value < val {
             return Self::search_bst(root.clone().unwrap().borrow().right.clone(), val);
-        }else{
+        } else {
             return root;
         }
     }
