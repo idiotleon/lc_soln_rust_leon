@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/
-///
-/// Time Complexity:    O()
-/// Space Complexity:   O()
-///
+/// Time Complexity:    O(`len_s`)
+/// Space Complexity:   O(2 ^ `k`)
 /// Reference:
 /// https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/discuss/1105774/Rust-0ms-one-line-64ms-solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
@@ -27,6 +25,7 @@ impl Solution {
                 return true;
             }
         }
+
         false
     }
 }

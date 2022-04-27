@@ -1,25 +1,24 @@
-use std::cmp;
+use std::collections::HashSet;
+/// @author: Leon
 /// https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/
-///
-/// Time Complexity:    O()
-/// Space Complexity:   O()
-///
+/// Time Complexity:    O(`len_s`)
+/// Space Complexity:   O(`len_s` * `k`)
 /// Reference:
 /// https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/discuss/1106203/Rust-Set-Solution
-use std::collections::HashSet;
-
 #[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn has_all_codes(s: String, k: i32) -> bool {
+        let len_s: usize = s.len();
         let mut seen: HashSet<&str> = HashSet::new();
-        let len: usize = cmp::min(s.len(), k as usize);
+        let len: usize = std::cmp::min(len_s, k as usize);
 
-        for i in 0..s.len() - len + 1 {
+        for i in 0..len_s - len + 1 {
             seen.insert(&s[i..i + len]);
         }
+
         return seen.len() == (1 << k);
     }
 }
