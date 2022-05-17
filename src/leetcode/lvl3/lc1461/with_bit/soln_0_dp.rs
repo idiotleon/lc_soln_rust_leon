@@ -15,14 +15,14 @@ impl Solution {
         let mut mask: usize = 0;
         let mut cnt_exp: u32 = 1 << k as u32;
         let mask_all_ones: usize = (1 << ku) - 1;
-        for (idx, &b) in s.as_bytes().iter().enumerate(){
+        for (idx, &b) in s.as_bytes().iter().enumerate() {
             mask = ((mask << 1) & mask_all_ones) + if b == b'1' { 1 } else { 0 };
-            if idx + 1 < ku || contained[mask]{
+            if idx + 1 < ku || contained[mask] {
                 continue;
             }
             contained[mask] = true;
             cnt_exp -= 1;
-            if cnt_exp == 0{
+            if cnt_exp == 0 {
                 return true;
             }
         }

@@ -4,3 +4,4 @@ pub mod lc0772;
 pub mod lc0847;
 pub mod lc1044;
 pub mod lc1074;
+pub mod lc2060;
