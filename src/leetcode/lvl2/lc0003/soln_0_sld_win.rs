@@ -19,7 +19,7 @@ impl Solution {
                 freqs[chs[lo] as usize] -= 1;
                 lo += 1;
             }
-            let len = hi - lo + 1;
+            let len: usize = hi - lo + 1;
             longest = std::cmp::max(longest, len);
             hi += 1;
         }
