@@ -1,15 +1,20 @@
 /// @author: Leon
 /// https://leetcode.com/problems/find-all-anagrams-in-a-string/
-/// Time Complexity:    O(`_len_s`)
-/// Space Complexity:   O(`_len_s`) + O(26) ~ O(`_len_s`)
+/// Time Complexity:    O(`len_s`)
+/// Space Complexity:   O(`len_s`) + O(26) ~ O(`len_s`)
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn find_anagrams(s: String, p: String) -> Vec<i32> {
-        let _len_s: usize = s.len();
-        let chs_s: Vec<char> = s.chars().collect();
+        let len_s: usize = s.len();
         let len_p: usize = p.len();
+        let mut ans: Vec<i32> = Vec::new();
+        // sanity check
+        if len_p > len_s {
+            return ans;
+        }
+        let chs_s: Vec<char> = s.chars().collect();
         let mut cnt: u16 = len_p as u16;
         let mut freqs: Vec<i32> = {
             let mut freqs: Vec<i32> = vec![0; 26];
@@ -18,7 +23,6 @@ impl Solution {
             }
             freqs
         };
-        let mut ans: Vec<i32> = Vec::new();
         let mut lo: usize = 0;
         for (hi, &ch) in chs_s.iter().enumerate() {
             let freq = &mut freqs[ch as usize - 'a' as usize];
@@ -51,6 +55,14 @@ mod test {
         let p = "abc".to_owned();
         let actual = Solution::find_anagrams(s, p);
         let expected: Vec<i32> = vec![0, 6];
+        assert_eq!(expected, actual);
+    }
+    #[test]
+    fn it_works_with_sample_input_2() {
+        let s = "abab".to_owned();
+        let p = "ab".to_owned();
+        let actual = Solution::find_anagrams(s, p);
+        let expected: Vec<i32> = vec![0, 1, 2];
         assert_eq!(expected, actual);
     }
 }

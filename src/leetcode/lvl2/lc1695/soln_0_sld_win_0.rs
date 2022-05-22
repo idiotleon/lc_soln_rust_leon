@@ -16,12 +16,12 @@ impl Solution {
         let mut hi: usize = 0;
         let mut sum: i32 = 0;
         let mut most: i32 = 0;
-        while hi < len_n{
-            if seen.insert(nums[hi]){
+        while hi < len_n {
+            if seen.insert(nums[hi]) {
                 sum += nums[hi];
                 most = std::cmp::max(most, sum);
                 hi += 1;
-            }else{
+            } else {
                 sum -= nums[lo];
                 seen.remove(&nums[lo]);
                 lo += 1;

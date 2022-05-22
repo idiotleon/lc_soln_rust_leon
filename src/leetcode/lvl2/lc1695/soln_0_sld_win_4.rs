@@ -25,7 +25,7 @@ impl Solution {
                 sum -= nums[lo];
                 lo += 1;
             }
-            if hi < len_n{
+            if hi < len_n {
                 sum += nums[hi];
                 seen.insert(nums[hi]);
             }
@@ -52,7 +52,7 @@ mod test {
         let expected = 8;
         assert_eq!(expected, actual);
     }
-        #[test]
+    #[test]
     pub fn test_test_case_2_should_return_expected() {
         let nums: Vec<i32> = vec![10000];
         let actual = Solution::maximum_unique_subarray(nums);
