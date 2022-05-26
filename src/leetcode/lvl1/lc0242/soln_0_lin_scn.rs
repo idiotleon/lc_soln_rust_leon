@@ -2,7 +2,6 @@
 /// https://leetcode.com/problems/valid-anagram/
 /// Time Complexity:    O(`_len_s` + `_len_t`) ~ O(max(`_len_s`, `_len_t`))
 /// Space Complexity:   O(26) ~ O(1)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
