@@ -3,6 +3,8 @@ use std::collections::HashMap;
 /// https://leetcode.com/problems/find-anagram-mappings/
 /// Time Complexity:    O(`len_n`)
 /// Space Complexity:   O(`len_n`)
+/// Caution:
+/// it is so temptating to come up with the solution without considering duplicates.
 struct Solution;
 
 #[allow(dead_code)]
