@@ -1,7 +1,7 @@
 /// @author: Leon
 /// https://leetcode.com/problems/permutation-in-string/
-/// Time Complexity:    O(`len_2`)
-/// Space Complexity:   O(`len_2`)
+/// Time Complexity:    O(`len1` * `len2`)
+/// Space Complexity:   O(`len1` * `len2`)
 /// Reference:
 /// https://leetcode.com/problems/permutation-in-string/discuss/102588/Java-Solution-Sliding-Window/105954
 /// https://leetcode.com/problems/permutation-in-string/discuss/102588/Java-Solution-Sliding-Window
@@ -15,35 +15,24 @@ impl Solution {
         if len1 > len2 {
             return false;
         }
-        let chs1: Vec<char> = s1.chars().collect();
-        let chs2: Vec<char> = s2.chars().collect();
         let mut freqs: Vec<i32> = {
-            let mut freqs: Vec<i32> = vec![0; 26];
-            for idx in 0..len1 {
-                freqs[chs1[idx] as usize - 'a' as usize] += 1;
-                freqs[chs2[idx] as usize - 'a' as usize] -= 1;
+            let mut freqs = vec![0; 26];
+            for ch in s1.chars() {
+                freqs[ch as usize - 'a' as usize] += 1;
             }
             freqs
         };
-        if Self::are_all_zeros(&freqs) {
-            return true;
-        }
-        for idx in len1..len2 {
-            freqs[chs2[idx] as usize - 'a' as usize] -= 1;
-            freqs[chs2[idx - len1] as usize - 'a' as usize] += 1;
-            if Self::are_all_zeros(&freqs) {
+        let chs2: Vec<char> = s2.chars().collect();
+        for (idx, &ch) in chs2.iter().enumerate() {
+            freqs[ch as usize - 'a' as usize] -= 1;
+            if idx >= len1 {
+                freqs[chs2[idx - len1] as usize - 'a' as usize] += 1;
+            }
+            if !freqs.iter().any(|&e| e != 0) {
                 return true;
             }
         }
         false
-    }
-    fn are_all_zeros(nums: &Vec<i32>) -> bool {
-        for &num in nums {
-            if num != 0 {
-                return false;
-            }
-        }
-        true
     }
 }
 
