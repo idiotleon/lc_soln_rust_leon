@@ -22,15 +22,15 @@ impl Solution {
                 distinct += 1;
             }
             *freq_hi += 1;
-            if distinct == k {
-                cnt += 1;
-            }
-            if idx + 1 >= k as usize {
-                let freq_lo = &mut freqs[chs[idx + 1 - k as usize] as usize - 'a' as usize];
+            if idx >= k as usize {
+                let freq_lo = &mut freqs[chs[idx - k as usize] as usize - 'a' as usize];
                 *freq_lo -= 1;
                 if *freq_lo == 0 {
                     distinct -= 1;
                 }
+            }
+            if distinct == k {
+                cnt += 1;
             }
         }
         cnt as i32
