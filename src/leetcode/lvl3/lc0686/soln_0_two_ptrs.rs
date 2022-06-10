@@ -13,16 +13,12 @@ impl Solution {
         let chs1: Vec<char> = str1.chars().collect();
         let len2: usize = str2.len();
         let chs2: Vec<char> = str2.chars().collect();
-        for idx1 in 0..len1{
+        for idx1 in 0..len1 {
             let mut idx2: usize = 0;
-            while idx2 < len2{
-                if chs1[(idx1 + idx2) % len1] == chs2[idx2]{
-                    idx2 += 1;
-                }else{
-                    break;
-                }
+            while idx2 < len2 && chs1[(idx1 + idx2) % len1] == chs2[idx2] {
+                idx2 += 1;
             }
-            if idx2 == len2{
+            if idx2 == len2 {
                 return ((idx1 + idx2 - 1) / len1) as i32 + 1;
             }
         }
