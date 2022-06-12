@@ -11,14 +11,14 @@ impl Solution {
         let mut ans: Vec<String> = Vec::with_capacity(len_ws);
         let mut lo: usize = 0;
         let mut hi: usize = 1;
-        while hi < len_ws{
-            while hi < len_ws && Self::is_anagram(&words[lo], &words[hi]){
+        while hi < len_ws {
+            while hi < len_ws && Self::is_anagram(&words[lo], &words[hi]) {
                 hi += 1;
             }
             ans.push(words[lo].to_owned());
             lo = hi;
             hi += 1;
-        } 
+        }
         if lo == len_ws - 1 {
             ans.push(words[lo].to_owned());
         }
