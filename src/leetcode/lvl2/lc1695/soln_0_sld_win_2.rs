@@ -1,26 +1,26 @@
+use std::collections::HashSet;
 /// @author: Leon
 /// https://leetcode.com/problems/maximum-erasure-value/
 /// Time Complexity:    O(`len_n`)
-/// Space Complexity:   O(`RANGE`)
+/// Space Complexity:   O(`len_n`)
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn maximum_unique_subarray(nums: Vec<i32>) -> i32 {
-        const RANGE: usize = 10e4 as usize + 7;
         let len_n: usize = nums.len();
-        let mut freqs: Vec<u16> = vec![0; RANGE];
+        let mut seen: HashSet<i32> = HashSet::new();
         let mut lo: usize = 0;
         let mut most: i32 = 0;
         let mut sum: i32 = 0;
         for hi in 0..len_n {
             sum += nums[hi];
-            freqs[nums[hi] as usize] += 1;
-            while lo < hi && freqs[nums[hi] as usize] > 1 {
+            while lo < hi && seen.contains(&nums[hi]) {
                 sum -= nums[lo];
-                freqs[nums[lo] as usize] -= 1;
+                seen.remove(&nums[lo]);
                 lo += 1;
             }
+            seen.insert(nums[hi]);
             most = std::cmp::max(most, sum);
         }
         most
