@@ -1,5 +1,4 @@
 use std::collections::HashMap;
-
 /// https://leetcode.com/problems/dot-product-of-two-sparse-vectors/
 /// Time Complexity:    O(`_len_n1` & `_len_n2`)
 /// Space Complexity:   O(`_len_n1` + `_len_n2`) ~ O(max(`_len_n1`, `_len_n2`))
