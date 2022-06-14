@@ -2,6 +2,8 @@
 /// https://leetcode.com/problems/max-consecutive-ones-iii/
 /// Time Complexity:    O(`len_n`)
 /// Space Complexity:   O(1)
+/// Reference:
+/// https://leetcode.com/problems/max-consecutive-ones-iii/discuss/247564/JavaC%2B%2BPython-Sliding-Window
 struct Solution;
 
 #[allow(dead_code)]

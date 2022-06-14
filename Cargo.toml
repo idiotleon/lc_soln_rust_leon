@@ -1,5 +1,5 @@
 [package]
-name = "leetcode_solutions_rust_an7one"
+name = "lc_soln_rust_leon"
 version = "0.1.0"
 authors = ["Leon <yanglyu.leon.7@gmail.com>"]
 edition = "2021"
