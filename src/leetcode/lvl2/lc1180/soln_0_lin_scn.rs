@@ -12,21 +12,21 @@ impl Solution {
         let _len_s: usize = s.len();
         let chs: Vec<char> = s.chars().collect();
         // the running length
-        let mut len: usize = 1;
+        let mut len: i32 = 1;
         let mut ans: i32 = 0;
         for (idx, &ch) in chs.iter().enumerate() {
             if idx > 0 {
                 if ch == chs[idx - 1] {
                     len += 1;
                 } else {
-                    ans += Self::get_count(len as i32);
+                    ans += Self::get_count(len);
                     len = 1;
                 }
             }
         }
         // note:
         // do not forget the last checkout
-        ans + Self::get_count(len as i32)
+        ans + Self::get_count(len)
     }
     /// to mathmetically calculate the count of substrings with all the same letters
     fn get_count(len: i32) -> i32 {
