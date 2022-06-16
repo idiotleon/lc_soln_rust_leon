@@ -18,10 +18,10 @@ impl Solution {
         let chs2: Vec<char> = sorted[len_ss - 1].chars().collect();
         let len2: usize = chs2.len();
         let ans: &mut String = &mut "".to_owned();
-        for idx in 0..len1{
-            if idx < len2 && chs1[idx] == chs2[idx]{
+        for idx in 0..len1 {
+            if idx < len2 && chs1[idx] == chs2[idx] {
                 ans.push(chs1[idx]);
-            }else{
+            } else {
                 break;
             }
         }
