@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/longest-palindromic-substring/
-///
 /// Time Complexity:     O(`len_s` ^ 2)
 /// Space Complexity:    O(`len_s`)
-///
 /// Reference:
 /// https://leetcode.com/problems/longest-palindromic-substring/discuss/295110/Rust-DP-Solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
@@ -16,7 +14,6 @@ impl Solution {
         let mut dp: Vec<Vec<bool>> = vec![vec![false; len_s]; len_s];
         let mut idx_start = 0;
         let mut idx_end = 0;
-
         for lo in (0..len_s).rev() {
             for hi in lo..len_s {
                 dp[lo][hi] = chs[lo] == chs[hi] && (hi - lo < 3 || dp[lo + 1][hi - 1]);
