@@ -1,4 +1,5 @@
 use std::collections::{HashMap, VecDeque};
+/// @author: Leon
 /// https://leetcode.com/problems/longest-common-prefix/
 /// Time Complexity:    O(`_len_ws` * avg_len_word)
 /// Space Complexity:   O(`_len_ws` * avg_len_word)

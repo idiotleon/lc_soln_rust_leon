@@ -1,3 +1,7 @@
+/// @author: Leon
+/// https://leetcode.com/problems/find-all-anagrams-in-a-string/
+/// Time Complexity:    O(`len_p` * `len_s`)
+/// Space Complexity:   O(max(`len_p`, `len_s`))
 struct Solution;
 
 #[allow(dead_code)]
