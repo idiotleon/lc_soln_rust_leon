@@ -11,10 +11,10 @@ impl Solution {
         let len_k: usize = k as usize;
         let mut cnt: i32 = 0;
         let mut sum: i32 = 0;
-        for (idx, &num) in nums.iter().enumerate(){
+        for (idx, &num) in nums.iter().enumerate() {
             sum += num;
-            if idx + 1 >= len_k{
-                if sum / k >= threshold{
+            if idx + 1 >= len_k {
+                if sum / k >= threshold {
                     cnt += 1;
                 }
                 sum -= nums[idx + 1 - len_k];
