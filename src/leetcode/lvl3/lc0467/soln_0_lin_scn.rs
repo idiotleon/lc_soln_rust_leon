@@ -15,9 +15,12 @@ impl Solution {
         // the running length
         let mut len: u16 = 0;
         for idx in 0..len_s {
-            if idx > 0 && ((chs[idx] as i8 - chs[idx - 1] as i8 == 1) || (chs[idx - 1] as i8 - chs[idx] as i8 == 25)){
+            if idx > 0
+                && ((chs[idx] as i8 - chs[idx - 1] as i8 == 1)
+                    || (chs[idx - 1] as i8 - chs[idx] as i8 == 25))
+            {
                 len += 1;
-            }else{
+            } else {
                 len = 1;
             }
             let idx_ch: usize = chs[idx] as usize - 'a' as usize;
