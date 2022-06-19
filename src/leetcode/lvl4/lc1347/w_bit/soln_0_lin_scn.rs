@@ -17,7 +17,7 @@ impl Solution {
         let _len_s: usize = s.len();
         let vowel_to_bit_idx: HashMap<char, u32> = {
             let mut map: HashMap<char, u32> = HashMap::with_capacity(5);
-            for (idx, ch) in "aeiou".chars().enumerate(){
+            for (idx, ch) in "aeiou".chars().enumerate() {
                 let bitmask = 1 << (idx as u32);
                 map.insert(ch, bitmask);
             }
