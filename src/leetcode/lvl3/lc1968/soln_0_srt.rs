@@ -12,7 +12,7 @@ impl Solution {
         let len_n: usize = nums.len();
         let mut nums: Vec<i32> = nums;
         nums.sort();
-        for idx in (1..len_n).step_by(2){
+        for idx in (1..len_n).step_by(2) {
             nums.swap(idx - 1, idx);
         }
         nums

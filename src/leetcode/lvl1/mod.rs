@@ -88,3 +88,4 @@ pub mod lc2200;
 pub mod lc2206;
 pub mod lc2215;
 pub mod lc2293;
+pub mod lc2309;
