@@ -13,13 +13,13 @@ impl Solution {
         let _len_ws: usize = words.len();
         let cloned = words.clone();
         let mut set: HashSet<&str> = cloned.iter().map(String::as_ref).into_iter().collect();
-        for word in words{
-            for idx in 1..word.len(){
+        for word in words {
+            for idx in 1..word.len() {
                 set.remove(&word[idx..]);
             }
         }
         let mut cnt: i32 = 0;
-        for word in set{
+        for word in set {
             cnt += word.len() as i32 + 1;
         }
         cnt
