@@ -1,10 +1,10 @@
 use crate::leetcode::util::data_structure::linked_list::single::list_node::ListNode;
 /// @author: Leon
 /// https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
-/// Time Complexity:    O(L)
-/// Space Complexity:   O(1)
+/// Time Compleixty:    O(L)
+/// Space Compleixty:   O(1)
 /// Reference:
-/// https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/discuss/1515011/rust
+/// https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/discuss/1615746/Rust-simple
 struct Solution;
 
 #[allow(dead_code)]
@@ -13,8 +13,7 @@ impl Solution {
         let mut h = &head;
         let mut num = 0;
         while let Some(cur) = h {
-            num *= 2;
-            num += cur.val;
+            num = (num << 1) | cur.val;
             h = &cur.next;
         }
         num
