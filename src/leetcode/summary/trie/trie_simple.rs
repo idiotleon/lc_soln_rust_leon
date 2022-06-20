@@ -1,3 +1,9 @@
+/// @author: Leon
+/// Reference:
+/// https://leetcode.com/problems/short-encoding-of-words/discuss/1096190/Rust-trie-reverse-and-sort-solutions
+/// about `dyn`
+/// https://stackoverflow.com/questions/50650070/what-does-dyn-mean-in-a-type
+/// https://www.educative.io/answers/what-is-the-dyn-keyword-in-rust
 #[allow(dead_code)]
 #[derive(Default)]
 struct TrieSimple {
