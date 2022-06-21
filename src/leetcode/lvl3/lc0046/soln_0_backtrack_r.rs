@@ -1,9 +1,7 @@
 /// @author: Leon
 /// https://leetcode.com/problems/permutations/
-///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-///
 /// Reference:
 /// https://leetcode.com/problems/subsets/discuss/27281/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)
 #[allow(dead_code)]
@@ -20,23 +18,23 @@ impl Solution {
         paths
     }
     fn backtrack(
-        mut used: &mut Vec<bool>,
+        used: &mut Vec<bool>,
         nums: &Vec<i32>,
-        mut path: &mut Vec<i32>,
-        mut paths: &mut Vec<Vec<i32>>,
+        path: &mut Vec<i32>,
+        paths: &mut Vec<Vec<i32>>,
     ) {
-        if path.len() == nums.len() {
-            paths.push(path.clone());
+        let len_n: usize = nums.len();
+        if path.len() == len_n {
+            paths.push(path.to_vec());
             return;
         }
-
         for (idx, &num) in nums.iter().enumerate() {
             if used[idx] {
                 continue;
             }
             path.push(num);
             used[idx] = true;
-            Self::backtrack(&mut used, &nums, &mut path, &mut paths);
+            Self::backtrack(used, nums, path, paths);
             path.pop();
             used[idx] = false;
         }
