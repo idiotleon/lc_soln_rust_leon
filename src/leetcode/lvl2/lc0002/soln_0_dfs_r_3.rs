@@ -13,31 +13,24 @@ impl Solution {
         l1: Option<Box<ListNode>>,
         l2: Option<Box<ListNode>>,
     ) -> Option<Box<ListNode>> {
-        Self::add_three_numbers(l1, l2, 0)
-    }
-
-    fn add_three_numbers(
-        l1: Option<Box<ListNode>>,
-        l2: Option<Box<ListNode>>,
-        sum: i32,
-    ) -> Option<Box<ListNode>> {
-        Some(Box::new(match (l1, l2, sum) {
-            (None, None, 0) => None?,
-            (None, None, val) => ListNode { next: None, val },
-            (a, b, mut sum) => ListNode {
-                next: Self::add_three_numbers(
-                    a.and_then(|a| {
-                        sum += a.val;
-                        a.next
-                    }),
-                    b.and_then(|b| {
-                        sum += b.val;
-                        b.next
-                    }),
-                    sum / 10,
-                ),
-                val: sum % 10,
-            },
-        }))
+        match (l1, l2) {
+            (None, None) => None,
+            (Some(n), None) | (None, Some(n)) => Some(n),
+            (Some(n1), Some(n2)) => {
+                let sum = n1.val + n2.val;
+                if sum < 10 {
+                    Some(Box::new(ListNode {
+                        val: sum,
+                        next: Self::add_two_numbers(n1.next, n2.next),
+                    }))
+                } else {
+                    let carry = Some(Box::new(ListNode::new(1)));
+                    Some(Box::new(ListNode {
+                        val: sum - 10,
+                        next: Self::add_two_numbers(Self::add_two_numbers(carry, n1.next), n2.next),
+                    }))
+                }
+            }
+        }
     }
 }

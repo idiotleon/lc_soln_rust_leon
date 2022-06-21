@@ -4,7 +4,7 @@ use crate::leetcode::util::data_structure::linked_list::single::list_node::ListN
 /// Time Complexity:    O(len1 + len2) ~ O(max(len1, len2))
 /// Space ComplexitY;   O(len1 + len2) ~ O(max(len1, len2)))
 /// Reference:
-/// https://leetcode.com/problems/add-two-numbers/discuss/469977/Simple-Rust-solution-less0ms-2.1MBgreater
+/// https://leetcode.com/problems/add-two-numbers/discuss/261694/Rust-4ms
 struct Solution;
 
 #[allow(dead_code)]
@@ -13,24 +13,27 @@ impl Solution {
         l1: Option<Box<ListNode>>,
         l2: Option<Box<ListNode>>,
     ) -> Option<Box<ListNode>> {
-        match (l1, l2) {
-            (None, None) => None,
-            (Some(n), None) | (None, Some(n)) => Some(n),
-            (Some(n1), Some(n2)) => {
-                let sum = n1.val + n2.val;
-                if sum < 10 {
-                    Some(Box::new(ListNode {
-                        val: sum,
-                        next: Self::add_two_numbers(n1.next, n2.next),
-                    }))
-                } else {
-                    let carry = Some(Box::new(ListNode::new(1)));
-                    Some(Box::new(ListNode {
-                        val: sum - 10,
-                        next: Self::add_two_numbers(Self::add_two_numbers(carry, n1.next), n2.next),
-                    }))
-                }
-            }
+        Self::merge(l1, l2, 0, ListNode::new(-1))
+    }
+    fn merge(
+        mut cur1: Option<Box<ListNode>>,
+        mut cur2: Option<Box<ListNode>>,
+        mut sum: i32,
+        mut new_node: ListNode,
+    ) -> Option<Box<ListNode>> {
+        if cur1.is_none() && cur2.is_none() && sum == 0 {
+            return None;
         }
+        if let Some(n1) = cur1 {
+            sum += n1.val;
+            cur1 = n1.next;
+        }
+        if let Some(n2) = cur2 {
+            sum += n2.val;
+            cur2 = n2.next;
+        }
+        new_node.val = if sum > 9 { sum - 10 } else { sum };
+        new_node.next = Self::merge(cur1, cur2, sum / 10, ListNode::new(-1));
+        Some(Box::new(new_node))
     }
 }
