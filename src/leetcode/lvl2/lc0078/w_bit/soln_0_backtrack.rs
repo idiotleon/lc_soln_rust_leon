@@ -1,6 +1,6 @@
 /// @author: Leon
 /// https://leetcode.com/problems/subsets/
-/// Time Complexity:    O()
+/// Time Complexity:    O((2 ^ `len_n`) * `len_n`)
 /// Space Complexity:   O()
 struct Solution;
 
