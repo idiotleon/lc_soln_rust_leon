@@ -13,9 +13,9 @@ impl Solution {
         let mut path: Vec<i32> = Vec::new();
         let mut paths: Vec<Vec<i32>> = Vec::new();
         let sorted: Vec<i32> = {
-            let mut sorted = nums;
-            sorted.sort();
-            sorted
+            let mut nums = nums;
+            nums.sort();
+            nums
         };
         Self::backtrack(0, &mut path, &sorted, &mut paths);
         paths
@@ -34,7 +34,7 @@ impl Solution {
             }
             path.push(nums[idx]);
             Self::backtrack(idx + 1, path, nums, paths);
-            path.remove(path.len() - 1);
+            path.pop();
         }
     }
 }
