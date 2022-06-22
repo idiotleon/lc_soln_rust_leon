@@ -2,8 +2,6 @@
 /// https://leetcode.com/problems/kth-largest-element-in-an-array/
 /// Time Complexity:    O(`len_n`)
 /// Space Complexity:   O(1)
-///
-/// This is not yet correct solution
 #[allow(dead_code)]
 struct Solution;
 
