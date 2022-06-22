@@ -1,13 +1,10 @@
+use std::collections::BinaryHeap;
+/// @author: Leon
 /// https://leetcode.com/problems/kth-largest-element-in-an-array/
-///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-///
 /// References:
-///     https://leetcode.com/problems/kth-largest-element-in-an-array/discuss/950796/Rust-BinaryHeap-0ms
-use std::collections::BinaryHeap;
-
-#[allow(dead_code)]
+/// https://leetcode.com/problems/kth-largest-element-in-an-array/discuss/950796/Rust-BinaryHeap-0ms
 struct Solution;
 
 #[allow(dead_code)]

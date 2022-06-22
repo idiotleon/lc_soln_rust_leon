@@ -1,1 +1,1 @@
-pub mod soln_0_kadane;
+pub mod soln_0_kadane_algo;

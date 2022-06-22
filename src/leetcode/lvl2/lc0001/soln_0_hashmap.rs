@@ -6,7 +6,6 @@ use std::collections::HashMap;
 /// this version consumes the original vector
 /// Reference:
 /// https://leetcode.com/problems/two-sum/discuss/715951/Rust%3A-HashMap-solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
