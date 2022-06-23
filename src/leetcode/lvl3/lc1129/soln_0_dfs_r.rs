@@ -1,7 +1,7 @@
 /// @author: Leon
 /// https://leetcode.com/problems/shortest-path-with-alternating-colors/
-/// Time Complexity:    O()
-/// Space Complexity:   O()
+/// Time Complexity:    O(V + E)
+/// Space Complexity:   O(V + E)
 struct Solution;
 
 #[allow(dead_code)]
