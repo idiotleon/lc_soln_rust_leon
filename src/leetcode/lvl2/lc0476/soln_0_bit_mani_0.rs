@@ -1,10 +1,10 @@
+/// @author: Leon
 /// https://leetcode.com/problems/number-complement/
 /// Time Complexity:    O(1)
 /// Space Complexity:   O(1)
 /// Reference:
-///  https://leetcode.com/problems/number-complement/discuss/95992/Java-1-line-bit-manipulation-solution/100579
+/// https://leetcode.com/problems/number-complement/discuss/95992/Java-1-line-bit-manipulation-solution/100579
 /// https://leetcode.com/problems/number-complement/discuss/95992/Java-1-line-bit-manipulation-solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

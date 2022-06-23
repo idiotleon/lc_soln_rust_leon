@@ -1,9 +1,10 @@
+/// @author: Leon
 /// https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/
 /// Time Complexity:    O(`len_r` + `len_c`)
 /// Space Complexity:   O(1)
 /// Reference:
 /// https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/discuss/510249/JavaPython-3-2-similar-O(m-%2B-n)-codes-w-brief-explanation-and-analysis.
-/// Similar Probles:
+/// Similar Problem:
 /// https://leetcode.com/problems/search-a-2d-matrix-ii/
 /// https://leetcode.com/problems/leftmost-column-with-at-least-a-one/discuss/590240/Java-O(m-+-n)-Follow-the-top-left-part-of-the-contour-of-the-1's.
 struct Solution;

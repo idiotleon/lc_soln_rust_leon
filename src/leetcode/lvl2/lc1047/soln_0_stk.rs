@@ -1,3 +1,4 @@
+/// @author: Leon
 /// https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
 /// Time Complexity:    O(`_len_s`)
 /// Space Complexity:   O(1) / O(`_len_s`)

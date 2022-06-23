@@ -4,12 +4,12 @@ use std::rc::Rc;
 
 use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 
+/// @author: Leon
 /// https://leetcode.com/problems/deepest-leaves-sum/
 /// Time Complexity:     O(N)
 /// Space Complexity:    O(W)
 /// Reference:
-///  https://leetcode.com/problems/deepest-leaves-sum/discuss/1153427/Rust-BFS-solution
-#[allow(dead_code)]
+/// https://leetcode.com/problems/deepest-leaves-sum/discuss/1153427/Rust-BFS-solution
 struct Solution;
 
 #[allow(dead_code)]

@@ -1,9 +1,9 @@
 use std::collections::BinaryHeap;
 
+/// @author: Leon
 /// https://leetcode.com/problems/k-closest-points-to-origin/
 /// Time Complexity:    O(`_len_pts` * lg(`k`))
 /// Space Complexity:   O(`k`)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

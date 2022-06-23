@@ -1,3 +1,6 @@
+use crate::leetcode::util::data_structure::linked_list::single::list_node::ListNode;
+
+/// @author: Leon
 /// https://leetcode.com/problems/odd-even-linked-list/
 /// Time Complexity:    O(L)
 /// Space Complexity:   O(1)
@@ -14,12 +17,12 @@ impl Solution {
         let mut cur_odd = &mut dummy_head_odd;
         let mut cur_even = &mut dummy_head_even;
         let mut is_even = false;
-        while let Some(mut node) = head{
+        while let Some(mut node) = head {
             head = std::mem::replace(&mut node.next, None);
-            if is_even{
+            if is_even {
                 cur_even.next = Some(node);
                 cur_even = cur_even.next.as_mut().unwrap();
-            }else{
+            } else {
                 cur_odd.next = Some(node);
                 cur_odd = cur_odd.next.as_mut().unwrap();
             }

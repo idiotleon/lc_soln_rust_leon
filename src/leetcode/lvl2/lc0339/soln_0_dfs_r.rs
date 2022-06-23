@@ -1,5 +1,6 @@
 use super::nested_integer::NestedInteger;
 
+/// @author: Leon
 /// https://leetcode.com/problems/nested-list-weight-sum/
 /// Time Complexity:    O(N)
 /// Space Complexity:   O(H)

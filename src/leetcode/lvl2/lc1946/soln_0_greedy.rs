@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/largest-number-after-mutating-substring/
-///
 /// Time Complexity:    O(`len_n`)
 /// Space Complexity:   O(`len_n`)
-///
 /// Reference:
 /// https://leetcode.com/problems/largest-number-after-mutating-substring/discuss/1360753/Mutation-must-be-continuous
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

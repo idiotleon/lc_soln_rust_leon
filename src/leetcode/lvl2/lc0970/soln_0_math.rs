@@ -1,13 +1,11 @@
-// https://leetcode.com/problems/powerful-integers/
-//
-// Time Complexity:     O()
-// Space Complexity:    O()
-//
-// Reference:
-//  https://leetcode.com/problems/powerful-integers/discuss/1183644/C%2B%2B-ans-Rust-bruteforce
 use std::collections::HashSet;
 
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/powerful-integers/
+/// Time Complexity:     O()
+/// Space Complexity:    O()
+/// Reference:
+/// https://leetcode.com/problems/powerful-integers/discuss/1183644/C%2B%2B-ans-Rust-bruteforce
 struct Solution;
 
 #[allow(dead_code)]

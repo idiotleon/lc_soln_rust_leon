@@ -1,4 +1,5 @@
 use std::collections::{HashMap, HashSet};
+
 /// @author: Leon
 /// https://leetcode.com/problems/word-pattern/
 /// Time Complexity:    O(`len_ws` * avg_len_word)

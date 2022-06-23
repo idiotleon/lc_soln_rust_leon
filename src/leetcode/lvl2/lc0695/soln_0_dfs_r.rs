@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/max-area-of-island/
-///
 /// Time Complexity:    O(`len_rs` * `len_cs`)
 /// Space Complexity:   O(`len_rs` * `len_cs`)
-///
 /// Reference:
 /// https://leetcode.com/problems/max-area-of-island/discuss/889283/Rust-DFS-4ms-72
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
@@ -24,16 +22,13 @@ impl Solution {
             {
                 return 0;
             }
-
             let mut area: i32 = 1;
             visited[r as usize][c as usize] = true;
-
             for d in 0..4 as usize {
                 let (nxt_r, nxt_c) = (r + DIRS[d], c + DIRS[d + 1]);
 
                 area += dfs(nxt_r, nxt_c, visited, grid);
             }
-
             area
         }
         let len_rs: usize = grid.len();

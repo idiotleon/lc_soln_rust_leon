@@ -1,5 +1,6 @@
+/// @author: Leon
 /// https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/
-/// Time Complexity:    O(`_len_n`d)
+/// Time Complexity:    O(`_len_n`)
 /// Space Complexity:   O(1)
 /// Reference:
 /// https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/discuss/466005/Concise-Rust-Solution

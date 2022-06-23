@@ -1,10 +1,10 @@
+/// @author: Leon
 /// https://leetcode.com/problems/hamming-distance/
 /// Time Complexity:    O(bit_one(`x` ^ `y`))
 /// Space Complexity:   O(1)
 /// Reference:
 /// https://leetcode.com/problems/hamming-distance/discuss/94698/Java-1-Line-Solution-%3AD
 /// https://tech.liuchao.me/2016/11/count-bits-of-integer/
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

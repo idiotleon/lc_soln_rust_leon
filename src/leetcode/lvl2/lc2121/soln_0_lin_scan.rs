@@ -1,5 +1,6 @@
 use std::collections::HashMap;
 
+/// @author: Leon
 /// https://leetcode.com/problems/intervals-between-identical-elements/
 /// Time Complexity:    O(`len_n`)
 /// Space Complexity:   O(`len_n`)

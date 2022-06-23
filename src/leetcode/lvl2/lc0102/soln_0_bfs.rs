@@ -2,7 +2,8 @@ use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 use std::cell::RefCell;
 use std::collections::VecDeque;
 use std::rc::Rc;
-/// @author: LEon
+
+/// @author: Leon
 /// https://leetcode.com/problems/binary-tree-level-order-traversal/
 /// Time Complexity:    O(N)
 /// Space Complexity:   O(W)

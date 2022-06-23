@@ -1,4 +1,5 @@
 use std::collections::HashSet;
+
 /// @author: Leon
 /// https://leetcode.com/problems/short-encoding-of-words/
 /// Time Complexity:    O(`_len_ws` * avg_len_word)

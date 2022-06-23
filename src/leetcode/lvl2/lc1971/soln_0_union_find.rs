@@ -2,7 +2,6 @@
 /// https://leetcode.com/problems/find-if-path-exists-in-graph/
 /// Time Complexity:    O(V + E) ~ O(`n` + `n_edges`)
 /// Space Complexity:   O(V + E) ~ O(`n` + `n_edges`)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

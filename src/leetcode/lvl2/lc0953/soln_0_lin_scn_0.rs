@@ -1,14 +1,12 @@
-/// https://leetcode.com/problems/verifying-an-alien-dictionary/
-///
-/// Time Complexity:    O()
-/// Space Complexity:   O()
-///
-/// Reference:
-/// https://leetcode.com/problems/verifying-an-alien-dictionary/discuss/987952/Idiomatic-Rust
 use std::cmp::Ordering;
 use std::collections::HashMap;
 
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/verifying-an-alien-dictionary/
+/// Time Complexity:    O()
+/// Space Complexity:   O()
+/// Reference:
+/// https://leetcode.com/problems/verifying-an-alien-dictionary/discuss/987952/Idiomatic-Rust
 struct Solution;
 
 #[allow(dead_code)]

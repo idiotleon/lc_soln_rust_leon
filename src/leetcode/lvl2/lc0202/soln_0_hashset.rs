@@ -1,9 +1,9 @@
 use std::collections::HashSet;
 
+/// @author: Leon
 /// https://leetcode.com/problems/happy-number/
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

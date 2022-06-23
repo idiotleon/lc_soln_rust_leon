@@ -1,8 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/sort-characters-by-frequency/
-///
 /// Time Complexity:    O(`_len` * lg(`_len`))
 /// Space Complexity:   O(`_len`)
-#[allow(dead_code)]
 pub struct Solution;
 
 #[allow(dead_code)]

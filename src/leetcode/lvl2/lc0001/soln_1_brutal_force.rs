@@ -4,7 +4,6 @@
 /// Space Complexity:   O(1)
 /// References:
 /// https://leetcode.com/problems/two-sum/discuss/207679/Rust
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

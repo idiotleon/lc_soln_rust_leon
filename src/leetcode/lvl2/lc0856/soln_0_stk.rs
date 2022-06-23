@@ -1,4 +1,5 @@
 use std::collections::VecDeque;
+
 /// @author: Leon
 /// https://leetcode.com/problems/score-of-parentheses/
 /// Time Complexity:    O(`len_s`)

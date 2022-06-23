@@ -1,7 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/k-closest-points-to-origin/
 /// Time Complexity:    O(`_len_pts` * lg(`_len_pts`))
 /// Space Complexity:   O(1) / O(`_len_pts`)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

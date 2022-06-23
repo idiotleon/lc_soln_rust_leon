@@ -1,2 +1,2 @@
-pub mod soln_0_hm;
-pub mod soln_1_hm;
+pub mod soln_0_hashmap;
+pub mod soln_1_hashmap;

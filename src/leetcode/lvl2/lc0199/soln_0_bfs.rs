@@ -4,13 +4,13 @@ use std::rc::Rc;
 
 use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 
+/// @author: Leon
 /// https://leetcode.com/problems/binary-tree-right-side-view/
 /// Time Complexity:    O(N)
 /// Space Complexity:   O(W)
 /// Reference:
 /// https://leetcode.com/problems/binary-tree-right-side-view/discuss/1052300/Rust-BFS
 /// https://leetcode.com/problems/binary-tree-right-side-view/discuss/690995/Rust-BFS
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

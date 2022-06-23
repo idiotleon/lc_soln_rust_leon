@@ -1,9 +1,9 @@
-struct Solution;
-
 /// @author: Leon
 /// https://leetcode.com/problems/buildings-with-an-ocean-view/
 /// Time Complexity:    O(`len_h`)
 /// Space Complexity:   O(1) / O(`len_h`)
+struct Solution;
+
 #[allow(dead_code)]
 impl Solution {
     pub fn find_buildings(heights: Vec<i32>) -> Vec<i32> {

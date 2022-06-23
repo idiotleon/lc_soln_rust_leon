@@ -2,7 +2,6 @@
 /// https://leetcode.com/problems/verifying-an-alien-dictionary/
 /// Time Complexity:    O(n_words * avg_word_len)
 /// Space Complexity:   O(26) ~ O(1)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

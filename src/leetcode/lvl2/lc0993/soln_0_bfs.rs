@@ -1,18 +1,15 @@
 use std::cell::RefCell;
 use std::collections::VecDeque;
-
 use std::rc::Rc;
 
 use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 
+/// @author: Leon
 /// https://leetcode.com/problems/cousins-in-binary-tree/
-///
 /// Time Complexity:    O(N)
 /// Space Complexity:   O(W)
-///
 /// Reference:
 /// https://leetcode.com/problems/cousins-in-binary-tree/discuss/1527316/Rust-BFS-solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

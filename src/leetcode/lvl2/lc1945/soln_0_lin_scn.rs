@@ -1,8 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/sum-of-digits-of-string-after-convert/
-///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-///
 /// Reference:
 /// https://leetcode.com/problems/sum-of-digits-of-string-after-convert/discuss/1360766/Handle-k..z-first/1023425
 /// https://leetcode.com/problems/sum-of-digits-of-string-after-convert/discuss/1360766/Handle-k..z-first

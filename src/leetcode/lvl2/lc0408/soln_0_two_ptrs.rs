@@ -1,7 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/valid-word-abbreviation/
 /// Time Complexity:    O(maxOf(`len_w`, `len_ab`))
 /// Space Complexity:   O(1) / O(`len_w` + `len_ab`)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

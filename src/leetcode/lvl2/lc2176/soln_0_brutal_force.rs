@@ -1,4 +1,5 @@
 use std::collections::HashMap;
+
 /// @author: Leon
 /// https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/
 /// Time Complexity:    O(`_len_n` ^ 2)

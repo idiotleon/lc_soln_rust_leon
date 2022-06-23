@@ -1,4 +1,5 @@
 use std::collections::{HashMap, VecDeque};
+
 /// @author: Leon
 /// https://leetcode.com/problems/employee-importance/
 /// Time Complexity:    O(V + E) ~ O()

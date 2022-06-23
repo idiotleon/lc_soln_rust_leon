@@ -1,9 +1,7 @@
 /// @author: Leon
 /// https://leetcode.com/problems/minimum-absolute-difference/
-///
 /// Time Complexity:    O(`len_n` * lg(`len_n`))
 /// Space Complexity:   O(`len_n`)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

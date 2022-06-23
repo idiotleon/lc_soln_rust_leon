@@ -1,4 +1,5 @@
 use std::collections::VecDeque;
+
 /// @author: Leon
 /// https://leetcode.com/problems/course-schedule/
 /// Time Complexity:    O(V + E) ~ O(`num_courses` + `_len_pres`)

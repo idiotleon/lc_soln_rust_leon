@@ -1,13 +1,11 @@
-/// https://leetcode.com/problems/minimum-cost-to-connect-sticks/
-///
-/// Time Complexity:    O(`len_s` * lg(`len_s`))
-/// Space Complexity:   O(`len_s`)
-///
-/// Reference:
-/// https://leetcode.com/problems/minimum-cost-to-connect-sticks/discuss/365865/Python-Greedy-Solution
 use std::collections::BinaryHeap;
 
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/minimum-cost-to-connect-sticks/
+/// Time Complexity:    O(`len_s` * lg(`len_s`))
+/// Space Complexity:   O(`len_s`)
+/// Reference:
+/// https://leetcode.com/problems/minimum-cost-to-connect-sticks/discuss/365865/Python-Greedy-Solution
 struct Solution;
 
 #[allow(dead_code)]

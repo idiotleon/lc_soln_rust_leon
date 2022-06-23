@@ -1,16 +1,12 @@
-/**
- * https://leetcode.com/problems/longest-harmonious-subsequence/
- *
- * Time Complexity:     O()
- * Space Complexity:    O()
- *
- * Refernece:
- *  https://leetcode.com/problems/longest-harmonious-subsequence/discuss/257536/simple-rust
- */
 use std::cmp;
 use std::collections::HashMap;
 
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/longest-harmonious-subsequence/
+/// Time Complexity:     O()
+/// Space Complexity:    O()
+/// Reference:
+/// https://leetcode.com/problems/longest-harmonious-subsequence/discuss/257536/simple-rust
 struct Solution;
 
 #[allow(dead_code)]

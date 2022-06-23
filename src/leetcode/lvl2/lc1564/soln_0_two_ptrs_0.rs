@@ -1,13 +1,11 @@
-/// https://leetcode.com/problems/put-boxes-into-the-warehouse-i/
-///
-/// Time Complexity:    O()
-/// Space Complexity:   O()
-///
-/// Reference:
-/// https://leetcode.com/problems/put-boxes-into-the-warehouse-i/discuss/821966/C%2B%2B-Two-Approaches
 use std::cmp::min;
 
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/put-boxes-into-the-warehouse-i/
+/// Time Complexity:    O()
+/// Space Complexity:   O()
+/// Reference:
+/// https://leetcode.com/problems/put-boxes-into-the-warehouse-i/discuss/821966/C%2B%2B-Two-Approaches
 struct Solution;
 
 #[allow(dead_code)]

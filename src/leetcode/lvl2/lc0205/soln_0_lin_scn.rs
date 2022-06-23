@@ -1,10 +1,10 @@
+/// @author: Leon
 /// https://leetcode.com/problems/isomorphic-strings/
 /// Time Complexity:    O(`len_s`)
 /// Space Complexity:   O(`len_s` + `len_t`) ~ O(`len_s`)
 /// Reference:
 /// https://github.com/huanminwu/LeetCode/blob/master/LeetCode_Day_5_Binary_Search.docx
 /// https://github.com/huanminwu/LeetCode/blob/master/LeetCode_Day_5_Binary_Search.docx
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

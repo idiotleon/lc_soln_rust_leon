@@ -2,14 +2,13 @@ use std::cell::RefCell;
 use std::rc::Rc;
 
 use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
+
+/// @author: Leon
 /// https://leetcode.com/problems/invert-binary-tree/
-///
 /// Time Complexity:    O(N)
 /// Space Complexity:   O(H)
-///
 /// Reference:
 /// https://leetcode.com/problems/invert-binary-tree/discuss/648167/Rust-solutions
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

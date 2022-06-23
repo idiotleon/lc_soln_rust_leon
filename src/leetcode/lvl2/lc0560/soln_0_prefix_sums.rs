@@ -1,9 +1,7 @@
 /// @author: Leon
 /// https://leetcode.com/problems/subarray-sum-equals-k/
-///
 /// Time Complexity:    O(`_len_n`)
 /// Space Complexity:   O(`_len_n`)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

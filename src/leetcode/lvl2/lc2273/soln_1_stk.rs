@@ -1,4 +1,5 @@
 use std::collections::VecDeque;
+
 /// @author: Leon
 /// https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/
 /// Time Complexity:    O(`_len_ws` * avg_len_word)

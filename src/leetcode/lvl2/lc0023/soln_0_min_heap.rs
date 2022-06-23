@@ -1,6 +1,8 @@
-use crate::leetcode::util::data_structure::linked_list::single::list_node::ListNode;
 use std::cmp::{Ordering, Reverse};
 use std::collections::BinaryHeap;
+
+use crate::leetcode::util::data_structure::linked_list::single::list_node::ListNode;
+
 /// @author: Leon
 /// https://leetcode.com/problems/merge-k-sorted-lists/
 /// Time Complexity:    O(`_len_ls` * lg(`_len_ls`))

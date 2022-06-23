@@ -3,12 +3,12 @@ use std::rc::Rc;
 
 use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 
+/// @author: Leon
 /// https://leetcode.com/problems/binary-tree-right-side-view/
 /// Time Complexity:    O(N)
 /// Space Complexity:   O(H)
 /// Reference:
 /// https://leetcode.com/problems/binary-tree-right-side-view/discuss/335805/Rust-Solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

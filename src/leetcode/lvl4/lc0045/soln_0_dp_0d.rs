@@ -9,12 +9,12 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn jump(nums: Vec<i32>) -> i32 {
-        let len_n: ulen_n = nums.len();
+        let len_n: usize = nums.len();
         let mut jumps: i32 = 0;
-        let mut cur_end: ulen_n = 0;
-        let mut cur_furthest: ulen_n = 0;
+        let mut cur_end: usize = 0;
+        let mut cur_furthest: usize = 0;
         for i in 0..len_n - 1 {
-            cur_furthest = std::cmp::max(cur_furthest, i + nums[i] as ulen_n);
+            cur_furthest = std::cmp::max(cur_furthest, i + nums[i] as usize);
             if i == cur_end {
                 jumps += 1;
                 cur_end = cur_furthest;

@@ -1,9 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/number-complement/
 /// Time Complexity:    O(1)
 /// Space Complexity:   O(1)
 /// Reference:
 /// https://leetcode.com/problems/number-complement/discuss/96017/3-line-C++/100620
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
