@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/minimum-number-of-refueling-stops/
-///
 /// Time Complexity:    O(`len_stns` * lg(`len_stns`))
 /// Space Complexity:   O(`len_stns`)
-///
 /// Reference:
 /// https://leetcode.com/problems/minimum-number-of-refueling-stops/discuss/1266797/Rust%3A-4ms-Iterative-Memoization
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

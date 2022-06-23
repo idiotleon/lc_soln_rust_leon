@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/count-number-of-special-subsequences/
-///
 /// Time Complexity:    O(`len_n`)
 /// Space Complexity:   O(3) ~ O(1)
-///
 /// Reference:
 ///  https://leetcode.com/problems/count-number-of-special-subsequences/discuss/1375485/JavaC%2B%2BPython-DP-Solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

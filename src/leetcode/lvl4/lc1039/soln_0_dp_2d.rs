@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/minimum-score-triangulation-of-polygon/
-///
 /// Time Complexity:    O(`len_n` ^ 3)
 /// Space Complexity:   O(`len_n` ^ 2)
-///
 /// Reference:
 /// https://leetcode.com/problems/minimum-score-triangulation-of-polygon/discuss/286705/JavaC%2B%2BPython-DP
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

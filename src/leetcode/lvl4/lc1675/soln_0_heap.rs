@@ -1,4 +1,5 @@
 use std::collections::BinaryHeap;
+
 /// @author: Leon
 /// https://leetcode.com/problems/minimize-deviation-in-array/
 /// Time Complexity:    O(`_len_n` * lg(`_len_n`))

@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/n-queens-ii/
-///
 /// Time Complexity:    O(`n`!)
 /// Space Complexity:   O(`n`)
-///
 /// Reference:
 /// https://leetcode.com/problems/n-queens-ii/discuss/298639/Rust-DFS-and-BitWis-0ms-Solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
@@ -13,7 +11,6 @@ impl Solution {
     pub fn total_n_queens(n: i32) -> i32 {
         Self::backtrack(0, 0, 0, 0, n)
     }
-
     fn backtrack(row: i32, col: i32, pie: i32, na: i32, n: i32) -> i32 {
         if row >= n {
             return 1;

@@ -1,12 +1,10 @@
+/// @author: Leon
 /// https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
-///
 /// Time Complexity:    O(lg(`len_n`))
 /// Space Complexity:   O(1)
-///
 /// Reference:
 /// https://leetcode.com/problems/search-in-rotated-sorted-array-ii/discuss/28218/My-8ms-C++-solution-(o(logn)-on-average-o(n)-worst-case)/284690
 /// https://leetcode.com/problems/search-in-rotated-sorted-array-ii/discuss/28218/My-8ms-C%2B%2B-solution-(o(logn)-on-average-o(n)-worst-case)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

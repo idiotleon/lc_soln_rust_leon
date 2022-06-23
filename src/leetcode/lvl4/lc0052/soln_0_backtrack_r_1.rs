@@ -1,13 +1,11 @@
-/// https://leetcode.com/problems/n-queens-ii/
-///
-/// Time Complexity:    O(`n`!)
-/// Space Complexity:   O(`n`)
-///
-/// Reference:
-/// https://leetcode.com/problems/n-queens-ii/discuss/298639/Rust-DFS-and-BitWis-0ms-Solution
 use std::collections::HashSet;
 
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/n-queens-ii/
+/// Time Complexity:    O(`n`!)
+/// Space Complexity:   O(`n`)
+/// Reference:
+/// https://leetcode.com/problems/n-queens-ii/discuss/298639/Rust-DFS-and-BitWis-0ms-Solution
 struct Solution;
 
 #[allow(dead_code)]
@@ -33,7 +31,6 @@ impl Solution {
         if row == n {
             return 1;
         }
-
         let mut cnt: i32 = 0;
         for col in 0..n {
             if cols.contains(&col)
@@ -42,12 +39,10 @@ impl Solution {
             {
                 continue;
             }
-
             cols.insert(col);
             dia_sum.insert(row + col);
             anti_dia_sum.insert(row - col);
             board[row][col] = Self::QUEEN;
-
             cnt += Self::backtrack(
                 row + 1,
                 &mut cols,
@@ -56,13 +51,11 @@ impl Solution {
                 &mut board,
                 n,
             );
-
             cols.remove(&col);
             dia_sum.remove(&(row + col));
             anti_dia_sum.remove(&(row - col));
             board[row][col] = Self::EMPTY;
         }
-
         cnt
     }
 }

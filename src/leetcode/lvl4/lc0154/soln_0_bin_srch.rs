@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/
-///
 /// Time Complexity:    O(`len_n`)
 /// Space Complexity:   O(1)
-///
 /// Reference:
 /// https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/discuss/1339694/Rust-with-comments
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

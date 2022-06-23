@@ -1,10 +1,11 @@
 use std::collections::HashSet;
+
+/// @author: Leon
 /// https://leetcode.com/problems/longest-consecutive-sequence/
 /// Time Complexity:    O(`_len_n`)
 /// Space Complexity:   O(`_len_n`)
 /// Reference:
 /// https://leetcode.com/problems/longest-consecutive-sequence/discuss/728511/Rust
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

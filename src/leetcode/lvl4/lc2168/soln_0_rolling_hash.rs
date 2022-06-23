@@ -1,4 +1,5 @@
 use std::collections::HashSet;
+
 /// @author: Leon
 /// https://leetcode.com/problems/unique-substrings-with-equal-digit-frequency/
 /// Time Complexity:    O(`len_s` ^ 2)

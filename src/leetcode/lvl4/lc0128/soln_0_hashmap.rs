@@ -1,8 +1,8 @@
 use std::collections::HashMap;
+
 /// https://leetcode.com/problems/longest-consecutive-sequence/
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

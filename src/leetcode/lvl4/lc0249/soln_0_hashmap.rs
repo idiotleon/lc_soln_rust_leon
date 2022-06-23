@@ -1,12 +1,11 @@
+use std::collections::HashMap;
+
 /// @author: Leon
 /// https://leetcode.com/problems/group-shifted-strings/
 /// Time Complexity:    O(`_len_strs` * ave_len_str)
 /// Space Complexity:   O(`_len_strs` * ave_len_str)
 /// Reference:
 /// https://leetcode.com/problems/group-shifted-strings/discuss/67442/My-Concise-JAVA-Solution/69322
-use std::collections::HashMap;
-
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

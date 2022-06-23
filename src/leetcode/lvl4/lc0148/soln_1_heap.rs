@@ -2,6 +2,7 @@ use std::cmp::Reverse;
 use std::collections::BinaryHeap;
 
 use crate::leetcode::util::data_structure::linked_list::single::list_node::ListNode;
+
 /// @author: Leon
 /// https://leetcode.com/problems/sort-list/
 /// Time Complexity:    O(L * lg(L))

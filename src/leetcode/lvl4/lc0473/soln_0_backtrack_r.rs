@@ -1,10 +1,10 @@
+/// @author: Leon
 /// https://leetcode.com/problems/matchsticks-to-square/
 /// Time Complexity:    O(4 ^ `sum_all`)
 /// Space Complexity:   O(`len_n`)
 /// Reference:
 /// https://leetcode.com/problems/partition-to-k-equal-sum-subsets/discuss/108741/Solution-with-Reference/569560
 /// https://leetcode.com/problems/partition-to-k-equal-sum-subsets/discuss/108741/Solution-with-Reference
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

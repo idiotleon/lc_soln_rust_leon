@@ -1,13 +1,12 @@
+use std::collections::BinaryHeap;
+
+/// @author: Leon
 /// https://leetcode.com/problems/furthest-building-you-can-reach/
-///
 /// Time Complexity:     O(`len_b` * lg(`len_b`))
 /// Space Complexity:    O(`len_b`)
-///
 /// Reference:
 /// https://leetcode.com/problems/furthest-building-you-can-reach/discuss/1177681/Rust-BinaryHeap-solution
 /// https://leetcode.com/problems/furthest-building-you-can-reach/discuss/918515/JavaC%2B%2BPython-Priority-Queue
-use std::collections::BinaryHeap;
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

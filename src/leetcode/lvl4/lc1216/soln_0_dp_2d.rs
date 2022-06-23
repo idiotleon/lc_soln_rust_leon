@@ -1,13 +1,11 @@
-/// https://leetcode.com/problems/valid-palindrome-iii/
-///
-/// Time Complexity:    O(`len_s` ^ 2)
-/// Space Complexity:   O(`len_s` ^ 2)
-///
-/// Reference:
-/// https://leetcode.com/problems/valid-palindrome-iii/discuss/397606/Find-Longest-Palindromic-Subsequence./358118
 use std::cmp::max;
 
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/valid-palindrome-iii/
+/// Time Complexity:    O(`len_s` ^ 2)
+/// Space Complexity:   O(`len_s` ^ 2)
+/// Reference:
+/// https://leetcode.com/problems/valid-palindrome-iii/discuss/397606/Find-Longest-Palindromic-Subsequence./358118
 struct Solution;
 
 #[allow(dead_code)]
@@ -19,7 +17,6 @@ impl Solution {
         for d in 0..len_s {
             for lo in 1..=len_s - d {
                 let hi = lo + d;
-
                 dp[lo][hi] = if lo == hi {
                     1
                 } else if chs[lo - 1] == chs[hi - 1] {

@@ -1,12 +1,10 @@
+/// @author: Leon
 /// https://leetcode.com/problems/partition-to-k-equal-sum-subsets/
-///
 /// Time Complexity:    O(`len_n` * (2 ^ `len_n`)) + O(`len_n` * lg(`len_n`)) ~ O(`len_n` * (2 ^ `len_n`))
 /// Space Complxity:    O(2 ^ `len_n`)
-///
 /// Reference:
 /// https://leetcode.com/problems/partition-to-k-equal-sum-subsets/discuss/335668/DP-with-Bit-Masking-Solution-%3A-Best-for-Interviews
 /// https://leetcode.com/problems/partition-to-k-equal-sum-subsets/discuss/108741/solution-with-reference/962804
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

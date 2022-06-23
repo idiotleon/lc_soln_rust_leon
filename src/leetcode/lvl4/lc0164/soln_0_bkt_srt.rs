@@ -1,14 +1,12 @@
+use std::cmp::max;
+
+/// @author: Leon
 /// https://leetcode.com/problems/maximum-gap/
-///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-///
 /// Reference:
 /// https://leetcode.com/problems/maximum-gap/discuss/756567/Rust-translated
 /// https://leetcode.com/problems/maximum-gap/discuss/50694/12ms-C%2B%2B-Suggested-Solution
-use std::cmp::max;
-
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

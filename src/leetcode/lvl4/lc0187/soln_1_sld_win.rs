@@ -1,4 +1,5 @@
 use std::collections::HashSet;
+
 /// @author: Leon
 /// https://leetcode.com/problems/repeated-dna-sequences/
 /// Time Complexity:    O(`len_s`)

@@ -1,3 +1,4 @@
+/// @author: Leon
 /// https://leetcode.com/problems/cutting-ribbons/
 /// Time Complexity:    O(`_len_r` * lg(`RANGE`))
 /// Space Complexity:   O(1)

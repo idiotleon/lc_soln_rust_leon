@@ -1,13 +1,11 @@
+/// @author: Leon
 /// https://leetcode.com/problems/valid-number/
-///
 /// Time Complexity:    O(`len_s`)
 /// Space Complexity:   O(`len_s`)
-///
 /// Reference:
 /// https://leetcode.com/problems/valid-number/discuss/23738/Clear-Java-solution-with-ifs/937169
 /// https://leetcode.com/problems/valid-number/discuss/23738/Clear-Java-solution-with-ifs/22978
 /// https://leetcode.com/problems/valid-number/discuss/23738/Clear-Java-solution-with-ifs
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

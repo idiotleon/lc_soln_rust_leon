@@ -1,4 +1,5 @@
 use std::collections::VecDeque;
+
 /// @author: Leon
 /// https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/
 /// Time Complexity:    O(`len_n`)

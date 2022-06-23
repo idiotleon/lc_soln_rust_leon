@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/n-queens-ii/
-///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-///
 /// Reference:
 /// https://leetcode.com/problems/n-queens-ii/discuss/1238496/Rust-backtracking-solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
@@ -14,7 +12,6 @@ impl Solution {
         let mut row: Vec<i32> = Vec::new();
         Self::backtrack(&mut row, n)
     }
-
     fn backtrack(mut row: &mut Vec<i32>, n: i32) -> i32 {
         let len_c: usize = row.len();
         if len_c == n as usize {

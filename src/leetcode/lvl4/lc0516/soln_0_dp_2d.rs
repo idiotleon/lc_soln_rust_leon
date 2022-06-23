@@ -1,8 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/longest-palindromic-subsequence/
-///
 /// Time Complexity:    O(`len_s` ^ 2)
 /// Space Complexity:   O(`len_s` ^ 2)
-///
 /// Reference:
 /// https://leetcode.com/problems/longest-palindromic-subsequence/discuss/99101/Straight-forward-Java-DP-solution
 #[allow(dead_code)]

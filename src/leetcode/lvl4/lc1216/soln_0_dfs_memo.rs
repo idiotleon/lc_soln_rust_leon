@@ -1,13 +1,11 @@
-/// https://leetcode.com/problems/valid-palindrome-iii/
-///
-/// Time Complexity:    O(`len_s` ^ 2)
-/// Space Complexity:   O(`len_s` ^ 2)
-///
-/// Reference:
-/// https://leetcode.com/problems/valid-palindrome-iii/discuss/397606/Find-Longest-Palindromic-Subsequence.
 use std::cmp::max;
 
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/valid-palindrome-iii/
+/// Time Complexity:    O(`len_s` ^ 2)
+/// Space Complexity:   O(`len_s` ^ 2)
+/// Reference:
+/// https://leetcode.com/problems/valid-palindrome-iii/discuss/397606/Find-Longest-Palindromic-Subsequence.
 struct Solution;
 
 #[allow(dead_code)]
@@ -18,7 +16,6 @@ impl Solution {
         let mut memo: Vec<Vec<Option<i32>>> = vec![vec![None; len_s]; len_s];
         len_s as i32 - Self::dfs(0, len_s - 1, &chs, &mut memo) <= k
     }
-
     fn dfs(lo: usize, hi: usize, chs: &Vec<char>, memo: &mut Vec<Vec<Option<i32>>>) -> i32 {
         if lo > hi {
             return 0;

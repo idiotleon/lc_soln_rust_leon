@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/longest-palindromic-subsequence/
-///
 /// Time Complexity:    O(`len_s` ^ 2)
 /// Space Complexity:   O(`len_s` ^ 2)
-///
 /// Reference:
 /// https://leetcode.com/problems/longest-palindromic-subsequence/discuss/99101/Straight-forward-Java-DP-solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
@@ -16,7 +14,6 @@ impl Solution {
         let chs: Vec<char> = s.chars().collect();
         Self::dfs(0, len_s - 1, &chs, &mut memo)
     }
-
     fn dfs(lo: usize, hi: usize, chs: &Vec<char>, memo: &mut Vec<Vec<i32>>) -> i32 {
         if memo[lo][hi] >= 0 {
             return memo[lo][hi];

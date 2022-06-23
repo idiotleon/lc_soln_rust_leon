@@ -1,13 +1,11 @@
-/// https://leetcode.com/problems/partition-array-for-maximum-sum/
-///
-/// Time Complexity:    O(`len_n` * `k`)
-/// Space Complexity:   O(`k`)
-///
-/// Reference:
-/// https://leetcode.com/problems/partition-array-for-maximum-sum/discuss/290863/JavaC%2B%2BPython-DP-O(K)-Space
 use std::cmp::max;
 
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/partition-array-for-maximum-sum/
+/// Time Complexity:    O(`len_n` * `k`)
+/// Space Complexity:   O(`k`)
+/// Reference:
+/// https://leetcode.com/problems/partition-array-for-maximum-sum/discuss/290863/JavaC%2B%2BPython-DP-O(K)-Space
 struct Solution;
 
 #[allow(dead_code)]

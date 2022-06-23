@@ -1,8 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/
-///
 /// Time Complexity:    O(RANGE_I32) ~ O(1)
 /// Space Complexity:   O(RANGE_I32) ~ O(1)
-///
 /// Reference:
 /// https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/discuss/103754/C%2B%2B-Non-DP-O(32)-Fibonacci-solution
 #[allow(dead_code)]

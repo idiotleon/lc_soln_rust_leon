@@ -1,3 +1,4 @@
+/// @author: Leon
 /// https://leetcode.com/problems/single-element-in-a-sorted-array/
 /// Time Complexity:    O(lg(`len_n`))
 /// Space Complexity:   O(1)

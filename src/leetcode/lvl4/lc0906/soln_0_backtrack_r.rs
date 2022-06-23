@@ -1,13 +1,11 @@
-/// https://leetcode.com/problems/super-palindromes/
-///
-/// Time Complexity:        O()
-/// Space Complexity:       O()
-///
-/// Reference:
-/// https://leetcode.com/problems/super-palindromes/discuss/1197431/Rust-backtracking-solution
 use std::ops::RangeInclusive;
 
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/super-palindromes/
+/// Time Complexity:        O()
+/// Space Complexity:       O()
+/// Reference:
+/// https://leetcode.com/problems/super-palindromes/discuss/1197431/Rust-backtracking-solution
 struct Solution;
 
 #[allow(dead_code)]
@@ -26,7 +24,6 @@ impl Solution {
         }
         count
     }
-
     fn backtrack(v: &mut Vec<u64>, range: &RangeInclusive<u64>, is_odd: bool, count: &mut i32) {
         if v.len() == 6 {
             let digits = if let Some(pos) = v.iter().position(|&d| d != 0) {

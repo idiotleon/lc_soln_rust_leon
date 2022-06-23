@@ -1,9 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/multiply-strings/
 /// Time Complexity:    O(`len1` + `len2`)
 /// Space Complexity:   O(`len1` + `len2`)
-/// Referenec:
+/// Reference:
 /// https://leetcode.com/problems/multiply-strings/discuss/241287/Rust-0ms-solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

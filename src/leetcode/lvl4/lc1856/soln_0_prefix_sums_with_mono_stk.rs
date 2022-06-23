@@ -1,13 +1,11 @@
-/// https://leetcode.com/problems/maximum-subarray-min-product/
-///
-/// Time Complexity:    O(`len_n`)
-/// Space Complexity:   O(`len_n`)
-///
-/// Reference:
-/// https://leetcode.com/problems/maximum-subarray-min-product/discuss/1198718/JavaPython-Stack-keeps-index-of-elements-less-than-numsi-O(N)
 use std::collections::VecDeque;
 
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/maximum-subarray-min-product/
+/// Time Complexity:    O(`len_n`)
+/// Space Complexity:   O(`len_n`)
+/// Reference:
+/// https://leetcode.com/problems/maximum-subarray-min-product/discuss/1198718/JavaPython-Stack-keeps-index-of-elements-less-than-numsi-O(N)
 struct Solution;
 
 #[allow(dead_code)]

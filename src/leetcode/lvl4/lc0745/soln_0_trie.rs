@@ -1,22 +1,11 @@
+/// @author: Leon
 /// https://leetcode.com/problems/prefix-and-suffix-search/
-///
 /// Time Complexities:
 ///  `new()`:    O()
 ///  `f()`:      O()
-///
 /// Space Complexity:    O()
-///
 /// Reference:
 /// https://leetcode.com/problems/prefix-and-suffix-search/discuss/1185417/Rust-Trie-solution
-#[allow(dead_code)]
-struct Solution;
-
-#[derive(Default)]
-struct Trie {
-    idx: i32,
-    children: [Option<Box<Trie>>; 27],
-}
-
 struct WordFilter {
     root: Trie,
 }
@@ -38,7 +27,6 @@ impl WordFilter {
         }
         Self { root }
     }
-
     fn f(&self, prefix: String, suffix: String) -> i32 {
         let mut cur = &self.root;
         let str = String::new() + &suffix + "{" + &prefix;
@@ -49,7 +37,12 @@ impl WordFilter {
                 return -1;
             }
         }
-
         cur.idx
     }
+}
+
+#[derive(Default)]
+struct Trie {
+    idx: i32,
+    children: [Option<Box<Trie>>; 27],
 }

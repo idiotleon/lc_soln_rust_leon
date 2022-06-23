@@ -1,1 +1,1 @@
-pub mod soln_0_hash_map;
+pub mod soln_0_hashmap;

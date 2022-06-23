@@ -1,14 +1,12 @@
+use std::cmp::{max, min};
+
+/// @author: Leon
 /// https://leetcode.com/problems/partition-array-for-maximum-sum/
-///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-///
 /// Reference:
 /// https://leetcode.com/problems/partition-array-for-maximum-sum/discuss/370807/dfs-solution-using-memoization-super-easy-to-understand
-#[allow(dead_code)]
 struct Solution;
-
-use std::cmp::{max, min};
 
 #[allow(dead_code)]
 impl Solution {
@@ -17,7 +15,6 @@ impl Solution {
         let mut memo: Vec<i32> = vec![0; len_n];
         Self::dfs(0, k as usize, &nums, &mut memo)
     }
-
     fn dfs(idx_start: usize, k: usize, nums: &Vec<i32>, mut memo: &mut Vec<i32>) -> i32 {
         let len_n: usize = nums.len();
         if idx_start >= len_n {

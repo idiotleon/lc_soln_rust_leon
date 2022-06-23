@@ -1,13 +1,11 @@
-/// https://leetcode.com/problems/partition-array-for-maximum-sum/
-///
-/// Time Complexity:    O(`len_n` * `k`)
-/// Space Complexity:   O(`len_n`)
-///
-/// Reference:
-/// https://leetcode.com/problems/partition-array-for-maximum-sum/discuss/290863/JavaC%2B%2BPython-DP-O(K)-Space
 use std::cmp::max;
 
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/partition-array-for-maximum-sum/
+/// Time Complexity:    O(`len_n` * `k`)
+/// Space Complexity:   O(`len_n`)
+/// Reference:
+/// https://leetcode.com/problems/partition-array-for-maximum-sum/discuss/290863/JavaC%2B%2BPython-DP-O(K)-Space
 struct Solution;
 
 #[allow(dead_code)]
@@ -18,7 +16,6 @@ impl Solution {
         for idx in 1..=len_n {
             let mut cur_max: i32 = 0;
             let mut max_sum: i32 = 0;
-
             for par in 1..=k {
                 if idx as i32 - par < 0 {
                     break;

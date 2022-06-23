@@ -1,14 +1,12 @@
-/// https://leetcode.com/problems/largest-color-value-in-a-directed-graph/
-///
-/// Time Complexity:    O(V + E) ~ O(`len_c` + `len_e`)
-/// Space Complexity:   O(V + E) ~ O(`len_c` + `len_e`)
-///
-/// Reference:
-/// https://leetcode.com/problems/largest-color-value-in-a-directed-graph/discuss/1198658/C%2B%2B-Topological-Sort
 use std::cmp::max;
 use std::collections::{HashMap, HashSet, VecDeque};
 
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/largest-color-value-in-a-directed-graph/
+/// Time Complexity:    O(V + E) ~ O(`len_c` + `len_e`)
+/// Space Complexity:   O(V + E) ~ O(`len_c` + `len_e`)
+/// Reference:
+/// https://leetcode.com/problems/largest-color-value-in-a-directed-graph/discuss/1198658/C%2B%2B-Topological-Sort
 struct Solution;
 
 #[allow(dead_code)]

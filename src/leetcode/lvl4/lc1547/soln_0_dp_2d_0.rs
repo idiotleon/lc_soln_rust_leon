@@ -1,12 +1,10 @@
+/// @author: Leon
 /// https://leetcode.com/problems/minimum-cost-to-cut-a-stick/
-///
 /// Time Complexity:    O(`len_n` ^ 3)
 /// Space Complexity:   O(`len_n` ^ 2)
-///
 /// Reference:
 /// https://leetcode.com/problems/minimum-cost-to-cut-a-stick/discuss/781074/JavaC%2B%2BPython-Merge-Stones
 /// https://leetcode.com/problems/minimum-cost-to-cut-a-stick/discuss/780880/DP-with-picture-(Burst-Balloons)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

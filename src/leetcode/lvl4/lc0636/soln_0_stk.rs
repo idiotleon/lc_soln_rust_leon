@@ -1,12 +1,10 @@
+/// @author: Leon
 /// https://leetcode.com/problems/exclusive-time-olc0
-///
 /// Time Complexity:    O(`_len_logs`)
 /// Space Complexity:   O(`_len_logs`)
-///
 /// Reference:
 /// https://leetcode.com/problems/exclusive-time-of-functions/discuss/105062/Java-Stack-Solution-O(n)-Time-O(n)-Space
 /// https://leetcode.com/problems/exclusive-time-of-functions/discuss/105062/Java-Stack-Solution-O(n)-Time-O(n)-Space/107796#[allow(dead_code)]
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
