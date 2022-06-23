@@ -5,7 +5,6 @@ use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 
 /// @author: Leon
 /// https://leetcode.com/problems/validate-binary-search-tree/
-///
 /// Time Complexity:    O(N)
 /// Space Complexity:   O(H)
 #[allow(dead_code)]

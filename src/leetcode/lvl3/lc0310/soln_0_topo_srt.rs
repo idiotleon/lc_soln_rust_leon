@@ -1,12 +1,11 @@
+use std::collections::VecDeque;
+/// @author: Leon
 /// https://leetcode.com/problems/minimum-height-trees/
 /// Time Complexity:    O(`n`)
 /// Space Complexity:   O(`n`)
 /// Referenece:
 /// https://leetcode.com/problems/minimum-height-trees/discuss/76129/Share-my-BFS-JAVA-code-using-degree-with-explanation-which-beats-more-than-95/293110
-#[allow(dead_code)]
 struct Solution;
-
-use std::collections::VecDeque;
 
 #[allow(dead_code)]
 impl Solution {

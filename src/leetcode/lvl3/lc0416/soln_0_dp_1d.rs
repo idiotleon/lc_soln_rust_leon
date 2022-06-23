@@ -1,7 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/partition-equal-subset-sum/
 /// Time Complexity:    O(`_len_n` * `target`)
 /// Space Complexity:   O(`target`)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

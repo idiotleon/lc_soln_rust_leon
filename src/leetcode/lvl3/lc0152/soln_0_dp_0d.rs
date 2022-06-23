@@ -1,3 +1,4 @@
+/// @author: Leon
 /// https://leetcode.com/problems/maximum-product-subarray/
 /// Time Complexity:    O()
 /// Space Complexity:   O()

@@ -1,11 +1,11 @@
 use crate::leetcode::util::data_structure::linked_list::single::list_node::ListNode;
 
+/// @author: Leon
 /// https://leetcode.com/problems/partition-list/
 /// Time Complexity:     O()
 /// Space Complexity:    O()
 /// Reference:
 /// https://leetcode.com/problems/partition-list/discuss/719013/Rust-100-fast-solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

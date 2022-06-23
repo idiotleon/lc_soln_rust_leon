@@ -1,3 +1,4 @@
+/// @author: Leon
 /// https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/
 /// Time Complexity:    O(`len_p`)
 /// Space Complexity:   O(1)
@@ -5,7 +6,6 @@
 /// https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/discuss/1635083/PythonC++Java-One-Pass-DP-oror-O(N)-oror-Detailed-Explanation-oror-Clean-and-Easy-to-Understand/1184977
 /// https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/discuss/1635033/C%2B%2B-O(N)-time-one-pass
 /// https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/discuss/1635083/PythonC%2B%2BJava-One-Pass-DP-oror-O(N)-oror-Detailed-Explanation-oror-Clean-and-Easy-to-Understand
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

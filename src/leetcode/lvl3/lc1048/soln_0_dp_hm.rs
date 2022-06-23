@@ -1,12 +1,10 @@
+/// @author: Leon
 /// https://leetcode.com/problems/longest-string-chain/
-///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-///
 /// Reference:
 /// https://leetcode.com/problems/longest-string-chain/discuss/887186/Rust-translated-60ms-100
 /// https://leetcode.com/problems/longest-string-chain/discuss/294890/JavaC%2B%2BPython-DP-Solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
@@ -17,10 +15,8 @@ impl Solution {
         words.sort_by_key(|s| s.len());
         let mut dp = HashMap::<String, i32>::new();
         let mut longest: i32 = 0;
-
         for w in words.iter() {
             let mut best = 0;
-
             for i in 0..w.len() {
                 let mut predecessor = String::new();
                 predecessor.push_str(&w[..i]);

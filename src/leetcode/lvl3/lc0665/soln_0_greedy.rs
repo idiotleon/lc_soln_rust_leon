@@ -1,10 +1,9 @@
-// https://leetcode.com/problems/non-decreasing-array/
-//
-// Time Complexity:     O(`len_n`)
-// Space Complexity:    O(1)
-//
-// Reference:
-// https://leetcode.com/problems/non-decreasing-array/discuss/106826/JavaC%2B%2B-Simple-greedy-like-solution-with-explanation
+/// @author: Leon
+/// https://leetcode.com/problems/non-decreasing-array/
+/// Time Complexity:     O(`len_n`)
+/// Space Complexity:    O(1)
+/// Reference:
+/// https://leetcode.com/problems/non-decreasing-array/discuss/106826/JavaC%2B%2B-Simple-greedy-like-solution-with-explanation
 #[allow(dead_code)]
 struct Solution;
 

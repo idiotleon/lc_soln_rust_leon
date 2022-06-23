@@ -3,18 +3,18 @@ use std::rc::Rc;
 
 use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 
+/// @author: Leon
 /// https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/
 /// Time Complexity:    O(N)
 /// Space Complexity:   O(H)
 /// Reference:
 /// https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/discuss/496496/Java-Two-Pass-PostOrder-Traversal
 /// https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/discuss/496549/JavaC%2B%2BPython-Easy-and-Concise
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
-    const MOD: i64 = 1_000_000_007;
+    const MOD: i64 = 1e9 as i64 + 7;
     pub fn max_product(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
         let sum = Self::get_sum(&root);
         let mut max_product: i64 = 0;

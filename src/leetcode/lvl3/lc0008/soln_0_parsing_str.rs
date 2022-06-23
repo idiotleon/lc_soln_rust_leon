@@ -1,3 +1,4 @@
+/// @author: Leon
 /// https://leetcode.com/problems/string-to-integer-atoi/
 /// Time Complexity:    O(`len_s`)
 /// Space Complexity:   O(`len_s`)

@@ -1,5 +1,6 @@
 use std::collections::HashMap;
 
+/// @author: Leon
 /// https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/
 /// Time Complexity:    O(`_len_n`)
 /// Space Complexity:   O(`_len_n`)

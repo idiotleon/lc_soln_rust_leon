@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/find-and-replace-pattern/
-///
 /// Time Complexity:    O(`_n_words` * L)
 /// Space Complexity:   O(`_n_words` * L)
-///
 /// Reference:
 /// https://leetcode.com/problems/find-and-replace-pattern/discuss/543439/Rust-using-two-maps
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

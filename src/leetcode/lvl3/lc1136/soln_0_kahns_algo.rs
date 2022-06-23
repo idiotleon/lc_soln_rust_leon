@@ -1,4 +1,5 @@
 use std::collections::{HashMap, VecDeque};
+
 /// @author: Leon
 /// https://leetcode.com/problems/parallel-courses/
 /// Time Complexity:    O(V + E) ~ O(`n` + `_len_rlts`)

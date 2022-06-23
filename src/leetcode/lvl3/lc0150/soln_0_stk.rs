@@ -1,8 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/evaluate-reverse-polish-notation/
-///
 /// Time Complexity:    O(L)
 /// Space Complexity:   O(L)
-///
 /// Reference:
 /// https://leetcode.com/problems/evaluate-reverse-polish-notation/discuss/490442/Rust-simple-solution
 use std::collections::VecDeque;
@@ -27,7 +26,6 @@ impl Solution {
                 })
             }
         }
-
         stack[0]
     }
 }

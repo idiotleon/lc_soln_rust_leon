@@ -1,3 +1,4 @@
+/// @author: Leon
 /// https://leetcode.com/problems/palindrome-partitioning/
 /// Time Complexity:    O(`len_s` * (2 ^ `len_s`))
 /// Space Complexity:   O()

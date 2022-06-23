@@ -1,6 +1,5 @@
 // @author: Leon
 // https://leetcode.com/problems/container-with-most-water/
-//
 // Time Complexity:     O(`size`)
 // Space Complexity:    O(1)
 use std::cmp;

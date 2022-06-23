@@ -1,13 +1,11 @@
+use std::collections::VecDeque;
+/// @author: Leon
 /// https://leetcode.com/problems/surrounded-regions/
-///
 /// Time Complexity:    O(`n_rows` * `n_cols`)
 /// Space Complexity:   O(`n_rows` * `n_cols`)
-///
 /// Reference:
 /// https://leetcode.com/problems/surrounded-regions/discuss/41649/My-BFS-solution-(C%2B%2B-28ms)
-use std::collections::VecDeque;
 
-#[allow(dead_code)]
 struct Solution;
 
 const DIRS: &'static [i8] = &[0, -1, 0, 1, 0];

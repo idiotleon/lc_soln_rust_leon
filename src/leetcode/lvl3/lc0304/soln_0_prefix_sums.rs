@@ -1,8 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/range-sum-query-2d-immutable/
-///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-///
 /// Reference:
 /// https://leetcode.com/problems/range-sum-query-2d-immutable/discuss/75350/Clean-C%2B%2B-Solution-and-Explaination-O(mn)-space-with-O(1)-time
 #[allow(dead_code)]

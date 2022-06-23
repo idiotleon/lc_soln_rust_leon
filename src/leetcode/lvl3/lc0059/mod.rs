@@ -1,1 +1,1 @@
-pub mod soln_0_mtx_manip;
+pub mod soln_0_matrix_manipulation;

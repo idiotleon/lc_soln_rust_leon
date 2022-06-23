@@ -1,7 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/daily-temperatures/
 /// Time Complexity:    O(`len_t`)
 /// Space Complexity:   O(`len_t`)
-#[allow(dead_code)]
 struct Solution;
 
 use std::collections::VecDeque;

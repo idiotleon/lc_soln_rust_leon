@@ -3,12 +3,12 @@ use std::rc::Rc;
 
 use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 
+/// @author: Leon
 /// https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 /// Time Complexity:    O(N)
 /// Space Complexity:   O(H)
 ////// Reference:
 /// https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/discuss/326589/Rust-0ms-3.4MB
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

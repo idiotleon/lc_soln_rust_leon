@@ -1,8 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/reverse-words-in-a-string/
-///
 /// Time Complexity:    O(L)
 /// Space Complexity:   O(L)
-///
 /// Reference:
 /// https://leetcode.com/problems/reverse-words-in-a-string/discuss/392048/Rust-One-liner
 #[allow(dead_code)]

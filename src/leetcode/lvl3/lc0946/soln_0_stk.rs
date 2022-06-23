@@ -1,4 +1,5 @@
 use std::collections::VecDeque;
+
 /// @author: Leon
 /// https://leetcode.com/problems/validate-stack-sequences/
 /// Time Complexity:    O(`_len_n`)

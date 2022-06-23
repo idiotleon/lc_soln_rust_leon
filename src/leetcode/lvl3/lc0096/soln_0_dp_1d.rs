@@ -1,3 +1,4 @@
+/// @author: Leon
 /// https://leetcode.com/problems/unique-binary-search-trees/
 /// Time Complexity:    O(`n` ^ 1)
 /// Space Complexity:   O(`n`)
@@ -11,7 +12,6 @@
 /// https://leetcode-cn.com/problems/unique-binary-search-trees/solution/shou-hua-tu-jie-san-chong-xie-fa-dp-di-gui-ji-yi-h/
 /// Catalan number:
 /// https://en.wikipedia.org/wiki/Catalan_number
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

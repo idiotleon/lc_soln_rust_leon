@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/find-duplicate-file-in-system/
-///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-///
 /// Reference:
 /// https://leetcode.com/problems/find-duplicate-file-in-system/discuss/1215511/Rust-HashMap-solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

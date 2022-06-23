@@ -1,13 +1,11 @@
 use std::collections::HashMap;
 
+/// @author: Leon
 /// https://leetcode.com/problems/binary-trees-with-factors/
-///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-///
 /// Reference:
 /// https://leetcode.com/problems/binary-trees-with-factors/discuss/1107610/Rust-HashMap-solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

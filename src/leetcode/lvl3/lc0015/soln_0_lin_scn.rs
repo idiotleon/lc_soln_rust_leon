@@ -1,11 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/3sum/
-///
 /// Time Complexity:    O(`len_n` ^ 2)
 /// Space Complexity:   O(1)
-///
-/// Reference:
-///
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

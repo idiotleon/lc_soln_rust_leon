@@ -1,8 +1,7 @@
-use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
-
 use std::cell::RefCell;
 use std::rc::Rc;
 
+use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 /// @author: Leon
 /// https://leetcode.com/problems/convert-bst-to-greater-tree/
 /// Time Complexity:    O(N)
@@ -19,7 +18,6 @@ impl Solution {
         Self::dfs(root.clone(), &mut sum);
         root
     }
-
     fn dfs(node: Option<Rc<RefCell<TreeNode>>>, sum: &mut i32) {
         if node.is_none() {
             return;

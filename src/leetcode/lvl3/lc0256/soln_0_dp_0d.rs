@@ -1,14 +1,11 @@
+use std::cmp::min;
+/// @author: Leon
 /// https://leetcode.com/problems/paint-house/
-///
 /// Time Complexity:    O(`_len_cts`)
 /// Space Complexity:   O(1)
-///
 /// Reference:
 /// https://leetcode.com/problems/paint-house/discuss/68211/Simple-java-DP-solution/70111
 /// https://leetcode.com/problems/paint-house/discuss/68211/Simple-java-DP-solution
-use std::cmp::min;
-
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

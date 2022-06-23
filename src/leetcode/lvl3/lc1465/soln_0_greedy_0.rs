@@ -1,12 +1,10 @@
+/// @author: Leon
 /// https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/
-///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-///
 /// Reference:
 /// https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/discuss/1248666/Rust-solution/960442
 /// https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/discuss/1248666/Rust-solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

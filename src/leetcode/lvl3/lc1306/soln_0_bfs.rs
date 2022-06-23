@@ -1,14 +1,11 @@
-// https://leetcode.com/problems/jump-game-iii/
-//
-// Time Complexity:     O(`len_arr`)
-// Space Compelxity:    O(`len_arr`)
-//
-// Reference:
-//  https://leetcode.com/problems/jump-game-iii/discuss/463798/JavaPython-3-BFS-and-DFS-codes-w-analysis.
-use std::collections::HashSet;
-use std::collections::VecDeque;
+use std::collections::{HashSet, VecDeque};
 
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/jump-game-iii/
+/// Time Complexity:     O(`len_arr`)
+/// Space Compelxity:    O(`len_arr`)
+/// Reference:
+/// https://leetcode.com/problems/jump-game-iii/discuss/463798/JavaPython-3-BFS-and-DFS-codes-w-analysis.
 struct Solution;
 
 #[allow(dead_code)]

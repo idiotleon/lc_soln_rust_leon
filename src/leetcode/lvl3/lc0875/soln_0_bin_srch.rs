@@ -4,7 +4,6 @@
 /// Space Complexity:   O(1)
 /// Reference:
 /// https://leetcode.com/problems/koko-eating-bananas/discuss/152324/JavaC%2B%2BPython-Binary-Search
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

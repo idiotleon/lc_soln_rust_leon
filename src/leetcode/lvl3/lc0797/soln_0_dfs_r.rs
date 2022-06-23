@@ -1,7 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/all-paths-from-source-to-target/
 /// Time Complexity:    O(V + E)
 /// Space Complexity:   O(V + E)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
@@ -16,19 +16,21 @@ impl Solution {
         };
         ans
     }
-    fn dfs(cur: usize, 
-        path: &mut Vec<i32>, 
-        graph: &Vec<Vec<i32>>, 
-        destination: usize, 
-        paths: &mut Vec<Vec<i32>>){
-            if cur == destination{
-                paths.push(path.to_vec());
-                return;
-            }
-            for &next in &graph[cur]{
-                path.push(next);
-                Self::dfs(next as usize, path, graph, destination, paths);
-                path.pop();
-            }
+    fn dfs(
+        cur: usize,
+        path: &mut Vec<i32>,
+        graph: &Vec<Vec<i32>>,
+        destination: usize,
+        paths: &mut Vec<Vec<i32>>,
+    ) {
+        if cur == destination {
+            paths.push(path.to_vec());
+            return;
+        }
+        for &next in &graph[cur] {
+            path.push(next);
+            Self::dfs(next as usize, path, graph, destination, paths);
+            path.pop();
+        }
     }
 }

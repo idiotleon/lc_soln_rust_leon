@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/ambiguous-coordinates/
-///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-///
 /// Reference:
 /// https://leetcode.com/problems/ambiguous-coordinates/discuss/123875/Really-clear-Java-code
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
@@ -26,7 +24,6 @@ impl Solution {
         }
         ans
     }
-
     fn allowed(slice: &str) -> Vec<String> {
         let len_s = slice.len();
         let chs: Vec<char> = slice.chars().collect();

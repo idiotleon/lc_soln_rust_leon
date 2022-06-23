@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/valid-parenthesis-string/
-///
 /// Time Complexity:    O(`_len_s`)
 /// Space Complexity:   O(`_len_s`) / O(1)
-///
 /// Reference:
 /// https://leetcode.com/problems/valid-parenthesis-string/discuss/302732/C%2B%2B-O(S)-Time-O(1)-Space-One-Pass-with-Explanation
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

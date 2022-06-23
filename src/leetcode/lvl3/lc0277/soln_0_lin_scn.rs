@@ -1,8 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/find-the-celebrity/
-///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
@@ -27,7 +26,6 @@ impl Solution {
         }
         celebrity
     }
-
     /// Fake API
     /// The knows API is defined for you.
     /// knows(a: i32, b: i32)->bool;

@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/search-suggestions-system/
-///
 /// Time Complexity:    O()
 /// Space Complexity:   O()
-///
 /// Reference:
 /// https://leetcode.com/problems/search-suggestions-system/discuss/1243383/Rust-simple-solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

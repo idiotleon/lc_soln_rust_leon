@@ -1,12 +1,10 @@
+/// @author: Leon
 /// https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/
-///
 /// Time Complexity:    O(`len_p`)
 /// Space Complexity:   O(`len_p`)
-///
 /// Reference:
 /// https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/discuss/1345047/C%2B%2B-solution-Note-the-rule-of-this-question-is-like-the-game-of-Mahjong.
 /// https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/discuss/1310512/Java-straightforward-solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
@@ -31,7 +29,6 @@ impl Solution {
                         if flag {
                             return false;
                         }
-
                         flag = true;
                     }
                     _ => {}

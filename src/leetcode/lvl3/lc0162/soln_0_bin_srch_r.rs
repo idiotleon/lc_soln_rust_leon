@@ -1,7 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/find-peak-element/
 /// Time Complexity:    O(lg(`len_n`))
 /// Space Complexity:   O(lg(`len_n`))
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

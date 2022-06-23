@@ -1,13 +1,9 @@
-// https://leetcode.com/problems/meeting-scheduler/
-//
-// Time Complexity:     O(`lens1` * lg(`lens1`)) + O(`lens2` * lg(`lens2`)) ~ O(lens * lg(lens)))
-// Space Complexity:    O(1)
-//
-// Reference:
-//  https://leetcode.com/problems/meeting-scheduler/discuss/408491/JavaC%2B%2B-Two-Pointer-Clean-code-O(NlogN)-for-Sorting-Beat-100
-use std::cmp;
-
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/meeting-scheduler/
+/// Time Complexity:     O(`lens1` * lg(`lens1`)) + O(`lens2` * lg(`lens2`)) ~ O(lens * lg(lens)))
+/// Space Complexity:    O(1)
+/// Reference:
+/// https://leetcode.com/problems/meeting-scheduler/discuss/408491/JavaC%2B%2B-Two-Pointer-Clean-code-O(NlogN)-for-Sorting-Beat-100
 struct Solution;
 
 #[allow(dead_code)]
@@ -27,8 +23,8 @@ impl Solution {
         let mut idx2 = 0;
 
         while idx1 < lens1 && idx2 < lens2 {
-            let start_intersect = cmp::max(slots1[idx1][0], slots2[idx2][0]);
-            let end_intersect = cmp::min(slots1[idx1][1], slots2[idx2][1]);
+            let start_intersect = std::cmp::max(slots1[idx1][0], slots2[idx2][0]);
+            let end_intersect = std::cmp::min(slots1[idx1][1], slots2[idx2][1]);
 
             if start_intersect + duration <= end_intersect {
                 return vec![start_intersect, start_intersect + duration];

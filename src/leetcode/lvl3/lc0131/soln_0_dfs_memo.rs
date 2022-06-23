@@ -1,6 +1,8 @@
+/// @author: Leon
 /// https://leetcode.com/problems/palindrome-partitioning/
 /// Time Complexity:    O(`len_s` * (2 ^ `len_s`))
 /// Space Complexity:   O(`len_s` ^ 2) + O(`len_s`)
+/// Reference:
 /// https://leetcode.com/problems/palindrome-partitioning/discuss/41982/Java-DP-%2B-DFS-solution
 struct Solution;
 

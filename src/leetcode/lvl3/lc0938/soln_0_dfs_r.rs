@@ -3,12 +3,12 @@ use std::rc::Rc;
 
 use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 
+/// @author: Leon
 /// https://leetcode.com/problems/range-sum-of-bst/
 /// Time Complexity:    O(N)
 /// Space Complexity:   O(H)
 /// Reference:
 /// https://leetcode.com/problems/range-sum-of-bst/discuss/213098/Rust-recursive-solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

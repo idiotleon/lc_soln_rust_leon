@@ -1,7 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/execution-of-all-suffix-instructions-staying-in-a-grid/
 /// Time Complexity:    O(`len_s` ^ 2)
 /// Space Complexity:   O(1) / O(`len_s`)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

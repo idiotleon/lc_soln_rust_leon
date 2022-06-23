@@ -1,4 +1,5 @@
 use std::collections::{HashSet, VecDeque};
+
 /// @author: Leon
 /// https://leetcode.com/problems/minimum-knight-moves/
 /// Time Complexity:    O(V + E) ~
@@ -20,16 +21,12 @@ impl Solution {
         (1, 2),
         (2, 1),
     ];
-
     pub fn min_knight_moves(x: i32, y: i32) -> i32 {
         let mut queue: VecDeque<(i32, i32)> = VecDeque::new();
         queue.push_back((0, 0));
-
         let mut visited: HashSet<(i32, i32)> = HashSet::new();
         visited.insert((0, 0));
-
         let mut moves: i32 = 0;
-
         while !queue.is_empty() {
             let len_q = queue.len();
             for _ in 0..len_q {

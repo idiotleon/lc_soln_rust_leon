@@ -1,11 +1,11 @@
 use std::collections::HashMap;
 
+/// @author: Leon
 /// https://leetcode.com/problems/count-nice-pairs-in-an-array/
 /// Time Complexity:    O(`_len_n * lg10(avg_len_num)`)
 /// Space Complexity:   O(`_len_n`)
 /// Reference:
 /// https://leetcode.com/problems/count-nice-pairs-in-an-array/discuss/1140487/Count-Frequency-of-difference-of-number-and-its-reverse-or-Easy-Hashmap-Explained
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

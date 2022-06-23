@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/longest-increasing-subsequence/
-///
 /// Time Complexity:        O(`len_n` ^ 2)
 /// Space Complexity:       O(`len_n`)
-///
 /// Reference:
 /// https://leetcode.com/problems/longest-increasing-subsequence/discuss/74836/My-easy-to-understand-O(n2)-solution-using-DP-with-video-explanation/144619
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

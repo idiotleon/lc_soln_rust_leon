@@ -1,1 +1,1 @@
-pub mod soln_0_grdy;
+pub mod soln_0_greedy;

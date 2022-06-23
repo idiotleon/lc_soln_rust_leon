@@ -1,3 +1,4 @@
+/// @author: Leon
 /// https://leetcode.com/problems/merge-intervals/
 /// Time Complexity:    O(`_len_intvl`)
 /// Space Complexity:   O(`_len_intvl`) / O(1)

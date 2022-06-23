@@ -1,8 +1,7 @@
+/// @author: Leon
 /// https://leetcode.com/problems/sort-colors/
-///
 /// Time Complexity:    O(`len_ns`)
 /// Space Complexity:   O(1)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

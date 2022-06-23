@@ -1,13 +1,11 @@
-/// https://leetcode.com/problems/maximum-of-minimum-values-in-all-subarrays/
-///
-/// Time Complexity:    O(`len_n`)
-/// Space Complexity;   O(`len_n`)
-///
-/// Reference:
-/// https://leetcode.com/problems/maximum-of-minimum-values-in-all-subarrays/discuss/1310252/Java-O(n)-using-Stacks
 use std::collections::VecDeque;
 
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/maximum-of-minimum-values-in-all-subarrays/
+/// Time Complexity:    O(`len_n`)
+/// Space Complexity;   O(`len_n`)
+/// Reference:
+/// https://leetcode.com/problems/maximum-of-minimum-values-in-all-subarrays/discuss/1310252/Java-O(n)-using-Stacks
 struct Solution;
 
 #[allow(dead_code)]

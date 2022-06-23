@@ -1,15 +1,15 @@
 use std::collections::VecDeque;
 /// @author: Leon
 /// https://leetcode.com/problems/course-schedule-ii/
-/// Time Complexity:    O(`num_courses` + `_n_pres`)
-/// Space Complexity:   O(`num_courses` + `n_pres`)
+/// Time Complexity:    O(`num_courses` + `_len_pres`)
+/// Space Complexity:   O(`num_courses` + `_len_pres`)
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn find_order(num_courses: i32, prerequisites: Vec<Vec<i32>>) -> Vec<i32> {
         let len_cs: usize = num_courses as usize;
-        let _n_pres = prerequisites.len();
+        let _len_pres = prerequisites.len();
         let (graph, mut indegrees) = Self::build_graph(len_cs, prerequisites);
         let mut queue: VecDeque<usize> = VecDeque::new();
         for (idx, &indegree) in indegrees.iter().enumerate() {

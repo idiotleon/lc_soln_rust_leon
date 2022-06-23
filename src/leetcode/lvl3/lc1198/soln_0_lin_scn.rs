@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/find-smallest-common-element-in-all-rows/
-///
 /// Time Complexity:    O(`num_rows` * num_cols)
 /// Space Complexity:   O(`RANGE`)
-///
 /// Reference:
-///     https://leetcode.com/problems/find-smallest-common-element-in-all-rows/discuss/1122045/Rust-simple-solution
-#[allow(dead_code)]
+/// https://leetcode.com/problems/find-smallest-common-element-in-all-rows/discuss/1122045/Rust-simple-solution
 struct Solution;
 
 #[allow(dead_code)]
