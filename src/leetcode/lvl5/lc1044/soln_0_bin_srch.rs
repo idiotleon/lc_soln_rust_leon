@@ -1,27 +1,24 @@
-/// https://leetcode.com/problems/longest-duplicate-substring/
-///
-/// Time Complexity:    O()
-/// Space Complexity:   O()
-///
-/// Reference:
-/// https://leetcode.com/problems/longest-duplicate-substring/discuss/695243/Rust-binary-search-%2B-Rabin-Karp-solution
 use std::collections::HashMap;
 
-const M: u64 = (1 << 31) - 1;
-const B: u64 = 257;
-
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/longest-duplicate-substring/
+/// Time Complexity:    O()
+/// Space Complexity:   O()
+/// Reference:
+/// https://leetcode.com/problems/longest-duplicate-substring/discuss/695243/Rust-binary-search-%2B-Rabin-Karp-solution
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
+    const M: u64 = (1 << 31) - 1;
+    const B: u64 = 257;
     pub fn longest_dup_substring(s: String) -> String {
         let s: &[u8] = s.as_bytes();
         let mut hashes: Vec<u64> = Vec::with_capacity(s.len() + 1);
         let mut hash = 0;
         hashes.push(hash);
         for &u in s.iter() {
-            hash = (hash * B + u as u64) % M;
+            hash = (hash * Self::B + u as u64) % Self::M;
             hashes.push(hash);
         }
         let (mut lo, mut hi) = (0, s.len());
@@ -38,10 +35,10 @@ impl Solution {
         s[ans..ans + lo - 1].iter().map(|&u| u as char).collect()
     }
     fn helper(s: &[u8], len: usize, hashes: &[u64]) -> Option<usize> {
-        let b = (0..len as u64).fold(1, |acc, _| (acc * B) % M);
+        let b = (0..len as u64).fold(1, |acc, _| (acc * Self::B) % Self::M);
         let mut hm: HashMap<u64, usize> = HashMap::new();
         for i in 0..s.len() - len + 1 {
-            let h = (hashes[i + len] + M - hashes[i] * b % M) % M;
+            let h = (hashes[i + len] + Self::M - hashes[i] * b % Self::M) % Self::M;
             if let Some(j) = hm.get(&h) {
                 if (0..len).all(|k| s[i + k] == s[j + k]) {
                     return Some(*j);

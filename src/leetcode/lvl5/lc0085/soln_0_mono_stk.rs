@@ -1,11 +1,11 @@
+use std::collections::VecDeque;
+
+/// @author: Leon
 /// https://leetcode.com/problems/maximal-rectangle/
 /// Time Complexity:    O(`_len_r` * `len_c`)
 /// Space Complexity:   O(`len_c`)
 /// Reference:
 /// https://leetcode.com/problems/maximal-rectangle/discuss/29064/A-O(n2)-solution-based-on-Largest-Rectangle-in-Histogram
-use std::collections::VecDeque;
-
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
