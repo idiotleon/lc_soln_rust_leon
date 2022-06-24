@@ -13,7 +13,7 @@ struct Solution;
 impl Solution {
     pub fn equal_digit_frequency(s: String) -> i32 {
         let len_s: usize = s.len();
-        let chs: Vec<char> = s.chars().collect();
+        let bs: &[u8] = s.as_bytes();
         const MOD: u32 = 1e9 as u32 + 7;
         // there are only 10 digits in decimal
         const RANGE: u32 = 10 + 1;
@@ -24,7 +24,7 @@ impl Solution {
             let mut most: u16 = 0;
             let mut hash: u32 = 0;
             for hi in lo..len_s {
-                let digit = chs[hi] as usize - '0' as usize;
+                let digit: usize = (bs[hi] - b'0') as usize;
                 if freqs[digit] == 0 {
                     unique += 1;
                 }

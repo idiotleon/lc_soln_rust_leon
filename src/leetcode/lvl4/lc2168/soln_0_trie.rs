@@ -13,7 +13,7 @@ struct Solution;
 impl Solution {
     pub fn equal_digit_frequency(s: String) -> i32 {
         let len_s: usize = s.len();
-        let chs: Vec<char> = s.chars().collect();
+        let bs: &[u8] = s.as_bytes();
         let mut ans: i32 = 0;
         // dummy root
         let root = Rc::new(RefCell::new(TrieNode::new()));
@@ -23,7 +23,7 @@ impl Solution {
             let mut most: u16 = 0;
             let mut cur = Some(root.clone());
             for hi in lo..len_s {
-                let digit: usize = chs[hi] as usize - '0' as usize;
+                let digit: usize = (bs[hi] - b'0') as usize;
                 if freqs[digit] == 0 {
                     unique += 1;
                 }
