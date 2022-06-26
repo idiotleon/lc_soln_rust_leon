@@ -8,22 +8,19 @@ struct Solution;
 impl Solution {
     pub fn product_except_self(nums: Vec<i32>) -> Vec<i32> {
         let len_n = nums.len();
-        let ans = {
-            let mut ans = vec![0; len_n];
-            if nums.is_empty() {
-                return ans;
-            }
-            ans[0] = 1;
-            for i in 1..len_n {
-                ans[i] = nums[i - 1] * ans[i - 1];
-            }
-            let mut res = 1;
-            for i in (0..len_n).rev() {
-                ans[i] *= res;
-                res *= nums[i];
-            }
-            ans
-        };
+        let mut ans = vec![0; len_n];
+        if nums.is_empty() {
+            return ans;
+        }
+        ans[0] = 1;
+        for i in 1..len_n {
+            ans[i] = nums[i - 1] * ans[i - 1];
+        }
+        let mut res = 1;
+        for i in (0..len_n).rev() {
+            ans[i] *= res;
+            res *= nums[i];
+        }
         ans
     }
 }

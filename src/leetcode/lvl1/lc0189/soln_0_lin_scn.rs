@@ -13,15 +13,13 @@ impl Solution {
             return;
         }
         Self::reverse((0, len_n - 1), nums);
-        Self::reverse((0, k as usize - 1), nums);
-        Self::reverse((k as usize, len_n - 1), nums);
+        Self::reverse((0, k - 1), nums);
+        Self::reverse((k, len_n - 1), nums);
     }
     fn reverse(coord: (usize, usize), nums: &mut Vec<i32>) {
         let (mut lo, mut hi) = coord;
         while lo < hi {
-            let tmp = nums[lo];
-            nums[lo] = nums[hi];
-            nums[hi] = tmp;
+            nums.swap(lo, hi);
             lo += 1;
             hi -= 1;
         }
