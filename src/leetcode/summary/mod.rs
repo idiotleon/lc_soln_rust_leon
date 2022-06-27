@@ -1,2 +1,2 @@
-pub mod linked_list;
-pub mod trie;
+pub mod by_algorithm;
+pub mod by_data_structure;
