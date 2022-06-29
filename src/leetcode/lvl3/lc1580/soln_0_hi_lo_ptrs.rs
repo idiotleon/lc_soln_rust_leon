@@ -1,7 +1,7 @@
 /// @author: Leon
 /// https://leetcode.com/problems/put-boxes-into-the-warehouse-ii/
-/// Time Complexity:    O(`len_bx` * lg(`len_bx`)) + O(`len_bx`) ~
-/// Space Complexity:   O(1)
+/// Time Complexity:    O(`len_bs` * lg(`len_bs`)) + O(`len_bs`) ~ O(`len_bs` * lg(`len_bs`))
+/// Space Complexity:   O(lg(`len_bs`))
 /// Reference:
 /// https://leetcode.com/problems/put-boxes-into-the-warehouse-ii/discuss/839298/JAVA-Short-O(NlgN%2BM)-Time-O(1)-Space
 struct Solution;
@@ -9,25 +9,28 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn max_boxes_in_warehouse(boxes: Vec<i32>, warehouse: Vec<i32>) -> i32 {
-        let len_wh: usize = warehouse.len();
+        let len_bs: usize = boxes.len();
+        let len_ws: usize = warehouse.len();
+        let boxes: Vec<i32> = {
+            let mut boxes = boxes;
+            boxes.sort();
+            boxes
+        };
+        let mut cnt: i32 = 0;
         let mut lo: usize = 0;
-        let mut hi: usize = len_wh - 1;
-        let len_bx: usize = boxes.len();
-        let mut boxes = boxes;
-        boxes.sort();
-        let mut count: usize = 0;
-        for i in (0..len_bx).rev() {
+        let mut hi: usize = len_ws - 1;
+        for idx in (0..len_bs).rev() {
             if lo > hi {
                 break;
             }
-            if boxes[i] <= warehouse[lo] {
+            if boxes[idx] <= warehouse[lo] {
                 lo += 1;
-                count += 1;
-            } else if boxes[i] <= warehouse[hi] {
+                cnt += 1;
+            } else if boxes[idx] <= warehouse[hi] {
                 hi -= 1;
-                count += 1;
+                cnt += 1;
             }
         }
-        count as i32
+        cnt
     }
 }
