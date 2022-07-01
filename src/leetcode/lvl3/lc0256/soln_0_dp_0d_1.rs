@@ -1,4 +1,5 @@
 use std::cmp::min;
+
 /// @author: Leon
 /// https://leetcode.com/problems/paint-house/
 /// Time Complexity:    O(`_len_cts`)
