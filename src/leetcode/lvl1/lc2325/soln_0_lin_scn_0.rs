@@ -1,6 +1,6 @@
 /// @author: Leon
 /// https://leetcode.com/problems/decode-the-message/
-/// Time Complexity:    O(`_len_k`) + O(`_len_m`) ~ O(max(`_len_k`, `_len_m`))
+/// Time Complexity:    O(`_len_k`) + O(`_len_m`) ~ O(`_len_k`)
 /// Space Complexity:   O(1)
 struct Solution;
 
@@ -21,8 +21,6 @@ impl Solution {
                 if ch == SPACE {
                     continue;
                 }
-                // let idx_ch: i32 = ch as i32 - 'a' as i32;
-                // let idx_ch: usize = idx_ch as usize;
                 let idx_ch: usize = ch as usize - 'a' as usize;
                 if used[idx_ch] == 0 {
                     distinct += 1;
