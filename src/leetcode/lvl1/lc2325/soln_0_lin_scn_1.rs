@@ -1,6 +1,6 @@
 /// @author: Leon
 /// https://leetcode.com/problems/decode-the-message/
-/// Time Complexity:    O(`_len_k`) + O(`_len_m`) ~ O(`_len_k`)
+/// Time Complexity:    O(`_len_k`) + O(`_len_m`) ~ O(max(`_len_k`. `_len_m`))
 /// Space Complexity:   O(1)
 struct Solution;
 
@@ -10,7 +10,6 @@ impl Solution {
         let _len_k: usize = key.len();
         let _len_m: usize = message.len();
         const RANGE: u8 = 26 + 1;
-        const IMPL: char = '#';
         const SPACE: u8 = b' ';
         let dict: Vec<u8> = {
             let mut dict: Vec<u8> = vec![RANGE; 26];
