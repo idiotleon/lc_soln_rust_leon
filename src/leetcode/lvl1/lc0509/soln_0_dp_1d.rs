@@ -1,9 +1,7 @@
 /// @author: Leon
 /// https://leetcode.com/problems/fibonacci-number/
-///
 /// Time Complexity:     O(`n`)
-/// Space Complexity:    O(`n`)
-#[allow(dead_code)]
+/// Space Complexity:    O(`n`) ~ O(1)
 struct Solution;
 
 #[allow(dead_code)]
@@ -12,12 +10,13 @@ impl Solution {
         if n == 0 {
             return 0;
         }
-        let mut dp = vec![0; (n + 1) as usize];
+        let len_ns: usize = n as usize;
+        let mut dp: Vec<i32> = vec![0; 1 + len_ns];
         dp[0] = 0;
         dp[1] = 1;
-        for i in 2..(n + 1) as usize {
-            dp[i] = dp[i - 1] + dp[i - 2];
+        for idx in 2..=len_ns {
+            dp[idx] = dp[idx - 1] + dp[idx - 2];
         }
-        dp[n as usize]
+        dp[len_ns]
     }
 }
