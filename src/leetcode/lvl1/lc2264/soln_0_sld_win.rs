@@ -1,7 +1,7 @@
 /// @author: Leon
 /// https://leetcode.com/problems/largest-3-same-digit-number-in-string/
-/// Time Complexity:    O()
-/// Space Complexity:   O()
+/// Time Complexity:    O(`len_s`)
+/// Space Complexity:   O(1)
 struct Solution;
 
 #[allow(dead_code)]
