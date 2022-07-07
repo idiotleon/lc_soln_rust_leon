@@ -15,20 +15,20 @@ impl Solution {
         let mut res: Vec<i64> = Vec::with_capacity(len_s);
         Self::dfs(0, &chs, &mut res)
     }
-    fn dfs(idx_start: usize, chs: &Vec<char>, res: &mut Vec<i64>) -> bool{
+    fn dfs(idx_start: usize, chs: &Vec<char>, res: &mut Vec<i64>) -> bool {
         let len_cs: usize = chs.len();
-        if idx_start == len_cs && res.len() >= 3{
+        if idx_start == len_cs && res.len() >= 3 {
             return true;
         }
         let mut num: i64 = 0;
-        for idx in idx_start..len_cs{
-            if idx != idx_start && chs[idx_start] == '0'{
+        for idx in idx_start..len_cs {
+            if idx != idx_start && chs[idx_start] == '0' {
                 break;
             }
             num = num * 10 + chs[idx] as i64 - '0' as i64;
-            if res.len() < 2 || num == res[res.len() - 1] + res[res.len() - 2]{
+            if res.len() < 2 || num == res[res.len() - 1] + res[res.len() - 2] {
                 res.push(num);
-                if Self::dfs(idx + 1, chs, res){
+                if Self::dfs(idx + 1, chs, res) {
                     return true;
                 }
                 res.pop();
