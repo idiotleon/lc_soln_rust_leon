@@ -49,6 +49,7 @@ pub mod lc0968;
 pub mod lc1039;
 pub mod lc1043;
 pub mod lc1102;
+pub mod lc1135;
 pub mod lc1163;
 pub mod lc1216;
 pub mod lc1234;
