@@ -16,29 +16,27 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn right_side_view(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
-        match root {
-            Some(node) => {
-                let mut ans: Vec<i32> = Vec::new();
-                let mut queue: VecDeque<Rc<RefCell<TreeNode>>> = VecDeque::new();
-                queue.push_back(node);
-                while !queue.is_empty() {
-                    let len_q = queue.len();
-                    for sz in 0..len_q {
-                        let first = queue.pop_front().unwrap();
-                        if sz == len_q - 1 {
-                            ans.push(first.clone().borrow().val);
+        let mut ans: Vec<i32> = Vec::new();
+        if let Some(rt) = root {
+            let mut queue: VecDeque<Rc<RefCell<TreeNode>>> = VecDeque::new();
+            queue.push_back(rt);
+            while !queue.is_empty() {
+                let len_q = queue.len();
+                for idx in 0..len_q {
+                    if let Some(cur) = queue.pop_front() {
+                        if idx == len_q - 1 {
+                            ans.push(cur.borrow().val);
                         }
-                        if let Some(ref left) = first.clone().borrow().left {
-                            queue.push_back(left.clone());
+                        if let Some(l) = cur.borrow().left.clone() {
+                            queue.push_back(l);
                         }
-                        if let Some(ref right) = first.clone().borrow().right {
-                            queue.push_back(right.clone());
+                        if let Some(r) = cur.borrow().right.clone() {
+                            queue.push_back(r);
                         }
                     }
                 }
-                ans
             }
-            None => vec![],
         }
+        ans
     }
 }
