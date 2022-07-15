@@ -2,8 +2,8 @@ use std::collections::VecDeque;
 
 /// @author: Leon
 /// https://leetcode.com/problems/basic-calculator-iii/
-/// Time Complexity:    O(`_len_s`)
-/// Space Compleixty:   O(`_len_s`)
+/// Time Complexity:    O(`len_s`)
+/// Space Compleixty:   O(`len_s`)
 /// Reference:
 /// https://leetcode.com/problems/basic-calculator-iii/discuss/152092/O(n)-Java-Recursive-Simple-Solution/227715
 struct Solution;
@@ -18,9 +18,9 @@ impl Solution {
     const SIGN_MULTIPLY: char = '*';
     const SIGN_DIVIDE: char = '/';
     pub fn calculate(s: String) -> i32 {
-        let _len_s = s.len();
-        let mut tokens: VecDeque<char> = VecDeque::new();
-        for ch in s.chars().into_iter() {
+        let len_s = s.len();
+        let mut tokens: VecDeque<char> = VecDeque::with_capacity(len_s);
+        for ch in s.chars() {
             if ch != Self::SPACE {
                 tokens.push_back(ch);
             }
@@ -70,21 +70,21 @@ impl Solution {
 mod test {
     use super::*;
     #[test]
-    fn test_sample_input_1() {
+    fn test_sample_input_1_should_return_expected() {
         let s: String = "1+1".to_owned();
         let actual: i32 = Solution::calculate(s);
         let expected: i32 = 2;
         assert_eq!(expected, actual);
     }
     #[test]
-    fn test_sample_input_2() {
+    fn test_sample_input_2_should_return_expected() {
         let s: String = "6-4/2".to_owned();
         let actual: i32 = Solution::calculate(s);
         let expected: i32 = 4;
         assert_eq!(expected, actual);
     }
     #[test]
-    fn test_sample_input_3() {
+    fn test_sample_input_3_should_return_expected() {
         let s: String = "2*(5+5*2)/3+(6/2+8)".to_owned();
         let actual: i32 = Solution::calculate(s);
         let expected: i32 = 21;
