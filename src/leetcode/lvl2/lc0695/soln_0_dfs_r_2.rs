@@ -10,6 +10,8 @@ struct Solution;
 impl Solution {
     pub fn max_area_of_island(grid: Vec<Vec<i32>>) -> i32 {
         const DIRS: [isize; 5] = [0, -1, 0, 1, 0];
+        const ISLAND: i32 = 1;
+        const WATER: i32 = 0;
         fn dfs(r: isize, c: isize, visited: &mut Vec<Vec<bool>>, grid: &Vec<Vec<i32>>) -> i32 {
             let len_rs: usize = grid.len();
             let len_cs: usize = grid[0].len();
@@ -18,7 +20,7 @@ impl Solution {
                 || c < 0
                 || c >= len_cs as isize
                 || visited[r as usize][c as usize]
-                || grid[r as usize][c as usize] == 0
+                || grid[r as usize][c as usize] == WATER
             {
                 return 0;
             }
@@ -26,7 +28,6 @@ impl Solution {
             visited[r as usize][c as usize] = true;
             for d in 0..4 as usize {
                 let (nxt_r, nxt_c) = (r + DIRS[d], c + DIRS[d + 1]);
-
                 area += dfs(nxt_r, nxt_c, visited, grid);
             }
             area
@@ -37,10 +38,9 @@ impl Solution {
         let mut visited: Vec<Vec<bool>> = vec![vec![false; len_cs]; len_rs];
         for r in 0..len_rs {
             for c in 0..len_cs {
-                if grid[r][c] == 0 {
+                if grid[r][c] == WATER {
                     continue;
                 }
-
                 let cur_area = dfs(r as isize, c as isize, &mut visited, &grid);
                 max_area = std::cmp::max(max_area, cur_area);
             }

@@ -1,19 +1,17 @@
 /// @author: Leon
-/// https://leetcode.com/problems/number-of-islands/
+/// https://leetcode.com/problems/max-area-of-island/
 /// Time Complexity:    O(`len_rs` * `len_cs`)
-/// Space Complexity:   O(1)
-///
-/// this is a NOT yet correct solution
+/// Space Complexity:   O(`len_rs` * `len_cs`)
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
-    pub fn num_islands(mut grid: Vec<Vec<char>>) -> i32 {
+    pub fn max_area_of_island(grid: Vec<Vec<i32>>) -> i32 {
         let len_rs: usize = grid.len();
         let len_cs: usize = grid[0].len();
         let len = len_rs * len_cs;
-        const LAND: char = '1';
-        const WATER: char = '0';
+        const LAND: i32 = 1;
+        const WATER: i32 = 0;
         const DIRS: &[isize] = &[0, -1, 0, 1, 0];
         let mut roots: Vec<i32> = {
             let mut roots = vec![0; len];
@@ -22,14 +20,16 @@ impl Solution {
             }
             roots
         };
-        let mut ranks: Vec<i32> = vec![1; len];
-        let mut isolated: i32 = len as i32;
+        let mut sizes: Vec<i32> = vec![1; len];
+        let mut visited: Vec<Vec<bool>> = vec![vec![false; len_cs]; len_rs];
+        let mut at_least_one: bool = false;
         for r in 0..len_rs {
             for c in 0..len_cs {
-                if grid[r][c] == WATER {
+                if grid[r][c] == WATER || visited[r][c] {
                     continue;
                 }
-                grid[r][c] = WATER;
+                at_least_one = true;
+                visited[r][c] = true;
                 for d in 0..4 {
                     let r_nxt: isize = r as isize + DIRS[d];
                     let c_nxt: isize = c as isize + DIRS[d + 1];
@@ -49,13 +49,16 @@ impl Solution {
                         r * len_cs + c,
                         r_nxt * len_cs + c_nxt,
                         &mut roots,
-                        &mut ranks,
-                        &mut isolated,
+                        &mut sizes,
                     );
                 }
             }
         }
-        isolated
+        if at_least_one {
+            sizes.into_iter().max().unwrap()
+        } else {
+            0
+        }
     }
     fn find(x: usize, roots: &mut Vec<i32>) -> usize {
         if roots[x] != x as i32 {
@@ -63,19 +66,20 @@ impl Solution {
         }
         roots[x] as usize
     }
-    fn union(x: usize, y: usize, roots: &mut Vec<i32>, ranks: &mut Vec<i32>, isolated: &mut i32) {
+    fn union(x: usize, y: usize, roots: &mut Vec<i32>, sizes: &mut Vec<i32>) {
         let root_x = Self::find(x, roots);
         let root_y = Self::find(y, roots);
         if root_x == root_y {
             return;
         }
-        if ranks[root_x] > ranks[root_y] {
+        if sizes[root_x] > sizes[root_y] {
             roots[root_y] = root_x as i32;
-            ranks[root_x] += 1;
+            sizes[root_x] += sizes[root_y];
+            sizes[root_y] = 0;
         } else {
             roots[root_x] = root_y as i32;
-            ranks[root_y] += 1;
+            sizes[root_y] += sizes[root_x];
+            sizes[root_x] = 0;
         }
-        *isolated -= 1;
     }
 }

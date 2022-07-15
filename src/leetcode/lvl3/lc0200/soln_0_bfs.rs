@@ -1,7 +1,7 @@
 use std::collections::VecDeque;
 /// @author: Leon
 /// https://leetcode.com/problems/number-of-islands/
-/// Time Complexity:    O(`len_r` * `len_c`)
+/// Time Complexity:    O(`len_rs` * `llen_cs`)
 /// Space Complexity:   O(1)
 struct Solution;
 
@@ -11,12 +11,12 @@ impl Solution {
     const LAND: char = '1';
     const WATER: char = '0';
     pub fn num_islands(grid: Vec<Vec<char>>) -> i32 {
-        let len_r: usize = grid.len();
-        let len_c: usize = grid[0].len();
-        let mut visited: Vec<Vec<bool>> = vec![vec![false; len_c]; len_r];
+        let len_rs: usize = grid.len();
+        let llen_cs: usize = grid[0].len();
+        let mut visited: Vec<Vec<bool>> = vec![vec![false; llen_cs]; len_rs];
         let mut cnt: i32 = 0;
-        for r in 0..len_r {
-            for c in 0..len_c {
+        for r in 0..len_rs {
+            for c in 0..llen_cs {
                 if grid[r][c] == Self::LAND && !visited[r][c] {
                     visited[r][c] = true;
                     Self::bfs((r, c), &mut visited, &grid);
@@ -27,8 +27,8 @@ impl Solution {
         cnt
     }
     fn bfs(coord: (usize, usize), visited: &mut Vec<Vec<bool>>, grid: &Vec<Vec<char>>) {
-        let len_r: usize = grid.len();
-        let len_c: usize = grid[0].len();
+        let len_rs: usize = grid.len();
+        let llen_cs: usize = grid[0].len();
         let mut queue: VecDeque<(usize, usize)> = VecDeque::new();
         queue.push_back(coord);
         while !queue.is_empty() {
@@ -40,8 +40,8 @@ impl Solution {
                         let c_nxt: isize = c_cur as isize + Self::DIRS[d + 1];
                         if r_nxt < 0
                             || c_nxt < 0
-                            || r_nxt as usize >= len_r
-                            || c_nxt as usize >= len_c
+                            || r_nxt as usize >= len_rs
+                            || c_nxt as usize >= llen_cs
                         {
                             continue;
                         }
