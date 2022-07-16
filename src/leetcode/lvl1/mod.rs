@@ -97,6 +97,7 @@ pub mod lc2278;
 pub mod lc2283;
 pub mod lc2287;
 pub mod lc2293;
+pub mod lc2299;
 pub mod lc2309;
 pub mod lc2315;
 pub mod lc2319;
