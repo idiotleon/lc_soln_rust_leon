@@ -2,7 +2,7 @@ use std::collections::BinaryHeap;
 
 /// @author: Leon
 /// https://leetcode.com/problems/minimum-amount-of-time-to-fill-cups/
-/// Time Complexity:    O(max(`nums`) * lg(`len_ns`)) ~ O(max(`nums`))
+/// Time Complexity:    O(max(`nums`) * lg(`len_ns`))
 /// Space Complexity:   O(`len_ns`) ~ O(1)
 struct Solution;
 
