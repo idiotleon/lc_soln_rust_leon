@@ -105,3 +105,4 @@ pub mod lc2319;
 pub mod lc2325;
 pub mod lc2330;
 pub mod lc2335;
+pub mod lc2341;
