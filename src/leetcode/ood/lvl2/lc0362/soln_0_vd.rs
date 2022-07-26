@@ -1,12 +1,11 @@
-/// https://leetcode.com/problems/design-hit-counter/
-///
-/// Time Complexity:    O()
-/// Space Complexity:   O()
-///
-/// Reference:
-/// https://leetcode.com/discuss/interview-question/178662/Design-a-Hit-Counter/
 use std::collections::VecDeque;
 
+/// @author: Leon
+/// https://leetcode.com/problems/design-hit-counter/
+/// Time Complexity:    O()
+/// Space Complexity:   O()
+/// Reference:
+/// https://leetcode.com/discuss/interview-question/178662/Design-a-Hit-Counter/
 const FIVE_MIN: i32 = 5 * 60;
 
 #[allow(dead_code)]

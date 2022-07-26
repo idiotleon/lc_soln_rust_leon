@@ -1,7 +1,6 @@
 /// https://leetcode.com/problems/adding-spaces-to-a-string/
 /// Time Complexity:    O(`_len_str`)
 /// Space Complexity:   O(1)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

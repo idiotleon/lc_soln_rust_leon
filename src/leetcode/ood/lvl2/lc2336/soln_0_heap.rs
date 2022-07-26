@@ -34,6 +34,7 @@ impl SmallestInfiniteSet {
             },
         }
     }
+
     fn pop_smallest(&mut self) -> i32 {
         if let Some(Reverse(top)) = self.heap.pop() {
             self.seen.remove(&top);
@@ -41,6 +42,7 @@ impl SmallestInfiniteSet {
         }
         -1
     }
+
     fn add_back(&mut self, num: i32) {
         if self.seen.insert(num) {
             self.heap.push(Reverse(num));

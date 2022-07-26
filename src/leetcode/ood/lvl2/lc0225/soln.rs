@@ -1,4 +1,5 @@
 use std::collections::VecDeque;
+
 /// @author: Leon
 /// https://leetcode.com/problems/implement-stack-using-queues/
 /// Time Complexities:
@@ -9,7 +10,6 @@ use std::collections::VecDeque;
 /// Space Complexity: O(N)
 /// Reference:
 /// https://leetcode.com/problems/implement-stack-using-queues/discuss/62516/Concise-1-Queue-Java-C%2B%2B-Python
-#[allow(dead_code)]
 struct MyStack {
     queue: VecDeque<i32>,
 }

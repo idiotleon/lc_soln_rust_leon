@@ -5,12 +5,12 @@ const MAX_LENGTH_TWEET: usize = 10;
 /// @author: Leon
 /// https://leetcode.com/problems/design-twitter/
 /// Time Complexities:
-///     `new()`:        O(1)
-///     `post_tweet()`: O(1)
-///     `get_news_feed`:O(O(len_twts))
-///     `follow`:       O(1)
-///     `unfollow`:     O(1)
-/// Space Complexity:   O(O(len_twts) + O(len_flws))
+///     `new()`:            O(1)
+///     `post_tweet()`:     O(1)
+///     `get_news_feed`:    O(O(len_twts))
+///     `follow`:           O(1)
+///     `unfollow`:         O(1)
+/// Space Complexity:       O(O(len_twts) + O(len_flws))
 /// Reference:
 /// https://leetcode.com/problems/design-twitter/discuss/82837/Java-Solutions-with-Two-Maps-and-PriorityQueue/87118
 /// https://leetcode.com/problems/design-twitter/discuss/82837/Java-Solutions-with-Two-Maps-and-PriorityQueue
@@ -32,7 +32,7 @@ impl Twitter {
 
     fn get_news_feed(&mut self, user_id: i32) -> Vec<i32> {
         let followees = self.follower_to_followees.entry(user_id).or_default();
-        let mut ans: Vec<i32> = Vec::new();
+        let mut ans: Vec<i32> = Vec::with_capacity(MAX_LENGTH_TWEET);
         for tweet in self.tweets.iter() {
             if ans.len() == MAX_LENGTH_TWEET {
                 break;

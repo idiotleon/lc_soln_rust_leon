@@ -12,10 +12,10 @@ impl Solution {
         let mut lo: usize = 0;
         let mut hi: usize = len_s - 1;
         let mut cnt: u8 = 0;
-        while lo < hi{
-            if chs[lo] != chs[hi]{
+        while lo < hi {
+            if chs[lo] != chs[hi] {
                 cnt += 1;
-                if cnt > 2{
+                if cnt > 2 {
                     return false;
                 }
             }

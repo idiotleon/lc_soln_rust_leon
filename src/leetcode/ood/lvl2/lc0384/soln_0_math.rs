@@ -1,17 +1,14 @@
-/// @author: Leon
-/// https://leetcode.com/problems/shuffle-an-array/
-///
-/// Time Complexities:    
-///     `shuffle()`:    O(`n`)
-///     `reset()`:      O(1)
-/// Space Complexity:   O(`n`)
-///
-/// Reference:
-/// https://leetcode.com/problems/shuffle-an-array/discuss/1350537/Rust-FisherYates-shuffle
 use rand::distributions::Uniform;
 use rand::prelude::*;
 
-#[allow(dead_code)]
+/// @author: Leon
+/// https://leetcode.com/problems/shuffle-an-array/
+/// Time Complexities:
+///     `shuffle()`:    O(`n`)
+///     `reset()`:      O(1)
+/// Space Complexity:   O(`n`)
+/// Reference:
+/// https://leetcode.com/problems/shuffle-an-array/discuss/1350537/Rust-FisherYates-shuffle
 struct Solution {
     origin: Vec<i32>,
     shuffled: Vec<i32>,

@@ -1,19 +1,14 @@
 /// @author: Leon
 /// https://leetcode.com/problems/maximum-number-of-words-you-can-type/
-///
-/// Time Complexity:    O(`len_t`)
+/// Time Complexity:    O(`_len_t`)
 /// Space Complexity:   O(1)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn can_be_typed_words(text: String, broken_letters: String) -> i32 {
-        // not used
-        // let len_t = text.len();
-
+        let _len_t = text.len();
         const CH_SPACE: char = ' ';
-
         let freqs: Vec<u8> = {
             let mut tmp = vec![0 as u8; 26];
             for ch in broken_letters.chars() {
@@ -21,7 +16,6 @@ impl Solution {
             }
             tmp
         };
-
         let words = text.split(CH_SPACE).collect::<Vec<&str>>();
         let mut cnt: i32 = 0;
         'outer: for word in words {
@@ -30,10 +24,8 @@ impl Solution {
                     continue 'outer;
                 }
             }
-
             cnt += 1;
         }
-
         cnt
     }
 }

@@ -1,7 +1,6 @@
 /// https://leetcode.com/problems/a-number-after-a-double-reversal/
 /// Time Complexity:    O(1)
 /// Space Complexity:   O(1)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

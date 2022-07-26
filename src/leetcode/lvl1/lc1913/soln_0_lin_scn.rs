@@ -1,15 +1,13 @@
 /// @author: Leon
 /// https://leetcode.com/problems/maximum-product-difference-between-two-pairs/
-///
-/// Time Complexity:    O(`_len_n`)
+/// Time Complexity:    O(`_len_ns`)
 /// Space Complexity:   O(1)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn max_product_difference(nums: Vec<i32>) -> i32 {
-        let _len_n = nums.len();
+        let _len_ns = nums.len();
         const MAX: i32 = 1e4 as i32;
         let mut min = MAX;
         let mut sec_min = MAX;

@@ -1,7 +1,6 @@
 /// https://leetcode.com/problems/valid-palindrome/
 /// Time Complexity:    O(`_len_s`)
 /// Space Complexity:   O(`_len_s`)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
@@ -25,7 +24,7 @@ impl Solution {
 
 #[cfg(test)]
 mod tests {
-    use super::Solution;
+    use super::*;
     #[test]
     fn it_works() {
         let s = "a.".to_owned();

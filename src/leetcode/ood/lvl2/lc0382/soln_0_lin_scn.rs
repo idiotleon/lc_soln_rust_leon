@@ -1,5 +1,8 @@
-use crate::leetcode::util::data_structure::linked_list::single::list_node::ListNode;
 use rand::prelude::*;
+
+use crate::leetcode::util::data_structure::linked_list::single::list_node::ListNode;
+
+/// @author: Leon
 /// https://leetcode.com/problems/linked-list-random-node/
 /// Time Complexities:
 ///     `new()`:        O(L)

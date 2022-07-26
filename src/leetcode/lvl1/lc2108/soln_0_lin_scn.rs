@@ -1,13 +1,13 @@
+/// @author: Leon
 /// https://leetcode.com/problems/find-first-palindromic-string-in-the-array/
-/// Time Complexity:    O(`_len_w` * `len_w`)
+/// Time Complexity:    O(`_len_ws` * `len_w`)
 /// Space Complexity:   O(`len_w`)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn first_palindrome(words: Vec<String>) -> String {
-        let _len_w = words.len();
+        let _len_ws = words.len();
         for word in words {
             if Self::is_palindrome(&word) {
                 return word;
