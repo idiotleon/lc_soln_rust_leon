@@ -1,3 +1,4 @@
+/// @author: Leon
 /// https://leetcode.com/problems/valid-palindrome/
 /// Time Complexity:    O(`_len_s`)
 /// Space Complexity:   O(`_len_s`)

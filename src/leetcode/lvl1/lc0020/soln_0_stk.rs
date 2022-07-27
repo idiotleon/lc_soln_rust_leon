@@ -3,7 +3,7 @@ use std::collections::VecDeque;
 /// @author: Leon
 /// https://leetcode.com/problems/valid-parentheses/
 /// Time Complexity:    O(`_len_s`)
-/// Space Complexity:   O(1)
+/// Space Complexity:   O(`_len_s`)
 struct Solution;
 
 #[allow(dead_code)]

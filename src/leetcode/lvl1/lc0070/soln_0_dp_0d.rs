@@ -2,7 +2,6 @@
 /// https://leetcode.com/problems/climbing-stairs/
 /// Time Complexity:    O(`n`)
 /// Space Complexity:   O(1)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

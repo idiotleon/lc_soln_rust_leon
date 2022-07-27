@@ -4,7 +4,6 @@
 /// Space Complexity:   O(1)
 /// Reference:
 /// https://leetcode.com/problems/add-binary/discuss/253415/Rust-Solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

@@ -1,11 +1,9 @@
+/// @author: Leon
 /// https://leetcode.com/problems/count-primes/
-///
 /// Time Complexity:    O(`n`)
 /// Space Complexity:   O(`n`)
-///
 /// Reference:
 /// https://leetcode.com/problems/count-primes/discuss/57588/My-simple-Java-solution
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

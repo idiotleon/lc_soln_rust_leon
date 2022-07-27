@@ -1,7 +1,6 @@
 /// https://leetcode.com/problems/merge-sorted-array/
 /// Time Complexity:    O(`m` + `n`)
 /// Space Complexity:   O(1)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]

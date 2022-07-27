@@ -1,15 +1,15 @@
 /// @author: Leon
 /// https://leetcode.com/problems/remove-element/
-/// Time Complexity:    O(`len_n`)
+/// Time Complexity:    O(`len_ns`)
 /// Space Complexity:   O(1)
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {
-        let len_n: usize = nums.len();
+        let len_ns: usize = nums.len();
         let mut lo: usize = 0;
-        for hi in 0..len_n {
+        for hi in 0..len_ns {
             if nums[hi] == val {
                 continue;
             }
