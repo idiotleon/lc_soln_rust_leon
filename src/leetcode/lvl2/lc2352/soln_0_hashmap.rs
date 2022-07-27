@@ -3,7 +3,9 @@ use std::collections::HashMap;
 /// @author: Leon
 /// https://leetcode.com/problems/equal-row-and-column-pairs/
 /// Time Complexity:    O(`len_rs` * `len_cs`)
-/// Space Complexity:   O(`len_rs` * ``)
+/// Space Complexity:   O(`len_rs` * `len_cs`)
+/// Reference:
+/// https://leetcode.com/problems/equal-row-and-column-pairs/discuss/2324872/100-fast-easy-understanding.
 struct Solution;
 
 #[allow(dead_code)]
@@ -20,11 +22,11 @@ impl Solution {
         };
         let mut cnt: i32 = 0;
         for c in 0..len_cs {
-            let mut tmp: Vec<i32> = Vec::with_capacity(len_cs);
+            let mut col: Vec<i32> = Vec::with_capacity(len_cs);
             for r in 0..len_rs {
-                tmp.push(grid[r][c]);
+                col.push(grid[r][c]);
             }
-            if let Some(&freq) = row_to_freq.get(&tmp) {
+            if let Some(&freq) = row_to_freq.get(&col) {
                 cnt += freq as i32;
             }
         }
