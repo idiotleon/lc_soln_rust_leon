@@ -11,14 +11,14 @@ impl Solution {
         const RANGE: usize = 100 + 1;
         let freqs: Vec<u8> = {
             let mut freqs = vec![0; RANGE];
-            for num in nums{
+            for num in nums {
                 freqs[num as usize] += 1;
             }
             freqs
         };
         let mut ans: u8 = 0;
-        for idx in 1..RANGE{
-            if freqs[idx] > 0{
+        for idx in 1..RANGE {
+            if freqs[idx] > 0 {
                 ans += 1;
             }
         }
