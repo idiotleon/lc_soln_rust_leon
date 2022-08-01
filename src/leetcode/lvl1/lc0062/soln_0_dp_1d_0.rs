@@ -4,7 +4,6 @@
 /// Space Complexity:    O(`n`)
 /// Reference:
 /// https://leetcode.com/problems/unique-paths/discuss/22954/C%2B%2B-DP
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
