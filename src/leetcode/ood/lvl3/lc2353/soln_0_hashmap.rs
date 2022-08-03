@@ -7,7 +7,7 @@ use std::collections::{BTreeSet, HashMap};
 ///     `new()`:            O(`len_fs`)
 ///     `change_rating`:    O(lg(`len_fs`))
 ///     `highest_rated`:    O(1)
-/// Space Complexity:       O(N)
+/// Space Complexity:       O(`len_fs`)
 #[allow(dead_code)]
 struct FoodRatings {
     cuisine_to_foods: HashMap<String, BTreeSet<Food>>,

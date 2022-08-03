@@ -1,7 +1,7 @@
 /// @author: Leon
 /// https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/
-/// Time Complexity:    O(100) ~ O(1)
-/// Space Complexity:   O(100) ~ O(1)
+/// Time Complexity:    O(`RANGE`) ~ O(1)
+/// Space Complexity:   O(`RANGE`) ~ O(1)
 struct Solution;
 
 #[allow(dead_code)]
