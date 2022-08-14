@@ -2,8 +2,8 @@ use std::collections::HashSet;
 
 /// @author: Leon
 /// https://leetcode.com/problems/word-ladder/
-/// Time Complexity:    O(`_len_wds` * `len_wd`)
-/// Space Complexity:   O(`_len_wds` * `len_wd`)
+/// Time Complexity:    O(`len_ws` * `len_wd`)
+/// Space Complexity:   O(`len_ws` * `len_wd`)
 /// Reference:
 /// https://leetcode.com/problems/word-ladder/discuss/40711/Two-end-BFS-in-Java-31ms.
 struct Solution;
@@ -11,18 +11,18 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn ladder_length(begin_word: String, end_word: String, word_list: Vec<String>) -> i32 {
-        let _len_s: usize = word_list.len();
+        let len_ws: usize = word_list.len();
         let mut word_set: HashSet<String> = word_list.into_iter().collect();
         if !word_set.contains(&end_word) {
             return 0;
         }
         let mut begin_set: HashSet<String> = {
-            let mut set: HashSet<String> = HashSet::new();
+            let mut set: HashSet<String> = HashSet::with_capacity(len_ws);
             set.insert(begin_word.to_owned());
             set
         };
         let mut end_set: HashSet<String> = {
-            let mut set: HashSet<String> = HashSet::new();
+            let mut set: HashSet<String> = HashSet::with_capacity(len_ws);
             set.insert(end_word.to_owned());
             set
         };
@@ -34,7 +34,7 @@ impl Solution {
                 begin_set = end_set;
                 end_set = tmp;
             }
-            let mut nxt_set: HashSet<String> = HashSet::new();
+            let mut nxt_set: HashSet<String> = HashSet::with_capacity(len_ws);
             for word in begin_set.iter() {
                 let len_wd: usize = word.len();
                 let mut chs: Vec<char> = word.chars().collect();
@@ -58,7 +58,7 @@ impl Solution {
             begin_set = nxt_set;
             steps += 1;
         }
-        0
+        return 0;
     }
 }
 
