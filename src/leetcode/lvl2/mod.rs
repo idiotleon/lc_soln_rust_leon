@@ -144,6 +144,7 @@ pub mod lc1973;
 pub mod lc1985;
 pub mod lc2007;
 pub mod lc2032;
+pub mod lc2078;
 pub mod lc2083;
 pub mod lc2089;
 pub mod lc2094;
