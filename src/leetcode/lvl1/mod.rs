@@ -71,6 +71,7 @@ pub mod lc1920;
 pub mod lc1935;
 pub mod lc1941;
 pub mod lc1991;
+pub mod lc2057;
 pub mod lc2068;
 pub mod lc2085;
 pub mod lc2103;
