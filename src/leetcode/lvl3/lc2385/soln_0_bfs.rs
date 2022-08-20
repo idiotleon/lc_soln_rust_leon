@@ -6,8 +6,8 @@ use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 
 /// @author: Leon
 /// https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/
-/// Time Complexity:    O(N)
-/// Space Complexity:   O(W)
+/// Time Complexity:    O(V + E) ~ O(N)
+/// Space Complexity:   O(V + E) ~ O(W)
 /// Reference:
 /// https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/discuss/2456717/BFS-%2B-HashMap
 struct Solution;
