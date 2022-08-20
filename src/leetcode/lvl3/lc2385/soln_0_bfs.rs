@@ -4,6 +4,12 @@ use std::rc::Rc;
 
 use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 
+/// @author: Leon
+/// https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/
+/// Time Complexity:    O(N)
+/// Space Complexity:   O(W)
+/// Reference:
+/// https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/discuss/2456717/BFS-%2B-HashMap
 struct Solution;
 
 #[allow(dead_code)]
