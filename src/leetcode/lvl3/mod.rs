@@ -164,6 +164,7 @@ pub mod lc1950;
 pub mod lc1954;
 pub mod lc1968;
 pub mod lc1976;
+pub mod lc1995;
 pub mod lc2033;
 pub mod lc2099;
 pub mod lc2120;
