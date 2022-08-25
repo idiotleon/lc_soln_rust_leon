@@ -4,6 +4,8 @@ use std::collections::HashMap;
 /// https://leetcode.com/problems/count-special-quadruplets/
 /// Time Complexity:    O(`len_ns` ^ 2)
 /// Space Complexity:   O(`len_ns`)
+/// Reference:
+/// https://leetcode.com/problems/count-special-quadruplets/discuss/1446988/JavaC%2B%2BPython3-Real-O(n2)-solution
 struct Solution;
 
 #[allow(dead_code)]
