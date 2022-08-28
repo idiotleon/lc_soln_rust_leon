@@ -1,6 +1,6 @@
 /// @author: Leon
 /// https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/
-/// Time Complexity:    O(`len_rs` * `len_cs`) + O(`len_rs` * lg(`len_cs`))
+/// Time Complexity:    O(`len_rs` * lg(`len_cs`))
 /// Space Complexity:   O(1)
 /// Reference:
 /// https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/discuss/2477222/C-Binary-Search
@@ -12,7 +12,7 @@ impl Solution {
     pub fn matrix_median(grid: Vec<Vec<i32>>) -> i32 {
         let len_rs: usize = grid.len();
         let len_cs: usize = grid[0].len();
-        let range_max: i32 = *grid.iter().map(|v| v.iter().max().unwrap()).max().unwrap();
+        let range_max: i32 = *grid.iter().map(|v| v.last().unwrap()).max().unwrap();
         let k = len_rs * len_cs / 2;
         let mut lo: i32 = 1;
         let mut hi: i32 = range_max;
