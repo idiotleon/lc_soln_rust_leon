@@ -1,6 +1,6 @@
 /// @author: Leon
 /// https://leetcode.com/problems/rotate-image/
-/// Time Complexity:     O(`len_r` * `len_c`)
+/// Time Complexity:     O(`len_rs` * `len_cs`)
 /// Space Complexity:    O(1)
 /// Reference:
 /// https://leetcode.com/problems/rotate-image/discuss/18872/A-common-method-to-rotate-the-image
@@ -9,14 +9,14 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn rotate(matrix: &mut Vec<Vec<i32>>) {
-        let len_r: usize = matrix.len();
+        let len_rs: usize = matrix.len();
         matrix.reverse();
-        for row in 0..len_r {
-            let len_c: usize = matrix[row].len();
-            for col in row + 1..len_c {
-                let temp = matrix[row][col];
-                matrix[row][col] = matrix[col][row];
-                matrix[col][row] = temp;
+        for r in 0..len_rs {
+            let len_cs: usize = matrix[r].len();
+            for c in r + 1..len_cs {
+                let tmp = matrix[r][c];
+                matrix[r][c] = matrix[c][r];
+                matrix[c][r] = tmp;
             }
         }
     }
