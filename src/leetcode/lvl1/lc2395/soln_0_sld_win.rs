@@ -1,9 +1,9 @@
+use std::collections::HashSet;
+
 /// @author: Leon
 /// https://leetcode.com/problems/find-subarrays-with-equal-sum/
 /// Time Complexity:    O(`len_ns`)
 /// Space Complexity:   O(`len_ns`)
-use std::collections::HashSet;
-
 struct Solution;
 
 #[allow(dead_code)]
