@@ -88,3 +88,4 @@ pub mod lc2360;
 pub mod lc2370;
 pub mod lc2392;
 pub mod lc2398;
+pub mod lc2402;
