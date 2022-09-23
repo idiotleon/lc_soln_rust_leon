@@ -1,4 +1,5 @@
 use std::collections::HashMap;
+
 /// @author: Leon
 /// https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/
 /// Time Complexity:    O(`_len_n`)
@@ -21,6 +22,6 @@ impl Solution {
             }
             sum_to_first_idx.entry(sum).or_insert(idx as i32);
         }
-        longest
+        return longest;
     }
 }

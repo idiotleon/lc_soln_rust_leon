@@ -1,4 +1,5 @@
 use std::collections::{HashSet, VecDeque};
+
 // @author: Leon
 // https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
 // Time Complexity:     O(V + E)
@@ -18,14 +19,14 @@ impl Solution {
             Self::bfs(i, &mut visited, &graph);
             cnt += 1;
         }
-        cnt
+        return cnt;
     }
     fn bfs(start: i32, visited: &mut HashSet<i32>, graph: &Vec<Vec<i32>>) {
         let mut queue: VecDeque<i32> = VecDeque::new();
         queue.push_back(start);
         while !queue.is_empty() {
-            let len_lvl = queue.len();
-            for _ in 0..len_lvl {
+            let len_q = queue.len();
+            for _ in 0..len_q {
                 if let Some(top) = queue.pop_front() {
                     if !visited.insert(top) {
                         continue;
@@ -45,6 +46,6 @@ impl Solution {
             graph[u as usize].push(v);
             graph[v as usize].push(u);
         }
-        graph
+        return graph;
     }
 }

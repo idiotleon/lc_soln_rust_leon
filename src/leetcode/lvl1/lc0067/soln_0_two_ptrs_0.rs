@@ -33,7 +33,7 @@ impl Solution {
             idx_a -= 1;
             idx_b -= 1;
         }
-        ans.chars().rev().collect()
+        return ans.chars().rev().collect::<String>();
     }
 }
 

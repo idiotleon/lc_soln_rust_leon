@@ -19,6 +19,6 @@ impl Solution {
             }
             dp[idx] = 1 + dp[idx - offset];
         }
-        dp
+        return dp;
     }
 }

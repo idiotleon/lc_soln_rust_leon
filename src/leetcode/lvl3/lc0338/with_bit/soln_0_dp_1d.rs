@@ -14,6 +14,6 @@ impl Solution {
         for i in 0..=n as usize {
             dp[i] = dp[i >> 1] + (i & 1) as i32;
         }
-        dp
+        return dp;
     }
 }

@@ -18,7 +18,7 @@ impl Solution {
             Self::dfs(i, &mut visited, &graph);
             cnt += 1;
         }
-        cnt
+        return cnt;
     }
     fn dfs(cur: usize, mut visited: &mut Vec<i32>, graph: &Vec<Vec<usize>>) {
         if visited[cur] == 1 {
@@ -37,6 +37,6 @@ impl Solution {
             graph[u].push(v);
             graph[v].push(u);
         }
-        graph
+        return graph;
     }
 }

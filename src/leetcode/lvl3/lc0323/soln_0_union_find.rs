@@ -21,7 +21,7 @@ impl Solution {
 
             Self::union(u, v, &mut roots, &mut ranks, &mut count)
         }
-        count as i32
+        return count as i32;
     }
     fn find(x: usize, roots: &mut Vec<usize>) -> usize {
         let mut x = x;
@@ -29,7 +29,7 @@ impl Solution {
             roots[x] = roots[roots[x]];
             x = roots[x];
         }
-        x
+        return x;
     }
     fn union(
         x: usize,

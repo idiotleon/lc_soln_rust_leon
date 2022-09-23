@@ -32,6 +32,6 @@ impl Solution {
             ans.push((digit + '0' as u8) as char);
             carry = sum / 2;
         }
-        ans.iter().rev().collect::<String>()
+        return ans.iter().rev().collect::<String>();
     }
 }
