@@ -9,9 +9,13 @@ struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
-    pub fn three_sum_closest(mut nums: Vec<i32>, target: i32) -> i32 {
+    pub fn three_sum_closest(nums: Vec<i32>, target: i32) -> i32 {
         let len_ns = nums.len();
-        nums.sort();
+        let nums: Vec<i32> = {
+            let mut nums = nums;
+            nums.sort();
+            nums
+        };
         let mut closest = nums[0] + nums[1] + nums[len_ns - 1];
         for idx in 0..len_ns - 2 {
             let mut lo = idx + 1;
@@ -36,6 +40,6 @@ impl Solution {
                 }
             }
         }
-        closest
+        return closest;
     }
 }
