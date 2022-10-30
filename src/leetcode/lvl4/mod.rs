@@ -64,6 +64,7 @@ pub mod lc1163;
 pub mod lc1216;
 pub mod lc1220;
 pub mod lc1234;
+pub mod lc1293;
 pub mod lc1345;
 pub mod lc1347;
 pub mod lc1354;
