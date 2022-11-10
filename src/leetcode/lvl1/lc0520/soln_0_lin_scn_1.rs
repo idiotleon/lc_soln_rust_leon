@@ -1,13 +1,13 @@
 /// @author: Leon
 /// https://leetcode.com/problems/detect-capital/
-/// Time Complexity:    O(`len_wd`)
+/// Time Complexity:    O(`_len_s`)
 /// Space Complexity:   O(1)
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn detect_capital_use(word: String) -> bool {
-        let _len_wd: usize = word.len();
+        let _len_s: usize = word.len();
         let mut seen_lower_case: bool = false;
         let mut should_all_be_capitals: bool = false;
         for (idx, ch) in word.chars().into_iter().enumerate() {
@@ -26,6 +26,6 @@ impl Solution {
                 seen_lower_case = true;
             }
         }
-        true
+        return true;
     }
 }
