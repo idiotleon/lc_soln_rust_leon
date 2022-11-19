@@ -47,6 +47,7 @@ pub mod lc0231;
 pub mod lc0235;
 pub mod lc0243;
 pub mod lc0252;
+pub mod lc0263;
 pub mod lc0287;
 pub mod lc0290;
 pub mod lc0326;
