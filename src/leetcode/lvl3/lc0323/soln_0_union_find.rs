@@ -18,7 +18,6 @@ impl Solution {
         for edge in edges.iter() {
             let u = edge[0] as usize;
             let v = edge[1] as usize;
-
             Self::union(u, v, &mut roots, &mut ranks, &mut count)
         }
         return count as i32;
