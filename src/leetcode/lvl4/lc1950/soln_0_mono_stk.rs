@@ -36,7 +36,7 @@ impl Solution {
         for idx in (0..len_ns - 1).rev() {
             ans[idx] = std::cmp::max(ans[idx], ans[idx + 1]);
         }
-        ans
+        return ans;
     }
     fn process(stk: &mut VecDeque<usize>, indices: &mut Vec<i32>, nums: &Vec<i32>, idx: usize) {
         while let Some(&idx_top) = stk.back() {
