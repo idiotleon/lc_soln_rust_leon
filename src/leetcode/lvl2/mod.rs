@@ -133,6 +133,7 @@ pub mod lc1512;
 pub mod lc1513;
 pub mod lc1539;
 pub mod lc1564;
+pub mod lc1588;
 pub mod lc1592;
 pub mod lc1624;
 pub mod lc1663;
