@@ -11,18 +11,20 @@ impl Solution {
     pub fn find_min_arrow_shots(points: Vec<Vec<i32>>) -> i32 {
         let _len_pts: usize = points.len();
         let sorted: Vec<Vec<i32>> = {
-            let mut sorted: Vec<Vec<i32>> = points;
+            let mut sorted = points;
             sorted.sort_by_key(|pt| pt[1]);
             sorted
         };
-        let mut prev_end: i32 = sorted[0][1];
-        let mut arrow: i32 = 1;
+        let mut end_prev: i32 = sorted[0][1];
+        let mut cnt: i32 = 1;
         for pt in sorted {
-            if pt[0] > prev_end {
-                prev_end = pt[1];
-                arrow += 1;
+            let start_cur = pt[0];
+            let end_cur = pt[1];
+            if start_cur > end_prev {
+                end_prev = end_cur;
+                cnt += 1;
             }
         }
-        arrow
+        return cnt;
     }
 }
