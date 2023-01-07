@@ -6,24 +6,24 @@ struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
-    pub fn can_complete_circuit(gas: Vec<i32>, cost: Vec<i32>) -> i32 {
+    pub fn can_complete_circuit(gas: Vec<i32>, costs: Vec<i32>) -> i32 {
         let len_gs: usize = gas.len();
-        let mut cur_tank = 0;
-        let mut total_tank = 0;
+        let mut tank_cur = 0;
+        let mut tank_total = 0;
         let mut idx_start: usize = 0;
         for idx in 0..len_gs {
-            let balance = gas[idx] - cost[idx];
-            cur_tank += balance;
-            if cur_tank < 0 {
-                idx_start = idx;
-                cur_tank = 0;
+            let balance = gas[idx] - costs[idx];
+            tank_cur += balance;
+            if tank_cur < 0 {
+                idx_start = 1 + idx;
+                tank_cur = 0;
             }
-            total_tank += balance;
+            tank_total += balance;
         }
-        if total_tank >= 0 {
+        return if tank_total >= 0 {
             idx_start as i32
         } else {
             -1
-        }
+        };
     }
 }
