@@ -2,7 +2,7 @@ use std::collections::HashMap;
 
 /// @author: Leon
 /// https://leetcode.com/problems/reduce-array-size-to-the-half/
-/// Time Complexity:    O(`len_ns`)
+/// Time Complexity:    O(`len_ns` * lg(`len_ns`))
 /// Space Complexity:   O(`len_ns`)
 struct Solution;
 
@@ -19,7 +19,7 @@ impl Solution {
         };
         let freqs: Vec<u32> = {
             let mut freqs: Vec<u32> = num_to_freqs.into_values().collect();
-            freqs.sort();
+            freqs.sort_unstable();
             freqs
         };
         let mut cnt: i32 = 0;
