@@ -97,6 +97,7 @@ pub mod lc0921;
 pub mod lc0922;
 pub mod lc0925;
 pub mod lc0941;
+pub mod lc0942;
 pub mod lc0953;
 pub mod lc0970;
 pub mod lc0973;
