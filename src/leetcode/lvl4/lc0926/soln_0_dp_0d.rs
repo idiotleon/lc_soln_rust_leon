@@ -10,17 +10,18 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn min_flips_mono_incr(s: String) -> i32 {
-        let _len_s = s.len();
+        const ONE: char = '1';
+        const ZERO: char = '0';
         let mut cnt_ones: u16 = 0;
         let mut cnt_flips: u16 = 0;
         for ch in s.chars() {
-            if ch == '1' {
-                cnt_ones += 1;
-            } else {
-                cnt_flips += 1;
+            match ch {
+                ZERO => cnt_flips += 1,
+                ONE => cnt_ones += 1,
+                _ => unreachable!(),
             }
             cnt_flips = std::cmp::min(cnt_flips, cnt_ones);
         }
-        cnt_flips as i32
+        return cnt_flips as i32;
     }
 }
