@@ -10,22 +10,22 @@ struct Solution;
 impl Solution {
     pub fn partition(s: String) -> Vec<Vec<String>> {
         let len_s: usize = s.len();
-        let mut path: Vec<String> = Vec::new();
-        let mut paths: Vec<Vec<String>> = Vec::new();
         let is_palindrome: Vec<Vec<bool>> = {
-            let mut is_palindrome: Vec<Vec<bool>> = vec![vec![false; len_s]; len_s];
+            let mut dp: Vec<Vec<bool>> = vec![vec![false; len_s]; len_s];
             let chs: Vec<char> = s.chars().collect();
             for hi in 0..len_s {
                 for lo in 0..=hi {
-                    if chs[lo] == chs[hi] && (hi - lo <= 2 || is_palindrome[lo + 1][hi - 1]) {
-                        is_palindrome[lo][hi] = true;
+                    if chs[lo] == chs[hi] && (hi - lo <= 2 || dp[lo + 1][hi - 1]) {
+                        dp[lo][hi] = true;
                     }
                 }
             }
-            is_palindrome
+            dp
         };
+        let mut path: Vec<String> = Vec::new();
+        let mut paths: Vec<Vec<String>> = Vec::new();
         Self::backtrack(0, &mut path, &s, &is_palindrome, &mut paths);
-        paths
+        return paths;
     }
     fn backtrack(
         idx_start: usize,
@@ -41,8 +41,8 @@ impl Solution {
         }
         for idx in idx_start..len_s {
             if is_palindrome[idx_start][idx] {
-                path.push(s[idx_start..idx + 1].to_owned());
-                Self::backtrack(idx + 1, path, s, is_palindrome, paths);
+                path.push(s[idx_start..1 + idx].to_owned());
+                Self::backtrack(1 + idx, path, s, is_palindrome, paths);
                 path.pop();
             }
         }
