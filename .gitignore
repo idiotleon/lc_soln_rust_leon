@@ -117,3 +117,4 @@ Temporary Items
 
 # gitingore for Fleet
 .fleet
+.fleet/*
