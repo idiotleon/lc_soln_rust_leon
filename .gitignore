@@ -83,7 +83,6 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
-
 ### Mac OS
 
 # General
@@ -115,3 +114,6 @@ Temporary Items
 
 # Visual Studio Code
 .vscode
+
+# gitingore for Fleet
+.fleet
