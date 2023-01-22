@@ -1,5 +1,3 @@
-use std::cmp::max;
-
 /// @author: Leon
 /// https://leetcode.com/problems/partition-array-for-maximum-sum/
 /// Time Complexity:    O(`len_n` * `k`)
@@ -20,14 +18,14 @@ impl Solution {
                 if idx as i32 - par < 0 {
                     break;
                 }
-                cur_max = max(cur_max, nums[idx - par as usize]);
-                max_sum = max(
+                cur_max = std::cmp::max(cur_max, nums[idx - par as usize]);
+                max_sum = std::cmp::max(
                     max_sum,
                     dp[(idx - par as usize) % k as usize] + cur_max * par,
                 );
             }
             dp[idx % k as usize] = max_sum;
         }
-        dp[len_n % k as usize]
+        return dp[len_n % k as usize];
     }
 }
