@@ -8,7 +8,8 @@ struct Solution;
 impl Solution {
     pub fn maximum_value(strs: Vec<String>) -> i32 {
         let _len_ws: usize = strs.len();
-        return strs.into_iter()
+        return strs
+            .into_iter()
             .map(|wd| Self::get_value(wd.chars().collect()))
             .max()
             .unwrap_or(-1);
