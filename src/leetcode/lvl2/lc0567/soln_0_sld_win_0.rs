@@ -39,7 +39,7 @@ impl Solution {
             }
             hi += 1;
         }
-        false
+        return false;
     }
 }
 
