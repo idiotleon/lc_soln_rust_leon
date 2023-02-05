@@ -23,7 +23,7 @@ impl Solution {
             };
             idx += 1;
         }
-        ans
+        return ans;
     }
     fn is_anagram(hi: usize, chs_s: &Vec<char>, hash_p: &Vec<u16>, len_p: usize) -> bool {
         let lo = hi + 1 - len_p;
@@ -33,14 +33,14 @@ impl Solution {
                 return false;
             }
         }
-        true
+        return true;
     }
     fn get_hash(lo: usize, hi: usize, chs: &Vec<char>) -> Vec<u16> {
         let mut freqs: Vec<u16> = vec![0; 26];
         for idx in lo..hi {
             freqs[chs[idx] as usize - 'a' as usize] += 1;
         }
-        freqs
+        return freqs;
     }
 }
 
