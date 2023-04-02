@@ -1,6 +1,6 @@
 /// @author: Leon
 /// https://leetcode.com/problems/shortest-word-distance-iii/
-/// Time Complexity:    O(`_len_ws` * avg_len_word)
+/// Time Complexity:    O(`len_ws` * avg_len_word)
 /// Space Complexity:   O(1)
 /// Reference:
 /// https://leetcode.com/problems/shortest-word-distance-iii/discuss/67097/12-16-lines-Java-C%2B%2B
@@ -9,33 +9,25 @@ struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
-    pub fn shortest_word_distance(words: Vec<String>, word1: String, word2: String) -> i32 {
-        let _len_ws: usize = words.len();
-        const RANGE: usize = 3 * 1e4 as usize + 7;
-        let mut idx1: usize = RANGE;
-        let mut idx2: usize = RANGE;
-        let mut shortest: usize = RANGE;
-        for (idx, word) in words.iter().enumerate() {
-            if word == &word1 {
+    pub fn shortest_word_distance(words_dict: Vec<String>, word1: String, word2: String) -> i32 {
+        let len_ws: usize = words_dict.len();
+        let mut idx1: usize = len_ws;
+        let mut idx2: usize = len_ws;
+        let mut shortest: i32 = len_ws as i32;
+        for (idx, word) in words_dict.into_iter().enumerate() {
+            if &word == &word1 {
                 idx1 = idx;
             }
-            if word == &word2 {
+            if &word == &word2 {
                 if &word1 == &word2 {
                     idx1 = idx2;
                 }
                 idx2 = idx;
             }
-            if idx1 != RANGE && idx2 != RANGE {
-                shortest = std::cmp::min(
-                    shortest,
-                    if idx1 > idx2 {
-                        idx1 - idx2
-                    } else {
-                        idx2 - idx1
-                    },
-                );
+            if idx1 != len_ws && idx2 != len_ws {
+                shortest = std::cmp::min(shortest, (idx1 as i32 - idx2 as i32).abs());
             }
         }
-        shortest as i32
+        return shortest;
     }
 }
