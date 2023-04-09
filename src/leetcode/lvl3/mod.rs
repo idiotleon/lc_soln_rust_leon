@@ -203,3 +203,4 @@ pub mod lc2369;
 pub mod lc2385;
 pub mod lc2387;
 pub mod lc2400;
+pub mod lc2615;
