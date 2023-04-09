@@ -222,3 +222,4 @@ pub mod lc2414;
 pub mod lc2485;
 pub mod lc2515;
 pub mod lc2546;
+pub mod lc2614;

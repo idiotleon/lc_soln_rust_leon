@@ -55,7 +55,6 @@ impl Solution {
                                 },
                         );
                     }
-
                     indegrees[next] -= 1;
                     if indegrees[next] == 0 {
                         queue.push_back(next as u32);
