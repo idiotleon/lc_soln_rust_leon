@@ -30,6 +30,6 @@ impl Solution {
                 }
             }
         }
-        -1
+        return -1;
     }
 }
