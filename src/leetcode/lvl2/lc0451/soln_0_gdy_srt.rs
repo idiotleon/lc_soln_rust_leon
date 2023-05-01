@@ -18,7 +18,7 @@ impl Solution {
         };
         chs.sort_by(|&a, &b| {
             if freqs[b as usize] != freqs[a as usize] {
-                freqs[b as usize].cmp(&freqs[(a as usize)])
+                freqs[b as usize].cmp(&freqs[a as usize])
             } else {
                 a.cmp(&b)
             }
