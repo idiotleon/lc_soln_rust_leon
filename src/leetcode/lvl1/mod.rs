@@ -61,6 +61,7 @@ pub mod lc1290;
 pub mod lc1295;
 pub mod lc1313;
 pub mod lc1343;
+pub mod lc1344;
 pub mod lc1347;
 pub mod lc1356;
 pub mod lc1370;
