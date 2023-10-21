@@ -40,6 +40,6 @@ impl Solution {
             lvl += 1;
             ans.push(res);
         }
-        ans
+        return ans;
     }
 }
