@@ -84,6 +84,7 @@ pub mod lc1559;
 pub mod lc1642;
 pub mod lc1675;
 pub mod lc1770;
+pub mod lc1793;
 pub mod lc1834;
 pub mod lc1856;
 pub mod lc1857;
