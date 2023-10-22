@@ -1,6 +1,6 @@
 /// @author: Leon
 /// https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
-/// Time Complexity:    O(lg(`len_rs` * `len_cs`))
+/// Time Complexity:    O(`len_cs` * lg(MAX - MIN))
 /// Space Complexity:   O(1)
 struct Solution;
 
@@ -20,7 +20,7 @@ impl Solution {
                 lo = mid + 1;
             }
         }
-        lo
+        return lo;
     }
     fn get_count(matrix: &Vec<Vec<i32>>, target: i32) -> i32 {
         let len_rs: isize = matrix.len() as isize;
@@ -35,6 +35,6 @@ impl Solution {
             cnt += c as i32 + 1;
             r += 1;
         }
-        cnt
+        return cnt;
     }
 }
