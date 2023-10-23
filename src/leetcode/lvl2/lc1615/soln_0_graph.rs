@@ -2,8 +2,8 @@ use std::collections::{HashMap, HashSet};
 
 /// @author: Leon
 /// https://leetcode.com/problems/maximal-network-rank/
-/// Time Complexity:    O(E + V ^ 2)
-/// Space Complexity:   O(E + V)
+/// Time Complexity:    O(E + V ^ 2) ~ O(`_len_rs` + `n` ^ 2)
+/// Space Complexity:   O(E + V) ~ O(`_len_rs` + `n`)
 /// Reference:
 /// https://leetcode.com/problems/maximal-network-rank/editorial/
 struct Solution;
@@ -11,6 +11,7 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn maximal_network_rank(n: i32, roads: Vec<Vec<i32>>) -> i32 {
+        let _len_rs: usize = roads.len();
         let n: usize = n as usize;
         let graph: HashMap<usize, HashSet<usize>> = Self::build_graph(n, roads);
         let mut ans: i32 = 0;
