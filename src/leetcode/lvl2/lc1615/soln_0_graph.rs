@@ -3,7 +3,9 @@ use std::collections::{HashMap, HashSet};
 /// @author: Leon
 /// https://leetcode.com/problems/maximal-network-rank/
 /// Time Complexity:    O(E + V ^ 2)
-/// Space Complexity:   O()
+/// Space Complexity:   O(E + V)
+/// Reference:
+/// https://leetcode.com/problems/maximal-network-rank/editorial/
 struct Solution;
 
 #[allow(dead_code)]
