@@ -2,9 +2,8 @@ use std::collections::VecDeque;
 
 /// @author: Leon
 /// https://leetcode.com/problems/detect-cycles-in-2d-grid/
-/// Time Complexity:    O(`len_r` * `len_c`)
-/// Space Complexity:   O(`len_r` * `len_c`)
-/// !!! This is not correct solution !!!
+/// Time Complexity:    O(`len_rs` * `len_cs`)
+/// Space Complexity:   O(`len_rs` * `len_cs`)
 /// Reference:
 /// https://leetcode.com/problems/detect-cycles-in-2d-grid/discuss/805673/C++-BFS/1068703
 /// https://leetcode.com/problems/detect-cycles-in-2d-grid/discuss/805673/C%2B%2B-BFS
@@ -14,42 +13,47 @@ struct Solution;
 impl Solution {
     pub fn contains_cycle(grid: Vec<Vec<char>>) -> bool {
         const DIRS: &'static [isize] = &[0, -1, 0, 1, 0];
-        let len_r: usize = grid.len();
-        let len_c: usize = grid[0].len();
-        let mut visited: Vec<Vec<bool>> = vec![vec![false; len_c]; len_r];
-        for r in 0..len_r {
-            for c in 0..len_c {
+        let len_rs: usize = grid.len();
+        let len_cs: usize = grid[0].len();
+        let mut visited: Vec<Vec<bool>> = vec![vec![false; len_cs]; len_rs];
+        for r in 0..len_rs {
+            for c in 0..len_cs {
                 if visited[r][c] {
                     continue;
                 }
-                let mut queue: VecDeque<(usize, usize)> = VecDeque::new();
+                let mut queue: VecDeque<(usize, usize)> = VecDeque::with_capacity(len_rs * len_cs);
                 queue.push_back((r, c));
                 while !queue.is_empty() {
                     let len_q: usize = queue.len();
                     for _ in 0..len_q {
-                        let (r_cur, c_cur) = queue.pop_front().unwrap();
-                        if visited[r_cur][c_cur] {
-                            return true;
-                        }
-                        visited[r_cur][c_cur] = true;
-                        for d in 0..4 {
-                            let r_nxt = r_cur as isize + DIRS[d];
-                            let c_nxt = c_cur as isize + DIRS[d + 1];
-                            if r_nxt < 0
-                                || c_nxt < 0
-                                || r_nxt as usize >= len_r
-                                || c_nxt as usize >= len_c
-                                || grid[r_nxt as usize][c_nxt as usize] != grid[r_cur][c_cur]
-                            {
-                                continue;
+                        if let Some((r_cur, c_cur)) = queue.pop_front() {
+                            if visited[r_cur][c_cur] {
+                                return true;
                             }
-                            queue.push_back((r_nxt as usize, c_nxt as usize));
+                            visited[r_cur][c_cur] = true;
+                            for d in 0..4 {
+                                let r_nxt = r_cur as isize + DIRS[d];
+                                let c_nxt = c_cur as isize + DIRS[d + 1];
+                                if r_nxt < 0 || c_nxt < 0 {
+                                    continue;
+                                }
+                                let r_nxt: usize = r_nxt as usize;
+                                let c_nxt: usize = c_nxt as usize;
+                                if r_nxt >= len_rs
+                                    || c_nxt >= len_cs
+                                    || grid[r_nxt][c_nxt] != grid[r_cur][c_cur]
+                                    || visited[r_nxt][c_nxt]
+                                {
+                                    continue;
+                                }
+                                queue.push_back((r_nxt as usize, c_nxt as usize));
+                            }
                         }
                     }
                 }
             }
         }
-        false
+        return false;
     }
 }
 

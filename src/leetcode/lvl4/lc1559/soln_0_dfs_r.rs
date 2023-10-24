@@ -1,34 +1,29 @@
 /// @author: Leon
 /// https://leetcode.com/problems/detect-cycles-in-2d-grid/
-/// Time Complexity:    O(`len_r` * `len_c`)
-/// Space Complexity:   O(`len_r` * ``)
+/// Time Complexity:    O(`len_rs` * `len_cs`)
+/// Space Complexity:   O(`len_rs` * `len_cs`)
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     const DIRS: &'static [isize] = &[0, -1, 0, 1, 0];
     pub fn contains_cycle(grid: Vec<Vec<char>>) -> bool {
-        const RANGE: usize = 500 + 7;
-        let len_r: usize = grid.len();
-        let len_c: usize = grid[0].len();
-        let mut visited: Vec<Vec<bool>> = vec![vec![false; len_c]; len_r];
-        for row in 0..len_r {
-            for col in 0..len_c {
-                if visited[row][col] {
+        const RANGE: usize = 500;
+        const IMPL: usize = RANGE + 7;
+        let len_rs: usize = grid.len();
+        let len_cs: usize = grid[0].len();
+        let mut visited: Vec<Vec<bool>> = vec![vec![false; len_cs]; len_rs];
+        for r in 0..len_rs {
+            for c in 0..len_cs {
+                if visited[r][c] {
                     continue;
                 }
-                if Self::dfs(
-                    (row, col),
-                    (RANGE, RANGE),
-                    &mut visited,
-                    grid[row][col],
-                    &grid,
-                ) {
+                if Self::dfs((r, c), (IMPL, IMPL), &mut visited, grid[r][c], &grid) {
                     return true;
                 }
             }
         }
-        false
+        return false;
     }
     fn dfs(
         coord_cur: (usize, usize),
@@ -37,23 +32,21 @@ impl Solution {
         ch_cur: char,
         grid: &Vec<Vec<char>>,
     ) -> bool {
-        let len_r: usize = grid.len();
-        let len_c: usize = grid[0].len();
+        let len_rs: usize = grid.len();
+        let len_cs: usize = grid[0].len();
         let (r_cur, c_cur) = coord_cur;
         let (r_prev, c_prev) = coord_prev;
         for d in 0..4 {
             let r_nxt = r_cur as isize + Self::DIRS[d];
             let c_nxt = c_cur as isize + Self::DIRS[d + 1];
-            if r_nxt < 0
-                || c_nxt < 0
-                || r_nxt as usize >= len_r
-                || c_nxt as usize >= len_c
-                || grid[r_nxt as usize][c_nxt as usize] != ch_cur
-            {
+            if r_nxt < 0 || c_nxt < 0 {
                 continue;
             }
             let r_nxt: usize = r_nxt as usize;
             let c_nxt: usize = c_nxt as usize;
+            if r_nxt >= len_rs || c_nxt >= len_cs || grid[r_nxt][c_nxt] != ch_cur {
+                continue;
+            }
             if r_nxt == r_prev && c_nxt == c_prev {
                 continue;
             }
@@ -65,7 +58,7 @@ impl Solution {
                 return true;
             };
         }
-        false
+        return false;
     }
 }
 
