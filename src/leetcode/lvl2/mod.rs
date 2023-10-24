@@ -116,6 +116,7 @@ pub mod lc1047;
 pub mod lc1056;
 pub mod lc1064;
 pub mod lc1100;
+pub mod lc1120;
 pub mod lc1151;
 pub mod lc1167;
 pub mod lc1176;
