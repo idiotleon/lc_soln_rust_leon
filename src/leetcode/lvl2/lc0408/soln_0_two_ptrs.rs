@@ -32,6 +32,6 @@ impl Solution {
             }
         }
         idx_w += number as usize;
-        idx_w == len_w && idx_ab == len_ab
+        return idx_w == len_w && idx_ab == len_ab;
     }
 }
