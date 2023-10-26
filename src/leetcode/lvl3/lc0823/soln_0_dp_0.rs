@@ -27,9 +27,10 @@ impl Solution {
                 if sorted[hi] % sorted[lo] == 0 {
                     let division = sorted[hi] / sorted[lo];
                     if let Some(&val) = dp.get(&division) {
-                        let val_lo = *dp.get(&sorted[lo]).unwrap();
-                        if let Some(val_hi) = dp.get_mut(&sorted[hi]) {
-                            *val_hi = (*val_hi + val_lo * val) % MOD;
+                        if let Some(&val_lo) = dp.get(&sorted[lo]) {
+                            if let Some(val_hi) = dp.get_mut(&sorted[hi]) {
+                                *val_hi = (*val_hi + val_lo * val) % MOD;
+                            }
                         }
                     }
                 }
