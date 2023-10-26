@@ -39,6 +39,6 @@ impl Solution {
             }
             lo += 1;
         }
-        ans
+        return ans;
     }
 }
