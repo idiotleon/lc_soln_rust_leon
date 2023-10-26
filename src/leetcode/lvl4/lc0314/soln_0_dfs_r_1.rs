@@ -6,8 +6,8 @@ use crate::leetcode::util::data_structure::tree::binary::tree_node::TreeNode;
 
 /// @author: Leon
 /// https://leetcode.com/problems/binary-tree-vertical-order-traversal/
-/// Time Complexity:    O()
-/// Space Complexity:   O()
+/// Time Complexity:    O(N)
+/// Space Complexity:   O(N)
 struct Solution;
 
 #[allow(dead_code)]
