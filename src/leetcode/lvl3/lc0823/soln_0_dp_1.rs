@@ -2,8 +2,8 @@ use std::collections::HashMap;
 
 /// @author: Leon
 /// https://leetcode.com/problems/binary-trees-with-factors/
-/// Time Complexity:    O()
-/// Space Complexity:   O()
+/// Time Complexity:    O(N)
+/// Space Complexity:   O(N)
 /// Reference:
 /// https://leetcode.com/problems/binary-trees-with-factors/discuss/1107610/Rust-HashMap-solution
 struct Solution;
