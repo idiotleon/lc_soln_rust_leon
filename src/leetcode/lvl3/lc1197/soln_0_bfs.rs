@@ -45,6 +45,6 @@ impl Solution {
             }
             moves += 1;
         }
-        -1
+        return -1;
     }
 }
