@@ -1,49 +1,59 @@
 use std::collections::VecDeque;
+
 /// @author: Leon
 /// https://leetcode.com/problems/course-schedule-ii/
-/// Time Complexity:    O(`num_courses` + `_len_pres`)
-/// Space Complexity:   O(`num_courses` + `_len_pres`)
+/// Time Complexity:    O(V + E) ~ O(`num_courses` + `_len_pres`) ~ O(`num_courses`)
+/// Space Complexity:   O(V + E) ~ O(`num_courses` + `_len_pres`) ~ O(`num_courses`)
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn find_order(num_courses: i32, prerequisites: Vec<Vec<i32>>) -> Vec<i32> {
-        let len_cs: usize = num_courses as usize;
-        let _len_pres = prerequisites.len();
-        let (graph, mut indegrees) = Self::build_graph(len_cs, prerequisites);
-        let mut queue: VecDeque<usize> = VecDeque::new();
-        for (idx, &indegree) in indegrees.iter().enumerate() {
-            if indegree == 0 {
-                queue.push_back(idx);
+        let num_courses: usize = num_courses as usize;
+        let mut ans: Vec<i32> = Vec::with_capacity(num_courses);
+        let (graph, mut counts) = Self::build_graph(num_courses, prerequisites);
+        let mut queue: VecDeque<usize> = {
+            let mut queue: VecDeque<usize> = VecDeque::with_capacity(num_courses);
+            for (idx, &count) in counts.iter().enumerate() {
+                if count == 0 {
+                    queue.push_back(idx);
+                }
             }
-        }
-        let mut ans: Vec<i32> = Vec::with_capacity(len_cs);
+            queue
+        };
         while !queue.is_empty() {
-            if let Some(cur) = queue.pop_front() {
-                ans.push(cur as i32);
-                for &nxt in graph[cur].iter() {
-                    indegrees[nxt] -= 1;
-                    if indegrees[nxt] == 0 {
-                        queue.push_back(nxt);
+            let len_q: usize = queue.len();
+            for _ in 0..len_q {
+                if let Some(cur) = queue.pop_front() {
+                    ans.push(cur as i32);
+                    for &nxt in &graph[cur] {
+                        counts[nxt] -= 1;
+                        if counts[nxt] == 0 {
+                            queue.push_back(nxt);
+                        }
                     }
                 }
             }
         }
-        if ans.len() < len_cs {
-            return vec![];
-        }
-        ans
+        return if ans.len() == num_courses {
+            ans
+        } else {
+            Vec::new()
+        };
     }
-    fn build_graph(let_vts: usize, prerequisites: Vec<Vec<i32>>) -> (Vec<Vec<usize>>, Vec<u16>) {
-        let mut indegrees: Vec<u16> = vec![0; let_vts];
-        let mut graph: Vec<Vec<usize>> = vec![vec![]; let_vts];
-        for pres in prerequisites {
-            let cur: usize = pres[0] as usize;
-            let pre: usize = pres[1] as usize;
-            graph[pre].push(cur);
-            indegrees[cur] += 1;
+    fn build_graph(
+        num_courses: usize,
+        prerequisites: Vec<Vec<i32>>,
+    ) -> (Vec<Vec<usize>>, Vec<u16>) {
+        let mut graph: Vec<Vec<usize>> = vec![Vec::with_capacity(num_courses); num_courses];
+        let mut counts: Vec<u16> = vec![0; num_courses];
+        for pre in prerequisites {
+            let to: usize = pre[0] as usize;
+            let from: usize = pre[1] as usize;
+            graph[from].push(to);
+            counts[to] += 1;
         }
-        (graph, indegrees)
+        return (graph, counts);
     }
 }
 
