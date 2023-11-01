@@ -55,4 +55,12 @@ mod test {
         let expected = true;
         assert_eq!(expected, actual);
     }
+    #[test]
+    fn it_works_with_sample_input_2() {
+        let num_courses = 2;
+        let prerequisites = vec![vec![1, 0], vec![0, 1]];
+        let actual = Solution::can_finish(num_courses, prerequisites);
+        let expected = false;
+        assert_eq!(expected, actual);
+    }
 }
