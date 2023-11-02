@@ -13,29 +13,29 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn assign_bikes(workers: Vec<Vec<i32>>, bikes: Vec<Vec<i32>>) -> Vec<i32> {
-        let len_n: usize = workers.len();
         const RANGE: i32 = 1e3 as i32 + 1;
-        let mut heap: BinaryHeap<Reverse<(u16, usize, usize)>> = {
-            let mut heap = BinaryHeap::new();
-            for (i, worker) in workers.into_iter().enumerate() {
-                for (j, bike) in bikes.iter().enumerate() {
-                    let dist: u16 =
-                        ((worker[0] - bike[0]).abs() + (worker[1] - bike[1]).abs()) as u16;
-                    heap.push(Reverse((dist, i, j)));
+        let len_ws: usize = workers.len();
+        let len_bs: usize = bikes.len();
+        let mut heap: BinaryHeap<Reverse<(i32, usize, usize)>> = {
+            let mut heap: BinaryHeap<Reverse<(i32, usize, usize)>> =
+                BinaryHeap::with_capacity(len_ws * len_bs);
+            for (idx_w, worker) in workers.into_iter().enumerate() {
+                for (idx_b, bike) in bikes.iter().enumerate() {
+                    let distance = (worker[0] - bike[0]).abs() + (worker[1] - bike[1]).abs();
+                    heap.push(Reverse((distance, idx_w, idx_b)));
                 }
             }
             heap
         };
-        let mut ans: Vec<i32> = vec![RANGE; len_n];
-        let mut assigned: HashSet<usize> = HashSet::new();
-        while assigned.len() < len_n {
-            if let Some(Reverse(res)) = heap.pop() {
-                let (_dist, worker, bike) = res;
-                if ans[worker] == RANGE && assigned.insert(bike) {
-                    ans[worker] = bike as i32;
+        let mut ans: Vec<i32> = vec![RANGE; len_ws];
+        let mut assigned: HashSet<usize> = HashSet::with_capacity(len_ws);
+        while assigned.len() < len_ws {
+            if let Some(Reverse((_distance, idx_w, idx_b))) = heap.pop() {
+                if ans[idx_w] == RANGE && assigned.insert(idx_b) {
+                    ans[idx_w] = idx_b as i32;
                 }
             }
         }
-        ans
+        return ans;
     }
 }
