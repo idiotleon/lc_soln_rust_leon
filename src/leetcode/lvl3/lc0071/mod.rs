@@ -1,1 +1,1 @@
-pub mod soln_0_deque;
+pub mod soln_0_prs_str;

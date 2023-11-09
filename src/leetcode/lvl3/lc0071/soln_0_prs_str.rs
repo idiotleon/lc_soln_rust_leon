@@ -1,4 +1,5 @@
 use std::collections::{HashSet, VecDeque};
+
 /// @author: Leon
 /// https://leetcode.com/problems/simplify-path/
 /// Time Complexity:    O(`len_p`)
@@ -11,14 +12,14 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn simplify_path(path: String) -> String {
-        let _len_p: usize = path.len();
+        let len_p: usize = path.len();
         let skip: HashSet<&str> = HashSet::from(["..", ".", ""]);
-        let mut deque: VecDeque<&str> = VecDeque::new();
-        for str in path.split("/") {
-            if !deque.is_empty() && str.eq("..") {
+        let mut deque: VecDeque<&str> = VecDeque::with_capacity(len_p);
+        for s in path.split("/") {
+            if !deque.is_empty() && s.eq("..") {
                 deque.pop_back();
-            } else if !skip.contains(str) {
-                deque.push_back(str);
+            } else if !skip.contains(s) {
+                deque.push_back(s);
             }
         }
         if deque.is_empty() {
@@ -29,6 +30,6 @@ impl Solution {
             ans.push('/');
             ans.push_str(top);
         }
-        ans
+        return ans;
     }
 }
