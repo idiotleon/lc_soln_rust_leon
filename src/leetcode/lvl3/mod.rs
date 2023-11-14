@@ -185,6 +185,7 @@ pub mod lc1759;
 pub mod lc1814;
 pub mod lc1893;
 pub mod lc1905;
+pub mod lc1930;
 pub mod lc1933;
 pub mod lc1950;
 pub mod lc1954;
