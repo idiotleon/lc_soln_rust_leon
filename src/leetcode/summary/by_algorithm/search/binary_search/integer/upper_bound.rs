@@ -1,5 +1,5 @@
 /// @author: Leon
-/// Time Complexity:    O(`len_ns`)
+/// Time Complexity:    O(lg(`len_ns`))
 /// Space Complexity:   O(1)
 /// Reference:
 /// https://github.com/phishman3579/java-algorithms-implementation/blob/master/src/com/jwetherell/algorithms/search/UpperBound.java

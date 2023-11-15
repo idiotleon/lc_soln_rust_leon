@@ -1,17 +1,17 @@
 /// @author: Leon
 /// https://leetcode.com/problems/kth-largest-element-in-an-array/
-/// Time Complexity:    O(`len_n`)
+/// Time Complexity:    O(`len_ns`)
 /// Space Complexity:   O(1)
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn find_kth_largest(mut nums: Vec<i32>, k: i32) -> i32 {
-        let len_n = nums.len();
-        let k_largest = len_n - k as usize;
+        let len_ns = nums.len();
+        let k: usize = k as usize;
+        let k_largest = len_ns - k;
         let mut lo: usize = 0;
-        let mut hi: usize = len_n - 1;
+        let mut hi: usize = len_ns - 1;
         while lo <= hi {
             let pivot = Self::partition(lo, hi, &mut nums);
             if pivot < k_largest {
@@ -22,7 +22,7 @@ impl Solution {
                 return nums[pivot];
             }
         }
-        -1
+        return -1;
     }
     fn partition(low: usize, high: usize, nums: &mut Vec<i32>) -> usize {
         if low == high {
@@ -52,6 +52,6 @@ impl Solution {
             nums.swap(lo, hi);
         }
         nums.swap(low, hi);
-        hi
+        return hi;
     }
 }

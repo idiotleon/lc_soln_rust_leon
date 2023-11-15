@@ -9,7 +9,8 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn top_k_frequent(nums: Vec<i32>, k: i32) -> Vec<i32> {
-        let _len_n: usize = nums.len();
+        let len_n: usize = nums.len();
+        let k: usize = k as usize;
         let num_to_freq: HashMap<i32, u16> = {
             let mut num_to_freq: HashMap<i32, u16> = HashMap::new();
             for num in nums {
@@ -17,15 +18,15 @@ impl Solution {
             }
             num_to_freq
         };
-        let mut heap: BinaryHeap<(i16, i32)> = BinaryHeap::new();
+        let mut heap: BinaryHeap<(i16, i32)> = BinaryHeap::with_capacity(len_n);
         for (num, freq) in num_to_freq.into_iter() {
             heap.push((-(freq as i16), num));
-            if heap.len() > k as usize {
+            if heap.len() > k {
                 heap.pop();
             }
         }
         let ans: Vec<i32> = {
-            let mut ans: Vec<i32> = Vec::new();
+            let mut ans: Vec<i32> = Vec::with_capacity(k);
             while let Some((_freq, num)) = heap.pop() {
                 ans.push(num);
             }
