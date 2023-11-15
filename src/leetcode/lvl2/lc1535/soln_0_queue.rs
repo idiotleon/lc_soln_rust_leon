@@ -14,7 +14,7 @@ impl Solution {
         if k as usize >= len_ns {
             return max;
         }
-        if k == 1{
+        if k == 1 {
             return std::cmp::max(nums[0], nums[1]);
         }
         let mut queue: VecDeque<i32> = {
@@ -50,7 +50,6 @@ impl Solution {
         return -1;
     }
 }
-
 
 #[cfg(test)]
 mod test {
