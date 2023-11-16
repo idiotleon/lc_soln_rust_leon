@@ -178,6 +178,7 @@ pub mod lc1961;
 pub mod lc1962;
 pub mod lc1971;
 pub mod lc1973;
+pub mod lc1980;
 pub mod lc1985;
 pub mod lc2007;
 pub mod lc2016;
