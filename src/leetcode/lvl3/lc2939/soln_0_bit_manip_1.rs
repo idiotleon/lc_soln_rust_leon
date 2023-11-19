@@ -1,6 +1,6 @@
 /// @author: Leon
 /// https://leetcode.com/problems/maximum-xor-product/
-/// Time Complexity:    O(`n``)
+/// Time Complexity:    O(`n`)
 /// Space Complexity:   O(1)
 /// Reference:
 /// https://leetcode.com/problems/maximum-xor-product/solutions/4304616/keep-greedy-keep-stupid/
