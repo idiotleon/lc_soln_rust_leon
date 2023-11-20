@@ -174,3 +174,4 @@ pub mod lc2490;
 pub mod lc2496;
 pub mod lc2500;
 pub mod lc2520;
+pub mod lc2553;

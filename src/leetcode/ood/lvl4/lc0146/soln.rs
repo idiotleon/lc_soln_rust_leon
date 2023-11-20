@@ -24,12 +24,12 @@ impl LRUCache {
     fn new(capacity: i32) -> Self {
         let capacity: usize = capacity as usize;
         Self {
-            /// the `HashMap::with_capacity()` rounds up to the nearest factor of 2
-            /// e.g.
-            /// capacity initialized    ->  actual capacity
-            /// 2, 3                    ->  4
-            /// 4                       ->  8
-            /// 8                       ->  16
+            // the `HashMap::with_capacity()` rounds up to the nearest factor of 2
+            // e.g.
+            // capacity initialized    ->  actual capacity
+            // 2, 3                    ->  4
+            // 4                       ->  8
+            // 8                       ->  16
             num_to_node: HashMap::with_capacity(capacity + 1),
             dll: DoublyLinkedList::new(),
             capacity,
