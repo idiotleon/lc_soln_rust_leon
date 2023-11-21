@@ -1,4 +1,5 @@
 use std::collections::VecDeque;
+
 /// @author: Leon
 /// https://leetcode.com/problems/walls-and-gates/
 /// Time Complexity:    O(`len_r` * `len_c`)
@@ -10,46 +11,50 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn walls_and_gates(rooms: &mut Vec<Vec<i32>>) {
-        let len_r: usize = rooms.len();
-        let len_c: usize = rooms[0].len();
         const DIRS: &[isize] = &[0, -1, 0, 1, 0];
+        const INF: i32 = i32::MAX;
+        // const INF: i32 = 2147483647;
         const GATE: i32 = 0;
         const WALL: i32 = -1;
-        const INF: i32 = i32::MAX;
-        let mut queue: VecDeque<(usize, usize)> = VecDeque::new();
-        for r in 0..len_r {
-            for c in 0..len_c {
-                if rooms[r][c] == GATE {
-                    queue.push_back((r, c));
+        let len_rs: usize = rooms.len();
+        let len_cs: usize = rooms[0].len();
+        let mut queue: VecDeque<(usize, usize)> = {
+            let mut queue: VecDeque<(usize, usize)> = VecDeque::with_capacity(len_rs * len_cs);
+            for r in 0..len_rs {
+                for c in 0..len_cs {
+                    if rooms[r][c] == GATE {
+                        queue.push_back((r, c));
+                    }
                 }
             }
-        }
-        let mut steps: i32 = 1;
+            queue
+        };
+        let mut step: i32 = 1;
         while !queue.is_empty() {
             let len_q: usize = queue.len();
             for _ in 0..len_q {
-                if let Some((r_cur, c_cur)) = queue.pop_front() {
-                    for d in 0..4 as usize {
-                        let r_nxt: isize = r_cur as isize + DIRS[d];
-                        let c_nxt: isize = c_cur as isize + DIRS[d + 1];
-                        if r_nxt < 0
-                            || c_nxt < 0
-                            || r_nxt as usize >= len_r
-                            || c_nxt as usize >= len_c
-                        {
+                if let Some((r, c)) = queue.pop_front() {
+                    for d in 0..4 {
+                        let r_nxt: isize = r as isize + DIRS[d];
+                        let c_nxt: isize = c as isize + DIRS[d + 1];
+                        if r_nxt < 0 || c_nxt < 0 {
                             continue;
                         }
                         let r_nxt: usize = r_nxt as usize;
                         let c_nxt: usize = c_nxt as usize;
-                        if rooms[r_nxt][c_nxt] != INF {
+                        if r_nxt >= len_rs
+                            || c_nxt >= len_cs
+                            || rooms[r_nxt][c_nxt] == WALL
+                            || rooms[r_nxt][c_nxt] != INF
+                        {
                             continue;
                         }
-                        rooms[r_nxt][c_nxt] = steps;
+                        rooms[r_nxt][c_nxt] = step;
                         queue.push_back((r_nxt, c_nxt));
                     }
                 }
             }
-            steps += 1;
+            step += 1;
         }
     }
 }

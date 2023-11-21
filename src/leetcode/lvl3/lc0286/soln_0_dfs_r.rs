@@ -10,11 +10,11 @@ struct Solution;
 impl Solution {
     const DIRS: &'static [isize] = &[0, -1, 0, 1, 0];
     pub fn walls_and_gates(rooms: &mut Vec<Vec<i32>>) {
-        let len_r: usize = rooms.len();
-        let len_c: usize = rooms[0].len();
+        let len_rs: usize = rooms.len();
+        let len_cs: usize = rooms[0].len();
         const GATE: i32 = 0;
-        for r in 0..len_r {
-            for c in 0..len_c {
+        for r in 0..len_rs {
+            for c in 0..len_cs {
                 if rooms[r][c] == GATE {
                     Self::dfs((r, c), rooms);
                 }
@@ -22,17 +22,20 @@ impl Solution {
         }
     }
     fn dfs(coord: (usize, usize), rooms: &mut Vec<Vec<i32>>) {
-        let len_r: usize = rooms.len();
-        let len_c: usize = rooms[0].len();
+        let len_rs: usize = rooms.len();
+        let len_cs: usize = rooms[0].len();
         let (r_cur, c_cur) = coord;
         for d in 0..4 {
             let r_nxt: isize = r_cur as isize + Self::DIRS[d];
             let c_nxt: isize = c_cur as isize + Self::DIRS[d + 1];
-            if r_nxt < 0 || c_nxt < 0 || r_nxt as usize >= len_r || c_nxt as usize >= len_c {
+            if r_nxt < 0 || c_nxt < 0 {
                 continue;
             }
             let r_nxt: usize = r_nxt as usize;
             let c_nxt: usize = c_nxt as usize;
+            if r_nxt >= len_rs || c_nxt >= len_cs {
+                continue;
+            }
             if rooms[r_nxt][c_nxt] > 1 + rooms[r_cur][c_cur] {
                 rooms[r_nxt][c_nxt] = 1 + rooms[r_cur][c_cur];
                 Self::dfs((r_nxt, c_nxt), rooms);
