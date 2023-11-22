@@ -42,6 +42,13 @@ impl Solution {
         return ans;
     }
     fn is_valid(r: usize, c: usize, nums: &Vec<Vec<i32>>) -> bool {
+        // based on the problem,
+        // there is no chance to be negative.
+        // if r < 0 || c < 0{
+        //     return false;
+        // }
+        // let r: usize = r as usize;
+        // let c: usize = c as usize;
         let len_rs: usize = nums.len();
         if r >= len_rs {
             return false;
