@@ -1,31 +1,33 @@
 use std::collections::BinaryHeap;
+
 /// @author: Leon
 /// https://leetcode.com/problems/find-k-closest-elements/
-/// Time Complexity:    O(`_len_n` * lg(`_len_n`))
+/// Time Complexity:    O(`_lelen_nsn_n` * lg(`len_ns`))
 /// Space Complexity:   O(`k`)
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn find_closest_elements(nums: Vec<i32>, k: i32, x: i32) -> Vec<i32> {
-        let _len_n: usize = nums.len();
+        let len_ns: usize = nums.len();
+        let k: usize = k as usize;
         // max heap
-        let mut heap: BinaryHeap<(i32, i32)> = BinaryHeap::new();
+        let mut heap: BinaryHeap<(i32, i32)> = BinaryHeap::with_capacity(len_ns);
         for num in nums {
             heap.push(((num - x).abs(), num));
-            if heap.len() > k as usize {
+            if heap.len() > k {
                 heap.pop();
             }
         }
         let ans: Vec<i32> = {
-            let mut res: Vec<i32> = Vec::new();
+            let mut res: Vec<i32> = Vec::with_capacity(len_ns);
             while let Some((_diff, num)) = heap.pop() {
                 res.push(num);
             }
             res.sort();
             res
         };
-        ans
+        return ans;
     }
 }
 
