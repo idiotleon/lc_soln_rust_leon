@@ -1,13 +1,13 @@
 /// @author: Leon
 /// https://leetcode.com/problems/target-sum/
-/// Time Complexity:    O(`len_ns` * `sum_total`)
+/// Time Complexity:    O(`_len_ns` * `sum_total`)
 /// Space Complexity:   O(`range`) ~ O(`sum_total`)
 struct Solution;
 
 #[allow(dead_code)]
 impl Solution {
     pub fn find_target_sum_ways(nums: Vec<i32>, target: i32) -> i32 {
-        let len_ns: usize = nums.len();
+        let _len_ns: usize = nums.len();
         let sum_total: i32 = nums.iter().sum();
         if target > sum_total || target < -sum_total {
             return 0;
