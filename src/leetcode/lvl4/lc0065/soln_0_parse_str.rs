@@ -20,23 +20,23 @@ impl Solution {
                 '0'..='9' => {
                     num_seen = true;
                 }
-                '.' => {
-                    if e_seen || dot_seen {
+                '-' | '+' => {
+                    if idx != 0 && chs[idx - 1] != 'e' && chs[idx - 1] != 'E' {
                         return false;
                     }
-                    dot_seen = true;
                 }
                 'e' | 'E' => {
                     if e_seen || !num_seen {
                         return false;
                     }
-                    num_seen = false;
                     e_seen = true;
+                    num_seen = false;
                 }
-                '-' | '+' => {
-                    if idx != 0 && chs[idx - 1] != 'e' {
+                '.' => {
+                    if e_seen || dot_seen {
                         return false;
                     }
+                    dot_seen = true;
                 }
                 _ => return false,
             }
