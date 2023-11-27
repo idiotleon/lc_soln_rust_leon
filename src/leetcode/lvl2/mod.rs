@@ -252,3 +252,4 @@ pub mod lc2785;
 pub mod lc2824;
 pub mod lc2909;
 pub mod lc2946;
+pub mod lc2979;
