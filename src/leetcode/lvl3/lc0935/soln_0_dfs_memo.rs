@@ -2,6 +2,8 @@
 /// https://leetcode.com/problems/knight-dialer/
 /// Time Complexity:    O()
 /// Space Complexity:   O()
+/// Reference:
+/// https://leetcode.com/problems/knight-dialer/editorial/
 struct Solution;
 
 #[allow(dead_code)]
