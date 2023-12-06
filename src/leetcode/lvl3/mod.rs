@@ -123,6 +123,7 @@ pub mod lc0721;
 pub mod lc0735;
 pub mod lc0739;
 pub mod lc0763;
+pub mod lc0764;
 pub mod lc0777;
 pub mod lc0779;
 pub mod lc0785;
