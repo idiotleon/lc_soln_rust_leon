@@ -168,6 +168,7 @@ pub mod lc1668;
 pub mod lc1679;
 pub mod lc1680;
 pub mod lc1695;
+pub mod lc1716;
 pub mod lc1762;
 pub mod lc1805;
 pub mod lc1807;
