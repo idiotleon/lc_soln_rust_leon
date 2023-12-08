@@ -1,7 +1,7 @@
 /// @author: Leon
 /// https://leetcode.com/problems/integer-to-english-ans/
-/// Time Complexity:    O()
-/// Space Complexity:   O()
+/// Time Complexity:    O(L ^ 2) ~ O(32 ^ 2) ~ O(1)
+/// Space Complexity:   O(L) ~ O(32) ~ O(1)
 struct Solution;
 
 #[allow(dead_code)]
