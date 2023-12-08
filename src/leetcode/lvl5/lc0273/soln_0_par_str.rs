@@ -1,5 +1,5 @@
 /// @author: Leon
-/// https://leetcode.com/problems/integer-to-english-words/
+/// https://leetcode.com/problems/integer-to-english-ans/
 /// Time Complexity:    O()
 /// Space Complexity:   O()
 struct Solution;
@@ -32,31 +32,32 @@ impl Solution {
         "", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety",
     ];
     const THOUSANDS: &'static [&'static str] = &["", "Thousand", "Million", "Billion"];
-    pub fn number_to_words(num: i32) -> String {
+    pub fn number_to_ans(num: i32) -> String {
         if num == 0 {
             return "Zero".to_owned();
         }
         let mut idx: usize = 0;
-        let mut words: String = String::new();
+        let mut ans: String = String::new();
         let mut res = num;
         while res > 0 {
             if res % 1000 != 0 {
-                words = format!(
+                ans = format!(
                     "{}{} {}",
                     Self::helper(res % 1000),
                     Self::THOUSANDS[idx],
-                    words
+                    ans
                 );
             }
             res /= 1000;
             idx += 1;
         }
-        return words.trim().to_owned();
+        return ans.trim().to_owned();
     }
     fn helper(num: i32) -> String {
         return if num == 0 {
             "".to_owned()
         } else if (1..20).contains(&num) {
+            // there is a trailing space
             format!("{} ", Self::LESS_THAN_20[num as usize])
         } else if (20..100).contains(&num) {
             format!(
