@@ -103,6 +103,7 @@ pub mod lc0746;
 pub mod lc0760;
 pub mod lc0814;
 pub mod lc0820;
+pub mod lc0824;
 pub mod lc0844;
 pub mod lc0849;
 pub mod lc0856;
