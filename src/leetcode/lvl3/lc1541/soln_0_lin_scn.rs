@@ -1,6 +1,6 @@
 /// @author: Leon
 /// https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/
-/// Time Complexity:    O(`len_s`)
+/// Time Complexity:    O(`_len_s`)
 /// Space Complexity:   O(1)
 /// Reference:
 /// https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/solutions/780199/java-c-python-straight-forward-one-pass/
@@ -11,7 +11,7 @@ impl Solution {
     pub fn min_insertions(s: String) -> i32 {
         const PAREN_OPEN: char = '(';
         const PAREN_CLOSED: char = ')';
-        let len_s: usize = s.len();
+        let _len_s: usize = s.len();
         let mut open_missing: i32 = 0;
         let mut closed_needed: i32 = 0;
         let mut closed_missing: i32 = 0;
