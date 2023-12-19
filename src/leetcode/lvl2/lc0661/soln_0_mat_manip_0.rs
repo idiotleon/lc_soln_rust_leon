@@ -9,7 +9,6 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn image_smoother(img: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
-        const DIRS: &'static [isize] = &[0, -1, 0, 1, 0];
         let len_rs: usize = img.len();
         let len_cs: usize = img[0].len();
         let mut ans: Vec<Vec<i32>> = vec![vec![0; len_cs]; len_rs];
