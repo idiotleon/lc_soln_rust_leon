@@ -1,7 +1,7 @@
 /// @author: Leon
 /// https://leetcode.com/problems/image-smoother/
-/// Time Complexity:    O(`len_r` * `len_c`)
-/// Space Complexity:   O(1) / O(`len_r` * `len_c`)
+/// Time Complexity:    O(`len_rs` * `len_cs`)
+/// Space Complexity:   O(1) / O(`len_rs` * `len_cs`)
 /// Referenece:
 /// https://leetcode.com/problems/image-smoother/discuss/106602/Very-Clean-Solution-in-Java
 struct Solution;
@@ -9,31 +9,32 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn image_smoother(img: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
-        let len_r: usize = img.len();
-        let len_c: usize = img[0].len();
-        let ans: Vec<Vec<i32>> = {
-            let mut res: Vec<Vec<i32>> = vec![vec![0; len_c]; len_r];
-            for (idx_r, row) in img.iter().enumerate() {
-                for (idx_c, &_value) in row.iter().enumerate() {
-                    let mut cnt: u8 = 0;
-                    let mut sum: u16 = 0;
-                    for delta_r in vec![-1, 0, 1] {
-                        for delta_c in vec![-1, 0, 1] {
-                            let r: isize = idx_r as isize + delta_r;
-                            let c: isize = idx_c as isize + delta_c;
-                            if r < 0 || c < 0 || r as usize >= len_r || c as usize >= len_c {
-                                continue;
-                            }
-                            cnt += 1;
-                            sum += img[r as usize][c as usize] as u16;
+        const DIRS: &'static [isize] = &[0, -1, 0, 1, 0];
+        let len_rs: usize = img.len();
+        let len_cs: usize = img[0].len();
+        let mut ans: Vec<Vec<i32>> = vec![vec![0; len_cs]; len_rs];
+        for r in 0..len_rs {
+            for c in 0..len_cs {
+                let mut sum: i32 = 0;
+                let mut count: i32 = 0;
+                for r_nxt in r as isize - 1..=r as isize + 1 {
+                    for c_nxt in c as isize - 1..=c as isize + 1 {
+                        if r_nxt < 0 || c_nxt < 0 {
+                            continue;
                         }
+                        let r_nxt: usize = r_nxt as usize;
+                        let c_nxt: usize = c_nxt as usize;
+                        if r_nxt >= len_rs || c_nxt >= len_cs {
+                            continue;
+                        }
+                        sum += img[r_nxt][c_nxt];
+                        count += 1;
                     }
-                    res[idx_r][idx_c] = sum as i32 / cnt as i32;
                 }
+                ans[r][c] = sum / count;
             }
-            res
-        };
-        ans
+        }
+        return ans;
     }
 }
 
