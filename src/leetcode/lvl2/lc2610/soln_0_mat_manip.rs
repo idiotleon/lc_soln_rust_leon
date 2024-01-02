@@ -1,7 +1,7 @@
 /// @author: Leon
 /// https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/
-/// Time Complexity:    O()
-/// Space Complexity:   O()
+/// Time Complexity:    O(`len_ns`)
+/// Space Complexity:   O(`len_ns`)
 struct Solution;
 
 #[allow(dead_code)]
