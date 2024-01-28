@@ -44,6 +44,6 @@ impl Solution {
                 }
             }
         }
-        count
+        return count;
     }
 }
