@@ -5,7 +5,6 @@
 /// Reference:
 /// http://zxi.mytechroad.com/blog/divide-and-conquer/leetcode-153-find-minimum-in-rotated-sorted-array/
 /// https://www.youtube.com/watch?v=P4r7mF1Jd50
-#[allow(dead_code)]
 struct Solution;
 
 #[allow(dead_code)]
