@@ -1,6 +1,6 @@
 /// @author: Leon
 /// https://leetcode.com/problems/verifying-an-alien-dictionary/
-/// Time Complexity:    O(n_words * avg_word_len)
+/// Time Complexity:    O(`len_ws` * avg_word_len)
 /// Space Complexity:   O(26) ~ O(1)
 struct Solution;
 
@@ -26,7 +26,7 @@ impl Solution {
                 return false;
             }
         }
-        return true;
+        true
     }
     fn is_bigger(chs_prev: &Vec<char>, chs_cur: &Vec<char>, order: &Vec<usize>) -> bool {
         let len_prev: usize = chs_prev.len();
@@ -40,6 +40,6 @@ impl Solution {
                     > order[ch_cur as usize - 'a' as usize];
             }
         }
-        return len_prev > len_cur;
+        len_prev > len_cur
     }
 }
